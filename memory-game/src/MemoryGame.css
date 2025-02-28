@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #4ca7f1, rgb(208, 226, 250));
+    font-family: 'Poppins', Arial, sans-serif;
+    padding: 20px;
+    animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 0.8s ease-out;
+}
+
+h2 {
+    color: #34495e;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.fruit-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 80%;
+    margin: 20px auto;
+    perspective: 1000px;
+}
+
+.fruit-card {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-style: preserve-3d;
+}
+
+.fruit-card:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.fruit-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: filter 0.3s ease;
+}
+
+.fruit-card:hover .fruit-image {
+    filter: brightness(1.1);
+}
+
+.fruit-name {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  background: rgba(44, 62, 80, 0.8);
+  padding: 6px 12px;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  opacity: 1;
+  transition: transform 0.3s ease;
+}
+
+.fruit-card:hover .fruit-name {
+  transform: translateX(-50%) translateY(5px);
+}
+
+.input-field {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    padding: 15px;
+    margin: 15px auto;
+    border: 2px solid #4ca7f1;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #2980b9;
+    box-shadow: 0 8px 20px rgba(76, 167, 241, 0.2);
+    transform: translateY(-2px);
+}
+
+.submit-btn {
+    background: #4ca7f1;
+    color: white;
+    font-size: 20px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(76, 167, 241, 0.3);
+}
+
+.submit-btn:hover {
+    background: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(76, 167, 241, 0.4);
+}
+
+.submit-btn:active {
+    transform: translateY(-1px);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .fruit-grid {
+        max-width: 100%;
+        gap: 15px;
+    }
+
+    .fruit-card {
+        width: 110px;
+        height: 110px;
+    }
+
+    .fruit-name {
+        font-size: 14px;
+    }
+
+    .input-field {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
