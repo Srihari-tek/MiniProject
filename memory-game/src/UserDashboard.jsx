@@ -42,7 +42,7 @@ const UserDashboard = () => {
     const fetchUserData = async () => {
       try {
         const userId = localStorage.getItem('username');
-        const response = await axios.get(`http://localhost:9090/api/user/${userId}`);
+        const response = await axios.get(`http://localhost:9090/api/game-result/${userId}`);
         setUserData(response.data);
       } catch (error) {
         console.error('Error fetching user data:', error);
