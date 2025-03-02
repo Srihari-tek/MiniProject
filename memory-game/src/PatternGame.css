@@ -1,79 +1,156 @@
-body {
-  font-family: 'Poppins', Arial, sans-serif;
-  background: linear-gradient(135deg, #ffffff, #f5f5f5);
+/* Pattern Game Specific Styles */
+body.pattern-game {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(45deg, #ffd1ff, #fae1dd, #ffc8dd);
+  background-size: 200% 200%;
+  animation: gradientBG 15s ease infinite;
+  color: black;
+  text-align: center;
   margin: 0;
-  min-height: 100vh;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #2c3e50;
+  height: 100vh;
 }
 
-.pattern-container {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+.pattern-game .game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.pattern-game .profile-container {
   width: 90%;
   max-width: 800px;
-  animation: fadeIn 0.8s ease-out;
+  padding: 2rem;
+  background: linear-gradient(45deg, #ffafcc, #bde0fe, #a2d2ff);
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1s ease-in-out;
 }
 
-.game-description {
-  background: #f8f9fa;
-  padding: 1.5rem;
-  border-radius: 15px;
-  margin-bottom: 2rem;
-  line-height: 1.6;
+.pattern-game h1 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
 }
 
-.pattern-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-.pattern-card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 2px solid transparent;
-}
-
-.pattern-card:hover {
-  transform: translateY(-5px);
-  border-color: #4ca7f1;
-  box-shadow: 0 8px 25px rgba(76, 167, 241, 0.2);
-}
-
-.next-btn {
-  background: linear-gradient(135deg, #4ca7f1, #2980b9);
-  color: white;
-  padding: 1rem 2rem;
+/* Buttons */
+.pattern-game button {
+  font-size: 1.1rem;
+  padding: 12px 20px;
+  margin: 10px;
   border: none;
   border-radius: 12px;
   cursor: pointer;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(76, 167, 241, 0.3);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.next-btn:hover {
+.pattern-game button:hover:not(:disabled) {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(76, 167, 241, 0.4);
 }
 
-/* Enhanced Animations */
+.pattern-game button:disabled {
+  background: #000000;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.pattern-game .speak-btn {
+  background: linear-gradient(45deg, #fee2e2, #fecaca);
+  color: black;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+}
+
+.pattern-game .next-btn {
+  background: linear-gradient(135deg, #4ca7f1, #2980b9);
+  color: black;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+}
+
+.pattern-game .profile-card {
+  padding: 2rem;
+  background: linear-gradient(45deg, #fae0e4, #f7cad0, #ff9ecd);
+  border-radius: 15px;
+  margin-top: 1.5rem;
+  transition: 0.4s;
+}
+
+.pattern-game .profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.pattern-game .profile-details {
+  background: linear-gradient(45deg, #fbc2eb, #a6c1ee);
+  color: black;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.pattern-game .profile-details:hover {
+  background: #2575fc;
+  color: white;
+}
+
+/* Animations */
 @keyframes fadeIn {
   from {
-      opacity: 0;
-      transform: translateY(20px);
+    opacity: 0;
+    transform: translateY(-20px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .pattern-game .profile-container {
+    width: 95%;
+    padding: 1.5rem;
+  }
+  .pattern-game h1 {
+    font-size: 2rem;
+  }
+  .pattern-game .profile-details, .pattern-game .next-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pattern-game .profile-container {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 15px;
+  }
+  .pattern-game .profile-card {
+    padding: 1rem;
+  }
+  .pattern-game h1 {
+    font-size: 1.8rem;
   }
 }

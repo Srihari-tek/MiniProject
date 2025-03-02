@@ -1,129 +1,185 @@
-body {
+.social-thinking-game {
+  --primary: #4ca7f1;
+  --secondary: #2980b9;
+  --text: #2c3e50;
+  --bg-light: #f8f9fa;
+  --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.social-thinking-game body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
   font-family: 'Poppins', Arial, sans-serif;
   background: linear-gradient(135deg, #ffffff, #f5f5f5);
-  margin: 0;
+  color: var(--text);
+}
+
+.social-thinking-game .social-container {
   min-height: 100vh;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #2c3e50;
+  flex-direction: column;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
-.social-container {
-  background: white;
-  padding: 2.5rem;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 800px;
-  animation: fadeIn 0.8s ease-out;
-}
-
-.game-header {
+.social-thinking-game .game-header {
   text-align: center;
-  margin-bottom: 2rem;
+  padding: 2rem 0;
+  animation: socialSlideDown 0.6s ease-out;
 }
 
-h1 {
-  color: #2c3e50;
-  font-size: 2.2rem;
+.social-thinking-game h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--text);
   margin-bottom: 1rem;
-  animation: slideDown 0.6s ease-out;
+  position: relative;
 }
 
-.question-card {
-  background: #f8f9fa;
+.social-thinking-game h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: var(--primary);
+  border-radius: 2px;
+}
+
+.social-thinking-game .question-card {
+  background: var(--bg-light);
   padding: 2rem;
   border-radius: 15px;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.question-card:hover {
-  transform: translateY(-3px);
+.social-thinking-game .question-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
 }
 
-.answers-grid {
+.social-thinking-game .answers-grid {
   display: grid;
-  gap: 1rem;
-  margin: 1.5rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+  padding: 0 1rem;
 }
 
-.answer-option {
+.social-thinking-game .answer-option {
   background: white;
-  padding: 1rem 1.5rem;
+  padding: 1.5rem;
   border-radius: 12px;
   border: 2px solid transparent;
   transition: all 0.3s ease;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
-.answer-option:hover {
-  border-color: #4ca7f1;
+.social-thinking-game .answer-option::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.social-thinking-game .answer-option:hover {
+  border-color: var(--primary);
   transform: translateX(5px);
-  box-shadow: 0 4px 15px rgba(76, 167, 241, 0.1);
+  box-shadow: 0 4px 15px rgba(76, 167, 241, 0.2);
 }
 
-.btn {
-  background: linear-gradient(135deg, #4ca7f1, #2980b9);
+.social-thinking-game .answer-option:hover::before {
+  opacity: 0.1;
+}
+
+.social-thinking-game .btn {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: white;
   padding: 1rem 2rem;
   border: none;
   border-radius: 12px;
   cursor: pointer;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(76, 167, 241, 0.3);
+  margin: 1rem;
+  min-width: 200px;
 }
 
-.btn:hover {
+.social-thinking-game .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(76, 167, 241, 0.4);
 }
 
-.result {
-  background: #f8f9fa;
-  padding: 1.5rem;
+.social-thinking-game .result {
+  background: var(--bg-light);
+  padding: 2rem;
   border-radius: 15px;
-  margin-top: 2rem;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 800px;
   text-align: center;
-  animation: fadeIn 0.6s ease-out;
+  animation: socialFadeIn 0.6s ease-out;
 }
 
-@keyframes fadeIn {
+@keyframes socialFadeIn {
   from {
-      opacity: 0;
-      transform: translateY(20px);
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@keyframes slideDown {
+@keyframes socialSlideDown {
   from {
-      opacity: 0;
-      transform: translateY(-20px);
+    opacity: 0;
+    transform: translateY(-20px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 @media (max-width: 768px) {
-  .social-container {
-      padding: 1.5rem;
-      width: 95%;
+  .social-thinking-game .social-container {
+    padding: 1rem;
   }
 
-  h1 {
-      font-size: 1.8rem;
+  .social-thinking-game .question-card {
+    padding: 1.5rem;
+    margin: 1rem;
   }
 
-  .question-card {
-      padding: 1.5rem;
+  .social-thinking-game .answers-grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .social-thinking-game .btn {
+    width: 100%;
+    max-width: none;
+    margin: 1rem 0;
   }
 }

@@ -5,6 +5,7 @@ import BoxClickGame from "./BoxClickGame";
 import MathReasoningGame from "./MathReasoningGame";
 import SocialThinkingQuiz from "./SocialThinkingQuiz";
 import UserDashboard from "./UserDashboard";
+import './App.css'
 
 const App = () => {
   const [gameStage, setGameStage] = useState("memory");
@@ -21,8 +22,9 @@ const App = () => {
         <MathReasoningGame onNextGame={() => setGameStage("socialthinking")} />
       ) : gameStage === "socialthinking" ? (
         <SocialThinkingQuiz onNextGame={() => setGameStage("userdashboard")} />
-      ) : (
-        <UserDashboard/>)}
+      ) : ( 
+        <UserDashboard/>
+      )}
     </div>
   );
 };

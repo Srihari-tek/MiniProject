@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Line } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
@@ -10,7 +10,7 @@ import {
   Tooltip,
   Legend
 } from 'chart.js';
-import './UserDashboard.css';
+import './HomePage.css';
 
 ChartJS.register(
   CategoryScale,
@@ -22,55 +22,18 @@ ChartJS.register(
   Legend
 );
 
-const UserDashboard = ({ userId, onStartNewSession }) => {
-  const [userData, setUserData] = useState({
+const HomePage = ({ gameScores, onStartNewSession }) => {
+  const [userData] = useState({
     name: 'Anna Morrison',
     level: 'High Intermediate',
     languages: ['English', 'Spanish']
   });
 
-  const [gameScores, setGameScores] = useState([]);
-
-  useEffect(() => {
-    const fetchGameScores = async () => {
-      try {
-        const response = await fetch(`http://localhost:9090/api/user/${userId}/gamescores`);
-        if (!response.ok) {
-          throw new Error('Failed to fetch game scores');
-        }
-        const data = await response.json();
-        setGameScores(data);
-      } catch (error) {
-        console.error('Error fetching game scores:', error);
-      }
-    };
-  
-    fetchGameScores();
-  
-    // Poll for new scores every 5 seconds
-    const interval = setInterval(() => {
-      fetchGameScores();
-    }, 5000);
-  
-    return () => clearInterval(interval); // Cleanup interval on component unmount
-  }, [userId]);
-  
-
-  // Convert category into a numerical score
-  const categoryToScore = (category) => {
-    switch (category) {
-      case 'Smart': return 100;
-      case 'Intermediate': return 75;
-      case 'Beginner': return 50;
-      default: return 0;
-    }
-  };
-
   const chartData = {
-    labels: gameScores.map(score => score.game), // Use game names as labels
+    labels: ['Memory', 'Box Click', 'Pattern', 'Math', 'Social'],
     datasets: [{
       label: 'Cognitive Performance',
-      data: gameScores.map(score => categoryToScore(score.category)), // Convert categories to numbers
+      data: Object.values(gameScores),
       borderColor: '#4A90E2',
       backgroundColor: 'rgba(74, 144, 226, 0.1)',
       tension: 0.4,
@@ -85,7 +48,7 @@ const UserDashboard = ({ userId, onStartNewSession }) => {
       },
       title: {
         display: true,
-        text: 'Cognitive Performance Over Time'
+        text: 'Time spent on learning'
       }
     }
   };
@@ -126,16 +89,12 @@ const UserDashboard = ({ userId, onStartNewSession }) => {
           </section>
 
           <section className="stats-grid">
-            {gameScores.length > 0 ? (
-              gameScores.map(({ game, category }) => (
-                <div key={game} className="stat-card">
-                  <h3>{game}</h3>
-                  <p>{category}</p>
-                </div>
-              ))
-            ) : (
-              <p>No game scores available</p>
-            )}
+            {Object.entries(gameScores).map(([game, score]) => (
+              <div key={game} className="stat-card">
+                <h3>{game}</h3>
+                <p>{score}%</p>
+              </div>
+            ))}
           </section>
 
           <section className="growth-monitor">
@@ -171,8 +130,4 @@ const UserDashboard = ({ userId, onStartNewSession }) => {
   );
 };
 
-UserDashboard.defaultProps = {
-  userId: 'guest'
-};
-
-export default UserDashboard;
+export default HomePage;
