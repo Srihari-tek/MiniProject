@@ -23,6 +23,14 @@ ChartJS.register(
   Legend
 );
 
+const gameSkillMap = {
+  "Memory Game": 'Memory Skills',
+  "BoxClickGame": 'Motor Skills',
+  "Pattern Recognition Game": 'Logical Thinking Skills',
+  "Math Reasoning Game": 'Mathematical Knowledge',
+  "Social Thinking Quiz": 'Social Understanding'
+};
+
 const UserDashboard = ({ onStartNewSession }) => {
   const navigate = useNavigate(); // ✅ React Router navigation
   const storedUserId = localStorage.getItem('userId') || 'guest';
@@ -36,14 +44,13 @@ const UserDashboard = ({ onStartNewSession }) => {
   const [gameScores, setGameScores] = useState([]);
 
   useEffect(() => {
-    // ✅ Store userId persistently
     if (userId !== 'guest') {
       localStorage.setItem('userId', userId);
     }
   }, [userId]);
 
   useEffect(() => {
-    if (!userId) return; // ✅ Prevent API call if userId is missing
+    if (!userId) return;
 
     const fetchGameScores = async () => {
       try {
@@ -59,16 +66,13 @@ const UserDashboard = ({ onStartNewSession }) => {
     };
 
     fetchGameScores();
-
-    // ✅ Poll for new scores every 5 seconds
     const interval = setInterval(() => {
       fetchGameScores();
     }, 5000);
 
-    return () => clearInterval(interval); // Cleanup interval
+    return () => clearInterval(interval);
   }, [userId]);
 
-  // Convert category into a numerical score
   const categoryToScore = (category) => {
     switch (category) {
       case 'Smart': return 100;
@@ -79,10 +83,10 @@ const UserDashboard = ({ onStartNewSession }) => {
   };
 
   const chartData = {
-    labels: gameScores.map(score => score.game), // Use game names as labels
+    labels: gameScores.map(score => gameSkillMap[score.game] || score.game),
     datasets: [{
       label: 'Cognitive Performance',
-      data: gameScores.map(score => categoryToScore(score.category)), // Convert categories to numbers
+      data: gameScores.map(score => categoryToScore(score.category)),
       borderColor: '#4A90E2',
       backgroundColor: 'rgba(74, 144, 226, 0.1)',
       tension: 0.4,
@@ -99,7 +103,7 @@ const UserDashboard = ({ onStartNewSession }) => {
 
   const handleStartNewSession = () => {
     onStartNewSession();
-    navigate('/game'); // ✅ Navigate smoothly without page refresh
+    navigate('/game');
   };
 
   return (
@@ -141,8 +145,11 @@ const UserDashboard = ({ onStartNewSession }) => {
             {gameScores.length > 0 ? (
               gameScores.map(({ game, category }) => (
                 <div key={game} className="stat-card">
-                  <h3>{game}</h3>
+                  <h3>{gameSkillMap[game] || game}</h3>
                   <p>{category}</p>
+                  <div className="progress-bar">
+                    <div className={`progress ${category.toLowerCase()}`} style={{ width: `${categoryToScore(category)}%` }}></div>
+                  </div>
                 </div>
               ))
             ) : (
@@ -154,23 +161,6 @@ const UserDashboard = ({ onStartNewSession }) => {
             <h2>Growth Monitor</h2>
             <div className="chart-container">
               <Line data={chartData} options={chartOptions} />
-            </div>
-          </section>
-
-          <section className="language-progress">
-            <div className="language-card">
-              <h3>English</h3>
-              <div className="progress-bar">
-                <div className="progress" style={{ width: '82%' }}></div>
-              </div>
-              <span>B2 - High Intermediate</span>
-            </div>
-            <div className="language-card">
-              <h3>Spanish</h3>
-              <div className="progress-bar">
-                <div className="progress" style={{ width: '65%' }}></div>
-              </div>
-              <span>C1 - Advanced</span>
             </div>
           </section>
 

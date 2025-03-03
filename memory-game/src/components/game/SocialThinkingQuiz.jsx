@@ -104,7 +104,7 @@ const SocialThinkingQuiz = () => {
     });
 
     setScore(newScore);
-    let newCategory = newScore >= 3 ? "Smart" : newScore === 2 ? "Intermediate" : "Beginner";
+    let newCategory = newScore >= 3 ? "Basic-Smart" : newScore === 2 ? "Basic-Intermediate" : "Basic-Beginner";
     setCategory(newCategory);
     setGameOver(true);
     speakText(`You answered ${newScore} out of ${selectedQuestions.length} correctly. Your category is ${newCategory}.`);

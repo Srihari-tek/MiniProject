@@ -7,22 +7,24 @@ const BoxClickGame = () => {
   const [score, setScore] = useState(0);
   const [timeLeft, setTimeLeft] = useState(30);
   const [isGameRunning, setIsGameRunning] = useState(false);
+  const [isGameOver, setIsGameOver] = useState(false); // New state to prevent duplicate API calls
   const [gameOverMessage, setGameOverMessage] = useState("");
   const [currentColor, setCurrentColor] = useState("blue");
-  const navigate = useNavigate(); // For navigation
+  const navigate = useNavigate(); 
   const colors = ["red", "blue", "green", "yellow", "purple"];
 
   const gameDescription =
     "Welcome to the Box Click Game! Click the blue circle to earn points. The game lasts 30 seconds. Try to get the highest score!";
 
   useEffect(() => {
-    speakText(gameDescription); // Automatically read instructions when the game loads
+    speakText(gameDescription);
   }, []);
 
   const startGame = () => {
     setScore(0);
     setTimeLeft(30);
     setIsGameRunning(true);
+    setIsGameOver(false); // Reset game over flag
     setGameOverMessage("");
     changeColor();
   };
@@ -36,11 +38,10 @@ const BoxClickGame = () => {
       return () => clearInterval(gameInterval);
     }
 
-    if (timeLeft === 0) {
-      setIsGameRunning(false);
+    if (timeLeft === 0 && isGameRunning && !isGameOver) {
       showFinalScore();
     }
-  }, [isGameRunning, timeLeft]);
+  }, [isGameRunning, timeLeft, isGameOver]);
 
   const changeColor = () => {
     const newColor = colors[Math.floor(Math.random() * colors.length)];
@@ -55,16 +56,21 @@ const BoxClickGame = () => {
   };
 
   const categorizeScore = () => {
-    if (score >= 8) return "Advanced";
-    if (score >= 5) return "Intermediate";
-    return "Beginner";
+    if (score >= 8) return "Basic-Smart";
+    if (score >= 5) return "Basic-Intermediate";
+    return "Basic-Beginner";
   };
 
   const showFinalScore = () => {
+    if (isGameOver) return; // Prevent duplicate execution
+
+    setIsGameOver(true); // Mark game as over
+    setIsGameRunning(false);
+    
     const category = categorizeScore();
     const finalMessage = `Game Over! Your final score is ${score}. Category: ${category}`;
     setGameOverMessage(finalMessage);
-    speakText(finalMessage); // Speak final score and category
+    speakText(finalMessage);
     sendGameResult(score, category);
   };
 
@@ -97,9 +103,8 @@ const BoxClickGame = () => {
     window.speechSynthesis.speak(speech);
   };
 
-  // Navigate to next game
   const goToNextGame = () => {
-    navigate("/pattern"); // Change this to the actual next game's route
+    navigate("/pattern");
   };
 
   return (

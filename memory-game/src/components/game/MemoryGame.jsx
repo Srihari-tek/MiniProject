@@ -83,9 +83,9 @@ const MemoryGame = () => {
     }
     setScore(correctCount);
 
-    let category = "Beginner";
-    if (correctCount >= 4) category = "Smart";
-    else if (correctCount >= 2) category = "Intermediate";
+    let category = "Basic-Beginner";
+    if (correctCount >= 4) category = "Basic-Smart";
+    else if (correctCount >= 2) category = "Basic-Intermediate";
     setCategory(category);
     setGameOver(true);
 
