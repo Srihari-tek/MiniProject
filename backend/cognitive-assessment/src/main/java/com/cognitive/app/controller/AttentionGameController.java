@@ -5,6 +5,7 @@ import com.cognitive.app.service.AttentionGameService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/game-result")
@@ -25,5 +26,10 @@ public class AttentionGameController {
     @GetMapping("/{userId}")
     public List<AttentionGameResult> getUserResults(@PathVariable String userId) {
         return attentionGameService.getResultsByUser(userId);
+    }
+
+    @GetMapping("/{userId}/gamescores")
+    public List<Map<String, String>> getUserGameScores(@PathVariable String userId) {
+        return attentionGameService.getUserGameScores(userId);
     }
 }
