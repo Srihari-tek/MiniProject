@@ -1,31 +1,36 @@
-import React, { useState } from "react";
-import MemoryGame from "./MemoryGame";
-import PatternGame from "./PatternGame";
-import BoxClickGame from "./BoxClickGame";
-import MathReasoningGame from "./MathReasoningGame";
-import SocialThinkingQuiz from "./SocialThinkingQuiz";
-import UserDashboard from "./UserDashboard";
-import './App.css'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import MemoryGame from "./components/game/MemoryGame";
+import PatternGame from "./components/game/PatternGame";
+import BoxClickGame from "./components/game/BoxClickGame";
+import MathReasoningGame from "./components/game/MathReasoningGame";
+import SocialThinkingQuiz from "./components/game/SocialThinkingQuiz";
+import UserDashboard from "./components/home/UserDashboard";
+import './App.css';
 
 const App = () => {
-  const [gameStage, setGameStage] = useState("memory");
-
   return (
-    <div>
-      {gameStage === "memory" ? (
-        <MemoryGame onNextGame={() => setGameStage("boxclickgame")} />
-      ) :  gameStage === "boxclickgame" ? (
-        <BoxClickGame onNextGame={() => setGameStage("pattern")} />
-      ) : gameStage === "pattern" ? (
-        <PatternGame onNextGame={() => setGameStage("mathreasoning")} />
-      ) : gameStage === "mathreasoning" ? (
-        <MathReasoningGame onNextGame={() => setGameStage("socialthinking")} />
-      ) : gameStage === "socialthinking" ? (
-        <SocialThinkingQuiz onNextGame={() => setGameStage("userdashboard")} />
-      ) : ( 
-        <UserDashboard/>
-      )}
-    </div>
+    <Router>
+      <div>
+        <Routes>
+          {/* Default route redirects to MemoryGame */}
+          <Route path="/" element={<Navigate to="/memory" />} />
+
+          {/* Game routes */}
+          <Route path="/memory" element={<MemoryGame />} />
+          <Route path="/boxclickgame" element={<BoxClickGame />} />
+          <Route path="/pattern" element={<PatternGame />} />
+          <Route path="/mathreasoning" element={<MathReasoningGame />} />
+          <Route path="/socialthinking" element={<SocialThinkingQuiz />} />
+          
+          {/* User Dashboard Route */}
+          <Route path="/dashboard" element={<UserDashboard />} />
+
+          {/* Fallback route for unknown paths */}
+          <Route path="*" element={<Navigate to="/memory" />} />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 

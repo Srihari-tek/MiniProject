@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import axios from "axios";
 import "./math.css"; // Import CSS file
 
-const MathReasoningGame = ({ onNextGame }) => {
+const MathReasoningGame = () => {
+  const navigate = useNavigate(); // React Router navigation hook
+
   const questionsData = [
     { question: "5 + 3 × 2 =", options: [10, 11, 12], answer: 11 },
     { question: "10 ÷ 2 + 4 =", options: [9, 8, 7], answer: 9 },
@@ -21,7 +24,7 @@ const MathReasoningGame = ({ onNextGame }) => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [score, setScore] = useState(0);
   const [gameOver, setGameOver] = useState(false);
-  const [showRules, setShowRules] = useState(true); // Show BODMAS instructions
+  const [showRules, setShowRules] = useState(true);
 
   // Text-to-speech function
   const speakText = (text) => {
@@ -32,15 +35,12 @@ const MathReasoningGame = ({ onNextGame }) => {
   };
 
   useEffect(() => {
-    // Shuffle and select 5 random questions from the pool of questions
     const shuffledQuestions = [...questionsData].sort(() => 0.5 - Math.random()).slice(0, 5);
     setSelectedQuestions(shuffledQuestions);
 
-    // Speak game description and rules when the game loads
-    const instructions = "Welcome to the Math Reasoning Game. In this game, you will solve math problems based on the BODMAS rule. Please pay attention to the rules displayed on the screen.";
+    const instructions = "Welcome to the Math Reasoning Game. Solve math problems using the BODMAS rule.";
     speakText(instructions);
 
-    // Hide rules after 15 seconds
     const timer = setTimeout(() => {
       setShowRules(false);
     }, 15000);
@@ -84,7 +84,7 @@ const MathReasoningGame = ({ onNextGame }) => {
       score,
       correctAnswers: score,
       totalQuestions: selectedQuestions.length,
-      timeTaken: 120, // Example: 120 seconds (you can dynamically track time)
+      timeTaken: 120, // Example time
       category: getCategory(),
     };
 
@@ -94,23 +94,19 @@ const MathReasoningGame = ({ onNextGame }) => {
       });
       console.log("Game result sent:", response.data);
       alert(`Your category: ${getCategory()}`);
+      navigate("/socialthinking"); // Navigate to the next game
     } catch (error) {
       console.error("Error sending data:", error);
     }
   };
 
-  const closeRules = () => {
-    setShowRules(false);
-  };
-
   return (
     <div className="math-game-container">
       <h1>Math Reasoning Game</h1>
-      {/* Clear Game Description */}
       <p className="game-description">
-        In this game, you'll solve math problems using the BODMAS rule. First, read the rules, then answer each question by selecting the correct option. Try to get as many correct as possible!
+        Solve math problems using the BODMAS rule.
       </p>
-      <button className="speak-btn" onClick={() => speakText("In this game, you'll solve math problems using the BODMAS rule. First, read the rules, then answer each question by selecting the correct option. Try to get as many correct as possible!")}>
+      <button className="speak-btn" onClick={() => speakText("Solve math problems using the BODMAS rule.")}>
         🔊 Hear Game Description
       </button>
       
@@ -118,31 +114,15 @@ const MathReasoningGame = ({ onNextGame }) => {
         <div className="math-rules-container">
           <div className="math-rules-content">
             <h2>BODMAS Rules</h2>
-            <p><strong>BODMAS</strong> stands for:</p>
             <ul>
-              <li><strong>B</strong>rackets (Parentheses)</li>
+              <li><strong>B</strong>rackets</li>
               <li><strong>O</strong>rders (Exponents)</li>
               <li><strong>D</strong>ivision</li>
               <li><strong>M</strong>ultiplication</li>
               <li><strong>A</strong>ddition</li>
               <li><strong>S</strong>ubtraction</li>
             </ul>
-            <p>BODMAS specifies the order in which we should perform mathematical operations.</p>
-            <p><strong>Order of operations:</strong></p>
-            <ol>
-              <li>First, solve anything inside <strong>brackets</strong>.</li>
-              <li>Next, handle any <strong>orders</strong> (exponents or square roots).</li>
-              <li>Then, perform any <strong>division</strong> and <strong>multiplication</strong> (from left to right).</li>
-              <li>Finally, perform any <strong>addition</strong> and <strong>subtraction</strong> (from left to right).</li>
-            </ol>
-            <p><strong>Example:</strong>  
-              Solve <code>5 + 3 × 2</code>.<br/>
-              According to BODMAS, you do multiplication first: <code>3 × 2 = 6</code>, then add: <code>5 + 6 = 11</code>.
-            </p>
-            <button onClick={closeRules}>Start Game</button>
-            <button className="speak-btn" onClick={() => speakText("Here are the BODMAS rules. B stands for brackets, O stands for orders, D for division, M for multiplication, A for addition and S for subtraction. Solve the math problems accordingly.")}>
-              🔊 Hear Rules
-            </button>
+            <button onClick={() => setShowRules(false)}>Start Game</button>
           </div>
         </div>
       ) : (
@@ -173,11 +153,8 @@ const MathReasoningGame = ({ onNextGame }) => {
             <>
               <p className="math-result fade-in">Your Score: {score} / {selectedQuestions.length}</p>
               <p className="math-result fade-in">Category: {getCategory()}</p>
-              <button className="next-btn" onClick={() => { submitResult(); onNextGame(); }}>
+              <button className="next-btn" onClick={submitResult}>
                 Next Game
-              </button>
-              <button className="speak-btn" onClick={() => speakText(`Your Score is ${score} out of ${selectedQuestions.length}. You are categorized as ${getCategory()}.`)}>
-                🔊 Hear Result
               </button>
             </>
           )}

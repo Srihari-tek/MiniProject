@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./MemoryGame.css"; 
-import apple from "./assets/images/apple.png";
-import banana from "./assets/images/banana.png";
-import cherry from "./assets/images/cherry.png";
-import grape from "./assets/images/grape.png";
-import mango from "./assets/images/mango.png";
-import orange from "./assets/images/orange.png";
-import peach from "./assets/images/peach.png";
-import pear from "./assets/images/pear.png";
-import plum from "./assets/images/plum.png";
-import strawberry from "./assets/images/strawberry.png";
+import apple from "../../assets/images/apple.png";
+import banana from "../../assets/images/banana.png";
+import cherry from "../../assets/images/cherry.png";
+import grape from "../../assets/images/grape.png";
+import mango from "../../assets/images/mango.png";
+import orange from "../../assets/images/orange.png";
+import peach from "../../assets/images/peach.png";
+import pear from "../../assets/images/pear.png";
+import plum from "../../assets/images/plum.png";
+import strawberry from "../../assets/images/strawberry.png";
 
 const fruitsList = [
   { name: "Apple", image: apple },
@@ -25,7 +26,8 @@ const fruitsList = [
   { name: "Strawberry", image: strawberry }
 ];
 
-const MemoryGame = ({ onNextGame }) => {
+const MemoryGame = () => {
+  const navigate = useNavigate();
   const [fruits, setFruits] = useState([]);
   const [userAnswers, setUserAnswers] = useState([]);
   const [showFruits, setShowFruits] = useState(true);
@@ -159,7 +161,7 @@ const MemoryGame = ({ onNextGame }) => {
           <button className="speak-btn" onClick={() => speakText(`Game Over! You scored ${score} out of 5. You are categorized as ${category}.`)}>
             🔊 Hear Result
           </button>
-          <button className="next-btn" onClick={onNextGame}>Next Game</button>
+          <button className="next-btn" onClick={() => navigate("/boxclickgame")}>Next Game</button>
         </>
       )}
     </div>

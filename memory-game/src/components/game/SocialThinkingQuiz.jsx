@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { motion } from "framer-motion";
 import "./SocialThinkingGame.css";
 
-const SocialThinkingQuiz = ({ onNextGame }) => {
+const SocialThinkingQuiz = () => {
+  const navigate = useNavigate();
   const [score, setScore] = useState(0);
   const [category, setCategory] = useState("");
   const [gameOver, setGameOver] = useState(false);
@@ -73,7 +75,7 @@ const SocialThinkingQuiz = ({ onNextGame }) => {
     },
   ];
 
-  // Text-to-Speech function
+
   const speakText = (text) => {
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = "en-US";
@@ -120,11 +122,10 @@ const SocialThinkingQuiz = ({ onNextGame }) => {
     };
 
     try {
-      const response = await axios.post("http://localhost:9090/api/game-result/submit", data, {
+      await axios.post("http://localhost:9090/api/game-result/submit", data, {
         headers: { "Content-Type": "application/json" },
       });
-      console.log("Game result sent:", response.data);
-      window.location.href = "/profile";
+      navigate("/dashboard");
     } catch (error) {
       console.error("Error sending data:", error);
     }
@@ -138,52 +139,27 @@ const SocialThinkingQuiz = ({ onNextGame }) => {
       transition={{ duration: 1 }}
     >
       <h1>Social Thinking Ability Quiz</h1>
-      {/* Clear Game Description */}
       <p>
         In this quiz, you'll be presented with various scenarios about social behavior. Choose the answer you believe best demonstrates appropriate social thinking.
       </p>
-      <button className="speak-btn" onClick={() => speakText("In this quiz, you'll be presented with various scenarios about social behavior. Choose the answer you believe best demonstrates appropriate social thinking.")}>
-        🔊 Hear Instructions
-      </button>
+      <button className="speak-btn" onClick={() => speakText("In this quiz, you'll be presented with various scenarios about social behavior. Choose the answer you believe best demonstrates appropriate social thinking.")}> 🔊 Hear Instructions </button>
       {!gameOver ? (
         selectedQuestions.length > 0 && currentQuestionIndex < selectedQuestions.length ? (
-          <motion.div
-            key={currentQuestionIndex}
-            initial={{ x: "100vw" }}
-            animate={{ x: 0 }}
-            transition={{ type: "spring", stiffness: 50 }}
-          >
-            <img
-              src={selectedQuestions[currentQuestionIndex]?.image}
-              alt="Question"
-              style={{ width: "100px", marginBottom: "10px" }}
-            />
+          <motion.div key={currentQuestionIndex} initial={{ x: "100vw" }} animate={{ x: 0 }} transition={{ type: "spring", stiffness: 50 }}>
+            <img src={selectedQuestions[currentQuestionIndex]?.image} alt="Question" style={{ width: "100px", marginBottom: "10px" }} />
             <h2>{selectedQuestions[currentQuestionIndex]?.question}</h2>
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
               {selectedQuestions[currentQuestionIndex]?.options.map((option, index) => (
-                <motion.label
-                  key={index}
-                  style={{ display: "flex", alignItems: "center", marginBottom: "10px" }}
-                  whileHover={{ scale: 1.1 }}
-                >
-                  <input
-                    type="radio"
-                    name={`q${selectedQuestions[currentQuestionIndex]?.id}`}
-                    value={option.isCorrect}
-                    style={{ marginRight: "10px" }}
-                  />
+                <motion.label key={index} style={{ display: "flex", alignItems: "center", marginBottom: "10px" }} whileHover={{ scale: 1.1 }}>
+                  <input type="radio" name={`q${selectedQuestions[currentQuestionIndex]?.id}`} value={option.isCorrect} style={{ marginRight: "10px" }} />
                   {option.text}
                 </motion.label>
               ))}
             </div>
             {currentQuestionIndex < selectedQuestions.length - 1 ? (
-              <button onClick={handleNext} className="btn">
-                Next
-              </button>
+              <button onClick={handleNext} className="btn"> Next </button>
             ) : (
-              <button onClick={handleSubmit} className="btn">
-                Submit
-              </button>
+              <button onClick={handleSubmit} className="btn"> Submit </button>
             )}
           </motion.div>
         ) : (
@@ -193,12 +169,8 @@ const SocialThinkingQuiz = ({ onNextGame }) => {
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
           <h2>You answered {score} out of {selectedQuestions.length} correctly.</h2>
           <h3>Your category is: {category}</h3>
-          <button className="speak-btn" onClick={() => speakText(`You answered ${score} out of ${selectedQuestions.length} correctly. Your category is ${category}.`)}>
-            🔊 Hear Result
-          </button>
-          <button className="next-btn" onClick={onNextGame}>
-            Next Game
-          </button>
+          <button className="speak-btn" onClick={() => speakText(`You answered ${score} out of ${selectedQuestions.length} correctly. Your category is ${category}.`)}> 🔊 Hear Result </button>
+          <button className="next-btn" onClick={() => navigate("/dashboard")}> Homepage </button>
         </motion.div>
       )}
     </motion.div>

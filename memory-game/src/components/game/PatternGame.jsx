@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import './PatternGame.css';
 
-const PatternGame = ({ onNextGame }) => {
+const PatternGame = () => {
+  const navigate = useNavigate();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [gameOver, setGameOver] = useState(false);
@@ -23,7 +25,7 @@ const PatternGame = ({ onNextGame }) => {
     { question: "What comes next? Apple, Banana, Apple, Banana, ___", options: ["Apple", "Banana", "Grapes"], correctAnswer: "Apple", type: "fruit" }
   ];
 
-  const [shuffledQuestions] = useState([...questions].sort(() => 0.5 - Math.random()).slice(0,5));
+  const [shuffledQuestions] = useState([...questions].sort(() => 0.5 - Math.random()).slice(0, 5));
 
   // Text-to-speech function
   const speakText = (text) => {
@@ -35,7 +37,7 @@ const PatternGame = ({ onNextGame }) => {
 
   // Speak instructions on game load
   useEffect(() => {
-    const instructions = "Welcome to the Pattern Recognition Game. In this game, you will be asked pattern based questions. Select the correct answer to complete each pattern. Good luck!";
+    const instructions = "Welcome to the Pattern Recognition Game. In this game, you will be asked pattern-based questions. Select the correct answer to complete each pattern. Good luck!";
     speakText(instructions);
   }, []);
 
@@ -85,6 +87,10 @@ const PatternGame = ({ onNextGame }) => {
     }
   };
 
+  const handleNextGame = () => {
+    navigate("/mathreasoning"); // Navigate to the next game
+  };
+
   return (
     <div className="profile-container">
       <h1>Pattern Recognition Game</h1>
@@ -101,7 +107,7 @@ const PatternGame = ({ onNextGame }) => {
         <>
           <h2>Game Over! Your Score: {score} / 5</h2>
           <p>Result has been sent to the backend.</p>
-          <button className="next-btn profile-card" onClick={onNextGame}>Next Game</button>
+          <button className="next-btn profile-card" onClick={handleNextGame}>Next Game</button>
         </>
       ) : (
         <div className="profile-card">

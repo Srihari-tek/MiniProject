@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Line } from 'react-chartjs-2';
+import { useNavigate } from 'react-router-dom'; // ✅ Use navigate instead of refreshing
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -22,7 +23,10 @@ ChartJS.register(
   Legend
 );
 
-const UserDashboard = ({ userId, onStartNewSession }) => {
+const UserDashboard = ({ onStartNewSession }) => {
+  const navigate = useNavigate(); // ✅ React Router navigation
+  const storedUserId = localStorage.getItem('userId') || 'guest';
+  const [userId, setUserId] = useState(storedUserId);
   const [userData, setUserData] = useState({
     name: 'Anna Morrison',
     level: 'High Intermediate',
@@ -32,9 +36,18 @@ const UserDashboard = ({ userId, onStartNewSession }) => {
   const [gameScores, setGameScores] = useState([]);
 
   useEffect(() => {
+    // ✅ Store userId persistently
+    if (userId !== 'guest') {
+      localStorage.setItem('userId', userId);
+    }
+  }, [userId]);
+
+  useEffect(() => {
+    if (!userId) return; // ✅ Prevent API call if userId is missing
+
     const fetchGameScores = async () => {
       try {
-        const response = await fetch(`http://localhost:9090/api/user/${userId}/gamescores`);
+        const response = await fetch(`http://localhost:9090/api/game-result/${userId}/gamescores`);
         if (!response.ok) {
           throw new Error('Failed to fetch game scores');
         }
@@ -44,17 +57,16 @@ const UserDashboard = ({ userId, onStartNewSession }) => {
         console.error('Error fetching game scores:', error);
       }
     };
-  
+
     fetchGameScores();
-  
-    // Poll for new scores every 5 seconds
+
+    // ✅ Poll for new scores every 5 seconds
     const interval = setInterval(() => {
       fetchGameScores();
     }, 5000);
-  
-    return () => clearInterval(interval); // Cleanup interval on component unmount
+
+    return () => clearInterval(interval); // Cleanup interval
   }, [userId]);
-  
 
   // Convert category into a numerical score
   const categoryToScore = (category) => {
@@ -80,14 +92,14 @@ const UserDashboard = ({ userId, onStartNewSession }) => {
   const chartOptions = {
     responsive: true,
     plugins: {
-      legend: {
-        position: 'top',
-      },
-      title: {
-        display: true,
-        text: 'Cognitive Performance Over Time'
-      }
+      legend: { position: 'top' },
+      title: { display: true, text: 'Cognitive Performance Over Time' }
     }
+  };
+
+  const handleStartNewSession = () => {
+    onStartNewSession();
+    navigate('/game'); // ✅ Navigate smoothly without page refresh
   };
 
   return (
@@ -162,7 +174,7 @@ const UserDashboard = ({ userId, onStartNewSession }) => {
             </div>
           </section>
 
-          <button className="start-session" onClick={onStartNewSession}>
+          <button className="start-session" onClick={handleStartNewSession}>
             Start New Training Session
           </button>
         </div>

@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./BoxClickGame.css";
 
-const BoxClickGame = ({ onNextGame }) => {
+const BoxClickGame = () => {
   const [score, setScore] = useState(0);
   const [timeLeft, setTimeLeft] = useState(30);
   const [isGameRunning, setIsGameRunning] = useState(false);
   const [gameOverMessage, setGameOverMessage] = useState("");
   const [currentColor, setCurrentColor] = useState("blue");
+  const navigate = useNavigate(); // For navigation
   const colors = ["red", "blue", "green", "yellow", "purple"];
 
   const gameDescription =
@@ -95,6 +97,11 @@ const BoxClickGame = ({ onNextGame }) => {
     window.speechSynthesis.speak(speech);
   };
 
+  // Navigate to next game
+  const goToNextGame = () => {
+    navigate("/pattern"); // Change this to the actual next game's route
+  };
+
   return (
     <div className="game-container">
       <h1>Box Click Game</h1>
@@ -116,7 +123,7 @@ const BoxClickGame = ({ onNextGame }) => {
 
       {gameOverMessage && <div className="game-over-popup">{gameOverMessage}</div>}
 
-      <button className="next-btn" onClick={onNextGame}>Next Game</button>
+      <button className="next-btn" onClick={goToNextGame}>Next Game</button>
     </div>
   );
 };
