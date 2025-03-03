@@ -1,6 +1,8 @@
-.body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #4ca7f1, rgb(208, 226, 250));
+.math-body {
+    font-family: 'Poppins', sans-serif;
+    background: skyblue
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -9,183 +11,296 @@
 .math-game-container {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
     min-height: 100vh;
+    perspective: 1000px;
 }
 
 .game-header {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    animation: titlePop 0.8s ease-out;
+    width: 90%;
+    max-width: 800px;
 }
 
 h1 {
-    color: #2980b9;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    color: black;
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.game-header p {
+    color: black;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
 }
 
 .question-section {
-    background: rgba(255, 255, 255, 0.95);
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.15);
+    padding: 2.5rem;
+    border-radius: 25px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
     margin: 0 auto 2rem;
-    width: 100%;
+    width: 90%;
     max-width: 800px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    animation: containerAppear 1s ease-out;
 }
 
 .question {
     font-size: 1.5rem;
-    color: #34495e;
-    margin-bottom: 2rem;
-    line-height: 1.5;
+    color: black;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .math-options {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin: 2rem 0;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin: 2.5rem auto;
+    width: 100%;
+    max-width: 500px;
 }
 
 .math-option {
-    background: #f8f9fa;
-    padding: 1rem;
-    border-radius: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.math-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.math-option label {
     display: flex;
     align-items: center;
-    width: 300px;
+    justify-content: center;
+    padding: 1.2rem 2rem;
+    background: black;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    cursor: pointer;
     transition: all 0.3s ease;
+    font-size: 1.2rem;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.math-option:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    background: #fff;
+.math-option input[type="radio"]:checked + label {
+    background: linear-gradient(45deg, #9f7aea, #b794f4);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-input[type="radio"] {
-    margin-right: 1rem;
-    transform: scale(1.2);
-    cursor: pointer;
-    accent-color: #3498db;
-}
-
-label {
-    font-size: 1.1rem;
-    color: #2c3e50;
-    cursor: pointer;
-    flex: 1;
+.math-option label:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.95);
+    color: black;
 }
 
 .controls-section {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    margin: 2rem 0;
+    gap: 1.5rem;
+    margin: 2.5rem 0;
 }
 
 button {
-    background-color: #3498db;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1rem;
+    background: lightblue;
+    color: black;
+    padding: 1rem 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    font-size: 1.1rem;
     font-weight: 500;
+    cursor: pointer;
     transition: all 0.3s ease;
-    min-width: 120px;
-    max-width: 200px;
-}
-
-button:disabled {
-    background-color: #bdc3c7;
-    cursor: not-allowed;
+    min-width: 150px;
+    backdrop-filter: blur(4px);
 }
 
 button:hover:not(:disabled) {
-    background-color: #2980b9;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+    background: darkorchid;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+    background: rgba(255, 255, 255, 0.1);
+    cursor: not-allowed;
+    opacity: 0.7;
 }
 
 .math-result {
-    background: rgba(255, 255, 255, 0.95);
-    padding: 1.5rem;
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 2rem;
+    border-radius: 20px;
     margin: 2rem auto;
     text-align: center;
-    font-size: 1.2rem;
-    color: #2c3e50;
+    font-size: 1.3rem;
+    color: black;
     max-width: 600px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+    animation: cardAppear 0.5s ease-out;
 }
 
 .rules-container {
     position: fixed;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background: rgba(76, 29, 149, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 20;
     padding: 1rem;
+    backdrop-filter: blur(8px);
 }
 
 .rules-content {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem;
+    border-radius: 20px;
     width: 90%;
     max-width: 600px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    animation: containerAppear 0.5s ease-out;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .rules-content h2 {
-    font-size: 1.8rem;
-    color: #2980b9;
+    font-size: 2rem;
+    color: #6b46c1;
     margin-bottom: 1.5rem;
 }
 
 .rules-content ul {
     text-align: left;
     padding-left: 1.5rem;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #34495e;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #4a5568;
 }
 
 .rules-content li {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes containerAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes titlePop {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes cardAppear {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 @media (max-width: 768px) {
     .math-game-container {
-        padding: 1rem;
+        padding: 1.5rem;
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .question {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
-    .math-option {
-        width: 100%;
-        max-width: 400px;
+    .math-option label {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
     }
 
     .rules-content {
         padding: 1.5rem;
     }
+}
+
+@media (max-width: 480px) {
+    .math-game-container {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .question {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+
+    .math-option label {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.9rem;
+    }
 
     button {
-        padding: 0.6rem 1.2rem;
-        font-size: 0.9rem;
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+        min-width: 120px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
     }
 }

@@ -36,7 +36,7 @@ const UserDashboard = ({ onStartNewSession }) => {
   const storedUserId = localStorage.getItem('userId') || 'guest';
   const [userId, setUserId] = useState(storedUserId);
   const [userData, setUserData] = useState({
-    name: 'Anna Morrison',
+    name: 'Guest',
     level: 'High Intermediate',
     languages: ['English', 'Spanish']
   });
@@ -109,7 +109,7 @@ const UserDashboard = ({ onStartNewSession }) => {
   return (
     <div className="dashboard-layout">
       <aside className="sidebar">
-        <div className="logo">Linglee</div>
+        <div className="logo">SynapLearn</div>
         <nav className="nav-menu">
           <button className="nav-item active">Dashboard</button>
           <button className="nav-item">Classes</button>
@@ -133,8 +133,8 @@ const UserDashboard = ({ onStartNewSession }) => {
         <div className="dashboard-content">
           <section className="welcome-banner">
             <div className="welcome-text">
-              <h1>Welcome back, {userData.name}!</h1>
-              <p>You've learned 80% of your goal this week!</p>
+              <h1>Welcome , {userData.name}!</h1>
+              <p>"Excited to have you here! Let's begin your learning journey."</p>
             </div>
             <div className="welcome-image">
               <img src="/avatar.png" alt="Welcome" />

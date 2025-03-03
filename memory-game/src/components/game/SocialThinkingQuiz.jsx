@@ -11,6 +11,7 @@ const SocialThinkingQuiz = () => {
   const [gameOver, setGameOver] = useState(false);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedQuestions, setSelectedQuestions] = useState([]);
+  const [answers, setAnswers] = useState({});
 
   const allQuestions = [
     {
@@ -35,46 +36,86 @@ const SocialThinkingQuiz = () => {
     },
     {
       id: 3,
-      question: "If you're in a group conversation, what should you do?",
-      image: "group.png",
+      question: "What should you do when someone is talking to you?",
+      image: "listening.png",
       options: [
-        { text: "Interrupt others when you have something to say", isCorrect: false },
-        { text: "Talk over others to be heard", isCorrect: false },
-        { text: "Listen carefully and wait for your turn to speak", isCorrect: true },
+        { text: "Look away and ignore them", isCorrect: false },
+        { text: "Listen attentively and respond politely", isCorrect: true },
+        { text: "Interrupt them to talk about yourself", isCorrect: false },
       ],
     },
     {
       id: 4,
-      question: "How do you show empathy to a friend?",
-      image: "empathy.png",
+      question: "How can you show kindness to a new student at school?",
+      image: "kindness.png",
       options: [
-        { text: "Ignore them", isCorrect: false },
-        { text: "Listen and validate their feelings", isCorrect: true },
-        { text: "Tell them to move on", isCorrect: false },
+        { text: "Introduce yourself and offer to show them around", isCorrect: true },
+        { text: "Ignore them because they are new", isCorrect: false },
+        { text: "Make fun of them", isCorrect: false },
       ],
     },
     {
       id: 5,
-      question: "What should you do when someone is talking to you?",
-      image: "listening.png",
+      question: "If you borrow something from a friend, what should you do?",
+      image: "borrow.png",
       options: [
-        { text: "Make eye contact and respond appropriately", isCorrect: true },
-        { text: "Look away and ignore them", isCorrect: false },
-        { text: "Interrupt them with your own story", isCorrect: false },
+        { text: "Return it in good condition and say thank you", isCorrect: true },
+        { text: "Keep it because they forgot about it", isCorrect: false },
+        { text: "Lose it and not tell them", isCorrect: false },
       ],
     },
     {
       id: 6,
-      question: "How can you include someone who feels left out?",
-      image: "inclusion.png",
+      question: "How can you make a friend feel included in a game?",
+      image: "include.png",
       options: [
-        { text: "Ignore them", isCorrect: false },
-        { text: "Make fun of them", isCorrect: false },
-        { text: "Invite them to join the conversation", isCorrect: true },
+        { text: "Invite them to join and explain the rules", isCorrect: true },
+        { text: "Tell them they can only watch", isCorrect: false },
+        { text: "Ignore them if they ask to play", isCorrect: false },
+      ],
+    },
+    {
+      id: 7,
+      question: "What should you do if someone is being bullied?",
+      image: "bully.png",
+      options: [
+        { text: "Tell a trusted adult and support the person being bullied", isCorrect: true },
+        { text: "Join in with the bullying", isCorrect: false },
+        { text: "Pretend you didn’t see anything", isCorrect: false },
+      ],
+    },
+    {
+      id: 8,
+      question: "How should you respond when someone shares good news with you?",
+      image: "happy_news.png",
+      options: [
+        { text: "Congratulate them and show excitement", isCorrect: true },
+        { text: "Tell them your news is better", isCorrect: false },
+        { text: "Ignore them and change the subject", isCorrect: false },
+      ],
+    },
+    {
+      id: 9,
+      question: "What should you do when you make a mistake?",
+      image: "mistake.png",
+      options: [
+        { text: "Deny it and blame someone else", isCorrect: false },
+        { text: "Admit it, apologize, and try to fix it", isCorrect: true },
+        { text: "Pretend it never happened", isCorrect: false },
+      ],
+    },
+    {
+      id: 10,
+      question: "If you see a friend struggling with something, what can you do?",
+      image: "help_friend.png",
+      options: [
+        { text: "Offer to help them", isCorrect: true },
+        { text: "Laugh and make fun of them", isCorrect: false },
+        { text: "Walk away and let them figure it out alone", isCorrect: false },
       ],
     },
   ];
-
+  
 
   const speakText = (text) => {
     const utterance = new SpeechSynthesisUtterance(text);
@@ -86,25 +127,43 @@ const SocialThinkingQuiz = () => {
   useEffect(() => {
     setSelectedQuestions(allQuestions.sort(() => 0.5 - Math.random()).slice(0, 5));
     const instructions =
-      "Welcome to the Social Thinking Ability Quiz. In this quiz, you will be asked questions about how to behave in various social situations. Please choose the most appropriate answer for each question. Good luck!";
+      "Welcome to the Social Thinking Ability Quiz. Please choose the most appropriate answer.";
     speakText(instructions);
   }, []);
 
+  const handleOptionSelect = (questionId, isCorrect) => {
+    setAnswers((prev) => ({
+      ...prev,
+      [questionId]: isCorrect,
+    }));
+  };
+
   const handleNext = () => {
+    const currentQuestion = selectedQuestions[currentQuestionIndex];
+    const selected = document.querySelector(`input[name="q${currentQuestion.id}"]:checked`);
+    if (selected) {
+      handleOptionSelect(currentQuestion.id, JSON.parse(selected.value));
+    }
     setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
   };
 
   const handleSubmit = () => {
-    let newScore = 0;
-    selectedQuestions.forEach((q) => {
-      const selected = document.querySelector(`input[name="q${q.id}"]:checked`);
-      if (selected && JSON.parse(selected.value)) {
-        newScore++;
-      }
-    });
+    const currentQuestion = selectedQuestions[currentQuestionIndex];
+    const selected = document.querySelector(`input[name="q${currentQuestion.id}"]:checked`);
+    if (selected) {
+      handleOptionSelect(currentQuestion.id, JSON.parse(selected.value));
+    }
 
+    const finalAnswers = { ...answers };
+    if (selected) {
+      finalAnswers[currentQuestion.id] = JSON.parse(selected.value);
+    }
+
+    const newScore = Object.values(finalAnswers).filter(Boolean).length;
     setScore(newScore);
-    let newCategory = newScore >= 3 ? "Basic-Smart" : newScore === 2 ? "Basic-Intermediate" : "Basic-Beginner";
+
+    const newCategory =
+      newScore >= 3 ? "Basic-Smart" : newScore === 2 ? "Basic-Intermediate" : "Basic-Beginner";
     setCategory(newCategory);
     setGameOver(true);
     speakText(`You answered ${newScore} out of ${selectedQuestions.length} correctly. Your category is ${newCategory}.`);
@@ -132,49 +191,97 @@ const SocialThinkingQuiz = () => {
   };
 
   return (
-    <motion.div
-      style={{ textAlign: "center", padding: "20px", fontFamily: "Arial, sans-serif" }}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-    >
-      <h1>Social Thinking Ability Quiz</h1>
-      <p>
-        In this quiz, you'll be presented with various scenarios about social behavior. Choose the answer you believe best demonstrates appropriate social thinking.
-      </p>
-      <button className="speak-btn" onClick={() => speakText("In this quiz, you'll be presented with various scenarios about social behavior. Choose the answer you believe best demonstrates appropriate social thinking.")}> 🔊 Hear Instructions </button>
-      {!gameOver ? (
-        selectedQuestions.length > 0 && currentQuestionIndex < selectedQuestions.length ? (
-          <motion.div key={currentQuestionIndex} initial={{ x: "100vw" }} animate={{ x: 0 }} transition={{ type: "spring", stiffness: 50 }}>
-            <img src={selectedQuestions[currentQuestionIndex]?.image} alt="Question" style={{ width: "100px", marginBottom: "10px" }} />
-            <h2>{selectedQuestions[currentQuestionIndex]?.question}</h2>
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-              {selectedQuestions[currentQuestionIndex]?.options.map((option, index) => (
-                <motion.label key={index} style={{ display: "flex", alignItems: "center", marginBottom: "10px" }} whileHover={{ scale: 1.1 }}>
-                  <input type="radio" name={`q${selectedQuestions[currentQuestionIndex]?.id}`} value={option.isCorrect} style={{ marginRight: "10px" }} />
-                  {option.text}
-                </motion.label>
-              ))}
+    <div className="social-thinking-game">
+      <div className="social-container">
+        <div className="game-header">
+          <h1>Social Thinking Ability Quiz</h1>
+          <p>
+            In this quiz, you'll be presented with various scenarios about social behavior. Choose the best answer.
+          </p>
+          <button 
+            className="btn speak-btn" 
+            onClick={() => speakText("In this quiz, you'll be presented with various scenarios about social behavior.")}
+          >
+            🔊 Hear Instructions
+          </button>
+        </div>
+
+        {!gameOver ? (
+          selectedQuestions.length > 0 && currentQuestionIndex < selectedQuestions.length ? (
+            <motion.div
+              className="question-card"
+              key={currentQuestionIndex}
+              initial={{ x: "100vw" }}
+              animate={{ x: 0 }}
+              transition={{ type: "spring", stiffness: 50 }}
+            >
+              <img
+                src={selectedQuestions[currentQuestionIndex]?.image}
+                alt="Question"
+                style={{ width: "150px", marginBottom: "20px" }}
+              />
+              <h2 className="question">{selectedQuestions[currentQuestionIndex]?.question}</h2>
+              <div className="answers-grid">
+                {selectedQuestions[currentQuestionIndex]?.options.map((option, index) => (
+                  <div key={index} className="answer-option">
+                    <input
+                      type="radio"
+                      id={`option${index}`}
+                      name={`q${selectedQuestions[currentQuestionIndex]?.id}`}
+                      value={option.isCorrect}
+                      onChange={() =>
+                        handleOptionSelect(selectedQuestions[currentQuestionIndex]?.id, option.isCorrect)
+                      }
+                    />
+                    <label htmlFor={`option${index}`}>
+                      <span>{option.text}</span>
+                    </label>
+                  </div>
+                ))}
+              </div>
+              {currentQuestionIndex < selectedQuestions.length - 1 ? (
+                <button onClick={handleNext} className="btn">
+                  Next Question
+                </button>
+              ) : (
+                <button onClick={handleSubmit} className="btn">
+                  Submit Quiz
+                </button>
+              )}
+            </motion.div>
+          ) : (
+            <div className="question-card">
+              <p>Loading questions...</p>
             </div>
-            {currentQuestionIndex < selectedQuestions.length - 1 ? (
-              <button onClick={handleNext} className="btn"> Next </button>
-            ) : (
-              <button onClick={handleSubmit} className="btn"> Submit </button>
-            )}
-          </motion.div>
+          )
         ) : (
-          <p>Loading questions...</p>
-        )
-      ) : (
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-          <h2>You answered {score} out of {selectedQuestions.length} correctly.</h2>
-          <h3>Your category is: {category}</h3>
-          <button className="speak-btn" onClick={() => speakText(`You answered ${score} out of ${selectedQuestions.length} correctly. Your category is ${category}.`)}> 🔊 Hear Result </button>
-          <button className="next-btn" onClick={() => navigate("/dashboard")}> Homepage </button>
-        </motion.div>
-      )}
-    </motion.div>
+          <motion.div 
+            className="result"
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }} 
+            transition={{ duration: 1 }}
+          >
+            <h2>
+              You answered {score} out of {selectedQuestions.length} correctly.
+            </h2>
+            <h3>Your category is: {category}</h3>
+            <button
+              className="btn speak-btn"
+              onClick={() =>
+                speakText(`You answered ${score} out of ${selectedQuestions.length} correctly. Your category is ${category}.`)
+              }
+            >
+              🔊 Hear Result
+            </button>
+            <button className="btn" onClick={() => navigate("/dashboard")}>
+              Return to Homepage
+            </button>
+          </motion.div>
+        )}
+      </div>
+    </div>
   );
 };
+
 
 export default SocialThinkingQuiz;

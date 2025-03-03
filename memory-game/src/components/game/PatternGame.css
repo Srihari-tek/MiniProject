@@ -1,112 +1,193 @@
-/* Pattern Game Specific Styles */
-body.pattern-game {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(45deg, #ffd1ff, #fae1dd, #ffc8dd);
-  background-size: 200% 200%;
+/* Pattern Game Styles */
+.pattern-game {
+  min-height: 100vh;
+  background: linear-gradient(45deg, #ffd1ff, #fae1dd, #ffc8dd, #ffafcc);
+  background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
-  color: black;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  font-family: 'Poppins', sans-serif;
 }
 
-.pattern-game .game-container {
+.game-container {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  padding: 2rem;
+}
+
+.profile-container {
+  width: 90%;
+  max-width: 800px;
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  animation: containerAppear 1s ease-out;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: #2d3436;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  animation: titlePop 0.8s ease-out;
+}
+
+.profile-container p {
+  font-size: 1.1rem;
+  color: #2d3436;
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.speak-btn {
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  color: #333;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 1rem auto;
+  display: block;
+}
+
+.speak-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.profile-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: cardAppear 0.5s ease-out;
+}
+
+.question-text {
+  font-size: 1.3rem;
+  color: #2d3436;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.option-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 500px;
+}
+
+.option {
+  position: relative;
   width: 100%;
 }
 
-.pattern-game .profile-container {
-  width: 90%;
-  max-width: 800px;
-  padding: 2rem;
-  background: linear-gradient(45deg, #ffafcc, #bde0fe, #a2d2ff);
-  border-radius: 20px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
-  animation: fadeIn 1s ease-in-out;
-}
-
-.pattern-game h1 {
-  font-size: 2.5rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  margin-bottom: 1.5rem;
-}
-
-/* Buttons */
-.pattern-game button {
-  font-size: 1.1rem;
-  padding: 12px 20px;
-  margin: 10px;
-  border: none;
-  border-radius: 12px;
+.option input[type="radio"] {
+  position: absolute;
+  opacity: 0;
   cursor: pointer;
-  transition: 0.3s ease-in-out;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  height: 0;
+  width: 0;
 }
 
-.pattern-game button:hover:not(:disabled) {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(76, 167, 241, 0.4);
-}
-
-.pattern-game button:disabled {
-  background: #000000;
-  cursor: not-allowed;
-  opacity: 0.7;
-}
-
-.pattern-game .speak-btn {
-  background: linear-gradient(45deg, #fee2e2, #fecaca);
-  color: black;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
-}
-
-.pattern-game .next-btn {
-  background: linear-gradient(135deg, #4ca7f1, #2980b9);
-  color: black;
-  padding: 1rem 2rem;
-  border-radius: 12px;
-}
-
-.pattern-game .profile-card {
-  padding: 2rem;
-  background: linear-gradient(45deg, #fae0e4, #f7cad0, #ff9ecd);
+.option label {
+  display: block;
+  padding: 1.2rem 2rem;
+  background: skyblue;
+  border: 2px solid transparent;
   border-radius: 15px;
-  margin-top: 1.5rem;
-  transition: 0.4s;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #2d3436;
 }
 
-.pattern-game .profile-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+.option input[type="radio"]:checked + label {
+  background: linear-gradient(45deg, #a6c1ee, #fbc2eb);
+  color: #333;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.pattern-game .profile-details {
-  background: linear-gradient(45deg, #fbc2eb, #a6c1ee);
-  color: black;
-  padding: 1rem 2rem;
-  border-radius: 12px;
-  transition: 0.3s;
+.option label:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background: #f8f9fa;
 }
 
-.pattern-game .profile-details:hover {
-  background: #2575fc;
+.profile-details {
+  background: linear-gradient(45deg, #4ca7f1, #2980b9);
   color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 2rem auto 0;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+}
+
+.profile-details:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.profile-details:not(:disabled):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.next-btn {
+  background: linear-gradient(135deg, #4ca7f1, #2980b9);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.next-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Animations */
-@keyframes fadeIn {
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes containerAppear {
   from {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -114,43 +195,78 @@ body.pattern-game {
   }
 }
 
-@keyframes gradientBG {
+@keyframes titlePop {
   0% {
-    background-position: 0% 50%;
+    opacity: 0;
+    transform: scale(0.8);
   }
   50% {
-    background-position: 100% 50%;
+    transform: scale(1.1);
   }
   100% {
-    background-position: 0% 50%;
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
-/* Responsive Styles */
+@keyframes cardAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  .pattern-game .profile-container {
+  .game-container {
+    padding: 1rem;
+  }
+
+  .profile-container {
     width: 95%;
     padding: 1.5rem;
   }
-  .pattern-game h1 {
-    font-size: 2rem;
+
+  h1 {
+    font-size: 2.2rem;
   }
-  .pattern-game .profile-details, .pattern-game .next-btn {
-    padding: 0.8rem 1.5rem;
+
+  .question-text {
+    font-size: 1.1rem;
+  }
+
+  .option label {
+    padding: 1rem 1.5rem;
     font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .pattern-game .profile-container {
+  .profile-container {
     width: 100%;
     padding: 1rem;
-    border-radius: 15px;
   }
-  .pattern-game .profile-card {
-    padding: 1rem;
-  }
-  .pattern-game h1 {
+
+  h1 {
     font-size: 1.8rem;
+  }
+
+  .option-container {
+    gap: 0.8rem;
+  }
+
+  .option label {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .profile-details,
+  .next-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
   }
 }

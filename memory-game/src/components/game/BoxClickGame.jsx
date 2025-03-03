@@ -68,7 +68,7 @@ const BoxClickGame = () => {
     setIsGameRunning(false);
     
     const category = categorizeScore();
-    const finalMessage = `Game Over! Your final score is ${score}. Category: ${category}`;
+    const finalMessage = `Game Over! Your final score is ${score}. Category: ${category}.`;
     setGameOverMessage(finalMessage);
     speakText(finalMessage);
     sendGameResult(score, category);
@@ -106,6 +106,7 @@ const BoxClickGame = () => {
   const goToNextGame = () => {
     navigate("/pattern");
   };
+  // ... existing code ...
 
   return (
     <div className="game-container">
@@ -122,13 +123,17 @@ const BoxClickGame = () => {
 
       <div className="circle" style={{ backgroundColor: currentColor }} onClick={handleClick}></div>
 
-      <button className="start-button" onClick={startGame} disabled={isGameRunning}>
-        Start Game
-      </button>
+      {!isGameRunning && !isGameOver && (
+        <button className="start-button" onClick={startGame}>
+          Start Game
+        </button>
+      )}
 
       {gameOverMessage && <div className="game-over-popup">{gameOverMessage}</div>}
 
-      <button className="next-btn" onClick={goToNextGame}>Next Game</button>
+      {isGameOver && (
+        <button className="next-btn" onClick={goToNextGame}>Next Game</button>
+      )}
     </div>
   );
 };
