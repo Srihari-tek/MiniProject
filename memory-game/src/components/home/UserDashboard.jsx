@@ -25,7 +25,7 @@ ChartJS.register(
 
 const gameSkillMap = {
   "Memory Game": 'Memory Skills',
-  "BoxClickGame": 'Motor Skills',
+  "BoxClickGame": 'Attention Focus Skills',
   "Pattern Recognition Game": 'Logical Thinking Skills',
   "Math Reasoning Game": 'Mathematical Knowledge',
   "Social Thinking Quiz": 'Social Understanding'
