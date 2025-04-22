@@ -112,7 +112,7 @@ const UserDashboard = ({ onStartNewSession }) => {
         <div className="logo">SynapLearn</div>
         <nav className="nav-menu">
           <button className="nav-item active">Dashboard</button>
-          <button className="nav-item">Classes</button>
+          <button className="nav-item" onClick={() => navigate('/classes')}>Classes</button>
           <button className="nav-item">Resources</button>
           <button className="nav-item">Learning Plan</button>
           <button className="nav-item">Chat</button>

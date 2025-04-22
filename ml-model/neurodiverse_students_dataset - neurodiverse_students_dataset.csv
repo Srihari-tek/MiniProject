@@ -1,0 +1,1001 @@
+Student_ID,Age,Gender,Diagnosis,Memory_Score,Memory_Level,Math_Reasoning_Score,Math_Reasoning_Level,Logical_Thinking_Score,Logical_Thinking_Level,Motor_Skills_Score,Motor_Skills_Level,Social_Understanding_Score,Social_Understanding_Level,Learning_Outcome,Recommendation
+S0001,17,F,ADHD,7,High,5.7,Moderate,7.3,High,9,High,5.5,Moderate,Moderate,Maintain current learning strategy
+S0002,12,F,Dyspraxia,5.5,Moderate,9.2,High,7.5,High,5.1,Moderate,7.1,High,Moderate,Maintain current learning strategy
+S0003,9,Other,Autism,5.1,Moderate,5.1,Moderate,6.5,Moderate,2.2,Low,2.6,Low,Low,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0004,9,Other,ADHD,4.9,Low,4,Low,6.6,Moderate,4.2,Low,3.2,Low,Low,"Use memory games, Apply visual math tools, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0005,14,M,Dyslexia,8.9,High,5.5,Moderate,6.1,Moderate,3.2,Low,4.9,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0006,16,F,ADHD,6.2,Moderate,3.7,Low,6.8,Moderate,4.8,Low,5.4,Moderate,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0007,12,F,ADHD,4.8,Low,9.7,High,6,Moderate,3.9,Low,7.6,High,Moderate,"Use memory games, Incorporate motor skill exercises"
+S0008,8,F,Autism,3.6,Low,6.4,Moderate,2.1,Low,3.3,Low,6.4,Moderate,Low,"Use memory games, Include logical puzzles, Incorporate motor skill exercises"
+S0009,15,Other,Autism,7.5,High,6.3,Moderate,5.8,Moderate,5.4,Moderate,3,Low,Moderate,Use peer modeling and social stories
+S0010,9,F,Dyspraxia,4.6,Low,5.1,Moderate,8.1,High,6.7,Moderate,2.5,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0011,10,F,Dyslexia,6.6,Moderate,5.2,Moderate,4.6,Low,7.2,High,8.1,High,Moderate,Include logical puzzles
+S0012,18,M,ADHD,7.9,High,4.3,Low,5.4,Moderate,6.7,Moderate,8,High,Moderate,Apply visual math tools
+S0013,17,M,Dyspraxia,5,Moderate,5.6,Moderate,3.8,Low,3.6,Low,7.6,High,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0014,8,Other,ASD,8.7,High,5.9,Moderate,8,High,6.7,Moderate,4.7,Low,Moderate,Use peer modeling and social stories
+S0015,9,F,Dyspraxia,6.7,Moderate,9.1,High,5.9,Moderate,9.1,High,1,Low,Moderate,Use peer modeling and social stories
+S0016,12,F,Autism,7.6,High,6.2,Moderate,5.4,Moderate,6.2,Moderate,2,Low,Moderate,Use peer modeling and social stories
+S0017,16,Other,ADHD,5.6,Moderate,6.7,Moderate,9,High,5,Moderate,4.4,Low,Moderate,Use peer modeling and social stories
+S0018,17,M,ASD,5,Moderate,7.8,High,6.7,Moderate,4.9,Low,7,High,Moderate,Incorporate motor skill exercises
+S0019,8,F,Autism,6.2,Moderate,7.9,High,4.6,Low,5.3,Moderate,5.2,Moderate,Moderate,Include logical puzzles
+S0020,18,F,ADHD,3.1,Low,6.6,Moderate,6.5,Moderate,6,Moderate,5.5,Moderate,Moderate,Use memory games
+S0021,18,Other,ASD,3.2,Low,5.2,Moderate,5.3,Moderate,4.4,Low,5.7,Moderate,Low,"Use memory games, Incorporate motor skill exercises"
+S0022,12,M,Dyspraxia,6.8,Moderate,9.8,High,6.3,Moderate,6.5,Moderate,5.9,Moderate,High,Maintain current learning strategy
+S0023,17,M,ADHD,2.2,Low,5.9,Moderate,6.1,Moderate,10,High,5.6,Moderate,Moderate,Use memory games
+S0024,11,Other,Autism,6.6,Moderate,5.9,Moderate,3.7,Low,8.3,High,7.5,High,Moderate,Include logical puzzles
+S0025,10,Other,Dyslexia,7.6,High,4.2,Low,8.8,High,3.2,Low,7.2,High,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0026,13,Other,Autism,10,High,4,Low,4.9,Low,6.2,Moderate,5,Moderate,Moderate,"Apply visual math tools, Include logical puzzles"
+S0027,17,M,ASD,2.9,Low,6.1,Moderate,3.9,Low,6.9,Moderate,4.2,Low,Low,"Use memory games, Include logical puzzles, Use peer modeling and social stories"
+S0028,9,F,Dyspraxia,9.1,High,4.4,Low,5.4,Moderate,7.6,High,3.5,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0029,9,F,ASD,6.5,Moderate,8.6,High,2.8,Low,6.4,Moderate,6.5,Moderate,Moderate,Include logical puzzles
+S0030,13,F,Dyspraxia,7.6,High,3.5,Low,3.4,Low,7,High,6.6,Moderate,Moderate,"Apply visual math tools, Include logical puzzles"
+S0031,9,F,ASD,6.5,Moderate,6.7,Moderate,4.6,Low,6.5,Moderate,6.6,Moderate,Moderate,Include logical puzzles
+S0032,12,Other,Autism,4.6,Low,9.7,High,6.9,Moderate,3.6,Low,7.3,High,Moderate,"Use memory games, Incorporate motor skill exercises"
+S0033,10,Other,ADHD,4.1,Low,7.6,High,8.3,High,4.4,Low,7.9,High,Moderate,"Use memory games, Incorporate motor skill exercises"
+S0034,9,M,Autism,6.8,Moderate,7.6,High,9.8,High,5.5,Moderate,4.5,Low,Moderate,Use peer modeling and social stories
+S0035,13,F,Dyslexia,4.2,Low,4.4,Low,5.8,Moderate,6.7,Moderate,6.6,Moderate,Moderate,"Use memory games, Apply visual math tools"
+S0036,18,Other,Autism,7.7,High,6,Moderate,8.9,High,5.5,Moderate,10,High,High,Maintain current learning strategy
+S0037,11,Other,ADHD,7.3,High,4.3,Low,3.9,Low,7,High,5.6,Moderate,Moderate,"Apply visual math tools, Include logical puzzles"
+S0038,16,Other,ASD,7.4,High,6.9,Moderate,5.9,Moderate,4.3,Low,3,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0039,9,F,Dyspraxia,5.1,Moderate,7.7,High,6.4,Moderate,3.5,Low,6.3,Moderate,Moderate,Incorporate motor skill exercises
+S0040,13,M,ADHD,6.8,Moderate,4.2,Low,6.3,Moderate,6.1,Moderate,3.7,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0041,12,F,Dyspraxia,6.7,Moderate,7.1,High,8.2,High,8.1,High,3.2,Low,Moderate,Use peer modeling and social stories
+S0042,10,M,Dyslexia,4.1,Low,7,High,7,High,7,High,10,High,High,Use memory games
+S0043,10,M,Autism,7.1,High,8.3,High,7.9,High,7.3,High,5.4,Moderate,High,Maintain current learning strategy
+S0044,14,M,Dyspraxia,7.5,High,4.5,Low,5.5,Moderate,5,Moderate,6.2,Moderate,Moderate,Apply visual math tools
+S0045,8,Other,Dyslexia,10,High,2.3,Low,7.4,High,2.8,Low,5.1,Moderate,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0046,18,F,Autism,8.2,High,6.1,Moderate,3.8,Low,4.6,Low,7.4,High,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0047,8,Other,Dyspraxia,4.5,Low,6.4,Moderate,6.1,Moderate,4.7,Low,10,High,Moderate,"Use memory games, Incorporate motor skill exercises"
+S0048,16,F,Autism,7.3,High,1.9,Low,6.4,Moderate,4.7,Low,7.7,High,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0049,8,Other,ADHD,4.4,Low,5.8,Moderate,7,High,7.7,High,3.6,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0050,15,Other,ADHD,5.3,Moderate,5.1,Moderate,4.7,Low,9.5,High,6.8,Moderate,Moderate,Include logical puzzles
+S0051,12,M,ADHD,3.5,Low,7.8,High,10,High,8.1,High,3,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0052,15,F,ASD,5,Moderate,8.5,High,4.6,Low,6.9,Moderate,7.5,High,Moderate,Include logical puzzles
+S0053,15,Other,Dyslexia,4.1,Low,5.9,Moderate,1,Low,4,Low,5.5,Moderate,Low,"Use memory games, Include logical puzzles, Incorporate motor skill exercises"
+S0054,18,M,Dyslexia,3.5,Low,9.3,High,3.1,Low,5.1,Moderate,6.3,Moderate,Moderate,"Use memory games, Include logical puzzles"
+S0055,8,Other,Dyslexia,8.9,High,3.1,Low,8.3,High,6,Moderate,4,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0056,14,Other,Autism,6.9,Moderate,6.4,Moderate,4.8,Low,6.1,Moderate,5.2,Moderate,Moderate,Include logical puzzles
+S0057,9,M,Dyslexia,6.2,Moderate,7.3,High,9.2,High,3.5,Low,10,High,High,Incorporate motor skill exercises
+S0058,15,F,Dyslexia,2.1,Low,5.7,Moderate,7.2,High,6.6,Moderate,4.8,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0059,14,F,Autism,5.6,Moderate,5,Moderate,4.8,Low,7.7,High,6.7,Moderate,Moderate,Include logical puzzles
+S0060,10,M,Dyspraxia,4.6,Low,7.8,High,6.6,Moderate,7.6,High,7.3,High,Moderate,Use memory games
+S0061,14,F,ASD,4.3,Low,4.9,Low,7.5,High,7.2,High,6,Moderate,Moderate,"Use memory games, Apply visual math tools"
+S0062,17,M,ASD,6.2,Moderate,8.6,High,4.8,Low,7.1,High,5.6,Moderate,Moderate,Include logical puzzles
+S0063,18,F,ADHD,5.6,Moderate,8.2,High,7.7,High,7.6,High,8.6,High,High,Maintain current learning strategy
+S0064,12,M,Autism,6,Moderate,7.4,High,5.4,Moderate,6.6,Moderate,5.7,Moderate,Moderate,Maintain current learning strategy
+S0065,9,Other,ASD,6.2,Moderate,7.2,High,4.4,Low,10,High,4,Low,Moderate,"Include logical puzzles, Use peer modeling and social stories"
+S0066,11,F,ADHD,3.6,Low,8.3,High,7.6,High,7.2,High,7.3,High,Moderate,Use memory games
+S0067,10,Other,Dyspraxia,6,Moderate,4.2,Low,6.2,Moderate,4.6,Low,8,High,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0068,13,Other,ADHD,5.7,Moderate,4.3,Low,5.4,Moderate,6.8,Moderate,4.9,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0069,9,F,ADHD,4.4,Low,6.5,Moderate,6.5,Moderate,5,Moderate,5.1,Moderate,Moderate,Use memory games
+S0070,9,M,Dyslexia,6.5,Moderate,3.1,Low,3.2,Low,4.6,Low,5.6,Moderate,Low,"Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises"
+S0071,11,F,ADHD,6.6,Moderate,9,High,7.7,High,5.7,Moderate,6,Moderate,High,Maintain current learning strategy
+S0072,9,Other,Dyslexia,4,Low,6,Moderate,5.4,Moderate,6.6,Moderate,4.3,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0073,15,F,Autism,7,High,9.1,High,5.8,Moderate,6.8,Moderate,7.4,High,High,Maintain current learning strategy
+S0074,18,F,ASD,5.2,Moderate,6.4,Moderate,6,Moderate,6.2,Moderate,4.5,Low,Moderate,Use peer modeling and social stories
+S0075,10,Other,ADHD,6,Moderate,7,High,8.9,High,7.9,High,10,High,High,Maintain current learning strategy
+S0076,16,Other,ADHD,4.5,Low,7.7,High,6.4,Moderate,10,High,4.4,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0077,10,M,Dyslexia,4.3,Low,4.8,Low,1.8,Low,4.9,Low,4.5,Low,Low,"Use memory games, Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0078,11,F,ADHD,6.3,Moderate,6.7,Moderate,9.8,High,7.9,High,4.8,Low,High,Use peer modeling and social stories
+S0079,11,M,Dyspraxia,4.2,Low,7,High,3.4,Low,9.7,High,8.4,High,Moderate,"Use memory games, Include logical puzzles"
+S0080,8,F,Dyspraxia,5.1,Moderate,2.6,Low,8.7,High,5.8,Moderate,8.5,High,Moderate,Apply visual math tools
+S0081,16,Other,Dyspraxia,2.8,Low,4.8,Low,6,Moderate,6.1,Moderate,5.1,Moderate,Low,"Use memory games, Apply visual math tools"
+S0082,11,M,Dyspraxia,7.2,High,3.9,Low,5.7,Moderate,6.2,Moderate,7,High,Moderate,Apply visual math tools
+S0083,8,M,ADHD,7.4,High,3.8,Low,2.9,Low,8.6,High,6.7,Moderate,Moderate,"Apply visual math tools, Include logical puzzles"
+S0084,11,M,ADHD,4.5,Low,9.1,High,6.2,Moderate,8.4,High,6.1,Moderate,Moderate,Use memory games
+S0085,9,Other,ADHD,10,High,9.5,High,5.5,Moderate,7.9,High,7.3,High,High,Maintain current learning strategy
+S0086,15,Other,Autism,8.7,High,4.1,Low,7.4,High,8.1,High,2.5,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0087,13,Other,Autism,3.6,Low,1.9,Low,5.5,Moderate,7.4,High,9,High,Moderate,"Use memory games, Apply visual math tools"
+S0088,11,Other,Autism,6.1,Moderate,9.3,High,3.2,Low,2.6,Low,5.9,Moderate,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0089,18,F,Autism,6.8,Moderate,5.9,Moderate,1.9,Low,5.8,Moderate,3.4,Low,Low,"Include logical puzzles, Use peer modeling and social stories"
+S0090,10,M,Dyslexia,7.3,High,6.7,Moderate,4.1,Low,5,Moderate,3.9,Low,Moderate,"Include logical puzzles, Use peer modeling and social stories"
+S0091,18,Other,Dyslexia,5.9,Moderate,7.9,High,4,Low,7,High,4.9,Low,Moderate,"Include logical puzzles, Use peer modeling and social stories"
+S0092,13,Other,ADHD,4.4,Low,5.8,Moderate,3.9,Low,4.9,Low,3.6,Low,Low,"Use memory games, Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0093,9,Other,Dyspraxia,9.9,High,6.1,Moderate,4.6,Low,6.4,Moderate,5.8,Moderate,Moderate,Include logical puzzles
+S0094,9,F,Dyspraxia,5.6,Moderate,7.2,High,7.5,High,4.9,Low,4.8,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0095,11,F,Dyspraxia,5.4,Moderate,1.4,Low,3,Low,8.7,High,9.3,High,Moderate,"Apply visual math tools, Include logical puzzles"
+S0096,15,Other,ASD,5.5,Moderate,7.2,High,6.6,Moderate,10,High,8.2,High,High,Maintain current learning strategy
+S0097,13,Other,ASD,5.7,Moderate,4.1,Low,2.8,Low,6.4,Moderate,4.5,Low,Low,"Apply visual math tools, Include logical puzzles, Use peer modeling and social stories"
+S0098,12,Other,ASD,3.2,Low,4.7,Low,3.8,Low,9.4,High,7.8,High,Moderate,"Use memory games, Apply visual math tools, Include logical puzzles"
+S0099,17,Other,Dyspraxia,6,Moderate,9,High,6.2,Moderate,4.3,Low,9,High,Moderate,Incorporate motor skill exercises
+S0100,9,F,ASD,7.1,High,3.9,Low,5.6,Moderate,4.2,Low,3.2,Low,Low,"Apply visual math tools, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0101,10,Other,ADHD,7.9,High,9.8,High,3.2,Low,7.1,High,4.7,Low,Moderate,"Include logical puzzles, Use peer modeling and social stories"
+S0102,12,M,ADHD,5,Moderate,4.8,Low,4.3,Low,6.1,Moderate,4.3,Low,Low,"Apply visual math tools, Include logical puzzles, Use peer modeling and social stories"
+S0103,18,Other,Dyspraxia,6.5,Moderate,5.9,Moderate,5.5,Moderate,4.2,Low,4.8,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0104,16,F,Autism,7.5,High,7,High,4,Low,6.2,Moderate,7.5,High,Moderate,Include logical puzzles
+S0105,14,F,Autism,2.7,Low,7.1,High,4.7,Low,7.1,High,4.5,Low,Moderate,"Use memory games, Include logical puzzles, Use peer modeling and social stories"
+S0106,16,F,Autism,2.4,Low,2.7,Low,6.1,Moderate,6.5,Moderate,4.2,Low,Low,"Use memory games, Apply visual math tools, Use peer modeling and social stories"
+S0107,11,F,ADHD,7.3,High,2.7,Low,5.9,Moderate,3.6,Low,4.7,Low,Low,"Apply visual math tools, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0108,9,F,Dyslexia,6.1,Moderate,4.3,Low,5.2,Moderate,8,High,4.8,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0109,11,F,Dyspraxia,7.7,High,3.7,Low,7.1,High,8.9,High,1.1,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0110,17,M,Dyslexia,4.4,Low,7.2,High,5.6,Moderate,6.7,Moderate,4.8,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0111,12,F,Dyslexia,6.2,Moderate,5.7,Moderate,8.3,High,6.5,Moderate,6.7,Moderate,Moderate,Maintain current learning strategy
+S0112,12,Other,Autism,5.2,Moderate,5,Moderate,5.1,Moderate,6.8,Moderate,5.2,Moderate,Moderate,Maintain current learning strategy
+S0113,15,Other,Autism,6.6,Moderate,10,High,7.7,High,5.3,Moderate,8.4,High,High,Maintain current learning strategy
+S0114,17,F,Dyspraxia,5.2,Moderate,1.9,Low,4,Low,2.3,Low,5.3,Moderate,Low,"Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises"
+S0115,16,F,Dyspraxia,6,Moderate,9.4,High,6.7,Moderate,5.6,Moderate,7.7,High,High,Maintain current learning strategy
+S0116,14,F,Dyspraxia,1.6,Low,6.5,Moderate,7.5,High,3,Low,8.3,High,Moderate,"Use memory games, Incorporate motor skill exercises"
+S0117,14,Other,Autism,6.7,Moderate,5.2,Moderate,7.3,High,10,High,6.4,Moderate,High,Maintain current learning strategy
+S0118,10,M,ASD,6.5,Moderate,5.1,Moderate,4.3,Low,7.7,High,4.3,Low,Moderate,"Include logical puzzles, Use peer modeling and social stories"
+S0119,9,M,ASD,6.1,Moderate,5,Moderate,7,High,6.7,Moderate,8.1,High,Moderate,Maintain current learning strategy
+S0120,14,M,ASD,5,Moderate,5.5,Moderate,4,Low,5.1,Moderate,6.8,Moderate,Moderate,Include logical puzzles
+S0121,12,M,Autism,7.5,High,4.2,Low,7.7,High,8.7,High,6.8,Moderate,Moderate,Apply visual math tools
+S0122,9,F,ADHD,9.8,High,4.5,Low,3.5,Low,2.4,Low,9,High,Moderate,"Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises"
+S0123,17,Other,Dyspraxia,7.3,High,5.9,Moderate,6.6,Moderate,3.7,Low,10,High,Moderate,Incorporate motor skill exercises
+S0124,16,F,ASD,6.3,Moderate,6.2,Moderate,7.5,High,7,High,6.4,Moderate,Moderate,Maintain current learning strategy
+S0125,12,F,ADHD,4.4,Low,6.9,Moderate,9.8,High,8.7,High,9.2,High,High,Use memory games
+S0126,18,M,ADHD,5,Moderate,4,Low,5.7,Moderate,6.1,Moderate,8.2,High,Moderate,Apply visual math tools
+S0127,17,Other,Autism,2.6,Low,9.1,High,5.7,Moderate,5.1,Moderate,4,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0128,10,Other,ASD,2.7,Low,7.6,High,6.1,Moderate,3.4,Low,3.4,Low,Low,"Use memory games, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0129,11,M,Autism,5.3,Moderate,9.3,High,5.5,Moderate,3,Low,5.5,Moderate,Moderate,Incorporate motor skill exercises
+S0130,14,M,Dyspraxia,5.5,Moderate,1,Low,5.9,Moderate,5.5,Moderate,7.4,High,Moderate,Apply visual math tools
+S0131,10,M,Autism,9.7,High,8.3,High,5.5,Moderate,3.8,Low,10,High,High,Incorporate motor skill exercises
+S0132,8,M,ASD,6.1,Moderate,6,Moderate,6,Moderate,6.4,Moderate,5.7,Moderate,Moderate,Maintain current learning strategy
+S0133,17,M,ADHD,4.9,Low,4.9,Low,5.9,Moderate,4.9,Low,4.6,Low,Moderate,"Use memory games, Apply visual math tools, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0134,8,M,Autism,6.2,Moderate,5.5,Moderate,9,High,1,Low,8.2,High,Moderate,Incorporate motor skill exercises
+S0135,13,Other,ASD,8.5,High,1.9,Low,5.3,Moderate,5.3,Moderate,3.2,Low,Low,"Apply visual math tools, Use peer modeling and social stories"
+S0136,8,Other,Autism,4.4,Low,3.8,Low,9.5,High,7.9,High,8.5,High,Moderate,"Use memory games, Apply visual math tools"
+S0137,16,M,ADHD,7.4,High,3.7,Low,5,Moderate,7,High,3.6,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0138,18,F,Autism,7.4,High,5.5,Moderate,5.3,Moderate,7.4,High,6.9,Moderate,Moderate,Maintain current learning strategy
+S0139,18,F,Dyspraxia,5.3,Moderate,8.3,High,3.8,Low,7.2,High,7.2,High,Moderate,Include logical puzzles
+S0140,9,F,ASD,5.4,Moderate,6.7,Moderate,3.5,Low,7.8,High,5.6,Moderate,Moderate,Include logical puzzles
+S0141,14,Other,ASD,5,Moderate,8.1,High,4.6,Low,3.2,Low,2.9,Low,Low,"Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0142,11,M,Dyspraxia,7.2,High,3.4,Low,9.5,High,1.8,Low,9.4,High,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0143,13,F,ADHD,6.4,Moderate,5.8,Moderate,4.9,Low,6.8,Moderate,5.9,Moderate,Moderate,Include logical puzzles
+S0144,14,F,ASD,8.2,High,6.2,Moderate,6.3,Moderate,5.3,Moderate,5.9,Moderate,Moderate,Maintain current learning strategy
+S0145,18,M,Autism,6.6,Moderate,2.6,Low,3.3,Low,7.5,High,6.3,Moderate,Moderate,"Apply visual math tools, Include logical puzzles"
+S0146,8,M,Dyslexia,5.6,Moderate,6,Moderate,6.7,Moderate,4.9,Low,4.4,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0147,9,F,Dyspraxia,6.4,Moderate,4,Low,6.8,Moderate,2.6,Low,8.1,High,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0148,17,F,Dyslexia,6.9,Moderate,6.5,Moderate,8,High,9.3,High,8,High,High,Maintain current learning strategy
+S0149,14,F,Dyspraxia,2.3,Low,3.4,Low,4.8,Low,6.1,Moderate,7,High,Low,"Use memory games, Apply visual math tools, Include logical puzzles"
+S0150,12,M,ADHD,4.5,Low,6.4,Moderate,4.5,Low,4.8,Low,3.2,Low,Low,"Use memory games, Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0151,13,Other,Autism,4.2,Low,3.3,Low,4,Low,8.1,High,4.1,Low,Low,"Use memory games, Apply visual math tools, Include logical puzzles, Use peer modeling and social stories"
+S0152,11,F,Dyspraxia,10,High,7,High,6.4,Moderate,4.3,Low,7.4,High,High,Incorporate motor skill exercises
+S0153,11,M,ASD,4.8,Low,6.2,Moderate,10,High,5.8,Moderate,8.3,High,High,Use memory games
+S0154,12,Other,Autism,4.6,Low,5.9,Moderate,9.5,High,4.7,Low,9.6,High,Moderate,"Use memory games, Incorporate motor skill exercises"
+S0155,16,F,ADHD,7.4,High,4.9,Low,7.3,High,7.9,High,7.2,High,Moderate,Apply visual math tools
+S0156,9,Other,ADHD,2.9,Low,4.5,Low,5.5,Moderate,5.9,Moderate,7.2,High,Moderate,"Use memory games, Apply visual math tools"
+S0157,15,M,Dyslexia,6.4,Moderate,3.3,Low,6.8,Moderate,7.2,High,7.1,High,Moderate,Apply visual math tools
+S0158,14,F,ASD,8.2,High,7.7,High,6.9,Moderate,5.9,Moderate,2.7,Low,Moderate,Use peer modeling and social stories
+S0159,18,M,ASD,6.9,Moderate,6.4,Moderate,6.5,Moderate,3.4,Low,3.8,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0160,16,Other,ADHD,8.1,High,5.9,Moderate,7.4,High,6.1,Moderate,6.1,Moderate,Moderate,Maintain current learning strategy
+S0161,10,M,Dyslexia,7.9,High,5,Moderate,6.2,Moderate,5.1,Moderate,5.1,Moderate,Moderate,Maintain current learning strategy
+S0162,11,M,ASD,5.4,Moderate,6.4,Moderate,5,Moderate,8.5,High,4.2,Low,Moderate,Use peer modeling and social stories
+S0163,15,Other,Dyspraxia,5.6,Moderate,5.1,Moderate,8.9,High,6.4,Moderate,8.1,High,Moderate,Maintain current learning strategy
+S0164,13,F,ASD,3,Low,6.5,Moderate,7.8,High,6.2,Moderate,8.1,High,Moderate,Use memory games
+S0165,11,Other,Dyslexia,5,Moderate,8.8,High,10,High,5.3,Moderate,5.1,Moderate,Moderate,Maintain current learning strategy
+S0166,10,M,ADHD,8.9,High,9.2,High,5,Moderate,5.2,Moderate,5.4,Moderate,Moderate,Maintain current learning strategy
+S0167,16,Other,Dyspraxia,3.3,Low,4.2,Low,4,Low,4.5,Low,5.9,Moderate,Low,"Use memory games, Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises"
+S0168,10,M,Autism,6.5,Moderate,9.1,High,4,Low,8,High,5.6,Moderate,Moderate,Include logical puzzles
+S0169,10,F,ADHD,5.9,Moderate,7.3,High,3.8,Low,6.8,Moderate,6.3,Moderate,Moderate,Include logical puzzles
+S0170,11,Other,Dyslexia,7,High,6.6,Moderate,10,High,4.7,Low,4.9,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0171,13,F,ADHD,4.8,Low,4.9,Low,4.7,Low,8.4,High,8.8,High,Moderate,"Use memory games, Apply visual math tools, Include logical puzzles"
+S0172,9,M,ASD,4.9,Low,4.3,Low,6.9,Moderate,4.9,Low,7.3,High,Moderate,"Use memory games, Apply visual math tools, Incorporate motor skill exercises"
+S0173,17,Other,ADHD,6.4,Moderate,3,Low,9.1,High,9.6,High,4.8,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0174,17,Other,Autism,5.2,Moderate,6.6,Moderate,6.7,Moderate,7.3,High,10,High,High,Maintain current learning strategy
+S0175,11,Other,Autism,5.6,Moderate,4.4,Low,3.2,Low,4.5,Low,5.9,Moderate,Low,"Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises"
+S0176,16,F,ADHD,9.6,High,5,Moderate,6.4,Moderate,6,Moderate,8.4,High,High,Maintain current learning strategy
+S0177,12,Other,ASD,10,High,4.9,Low,5,Moderate,8.1,High,7.4,High,High,Apply visual math tools
+S0178,9,Other,ADHD,9.7,High,7.2,High,5.3,Moderate,7.2,High,8.2,High,High,Maintain current learning strategy
+S0179,9,Other,ADHD,7.6,High,7,High,8.1,High,8.3,High,8.8,High,High,Maintain current learning strategy
+S0180,15,Other,ASD,7.3,High,5.7,Moderate,6.3,Moderate,8.4,High,4.4,Low,Moderate,Use peer modeling and social stories
+S0181,15,M,ASD,6.7,Moderate,5.2,Moderate,6.1,Moderate,8.6,High,6.4,Moderate,Moderate,Maintain current learning strategy
+S0182,14,F,ADHD,6.1,Moderate,3.3,Low,7.5,High,7.3,High,10,High,Moderate,Apply visual math tools
+S0183,9,M,Dyslexia,5.4,Moderate,6.4,Moderate,6.5,Moderate,9.2,High,5.8,Moderate,Moderate,Maintain current learning strategy
+S0184,15,Other,Dyslexia,6.6,Moderate,7.2,High,6.4,Moderate,5.1,Moderate,6.4,Moderate,Moderate,Maintain current learning strategy
+S0185,9,Other,ADHD,8.1,High,3.9,Low,6.3,Moderate,4.6,Low,8.4,High,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0186,17,F,Dyspraxia,3,Low,4.9,Low,6.8,Moderate,9.1,High,5.9,Moderate,Moderate,"Use memory games, Apply visual math tools"
+S0187,15,F,ASD,4.9,Low,9.8,High,3.1,Low,1.6,Low,6.9,Moderate,Moderate,"Use memory games, Include logical puzzles, Incorporate motor skill exercises"
+S0188,13,F,Dyslexia,5,Moderate,4,Low,7.4,High,6.5,Moderate,4.9,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0189,17,Other,ASD,3.4,Low,7.7,High,7.3,High,5.8,Moderate,9.7,High,Moderate,Use memory games
+S0190,12,F,Autism,3.9,Low,2.9,Low,4.6,Low,5.9,Moderate,6.5,Moderate,Low,"Use memory games, Apply visual math tools, Include logical puzzles"
+S0191,10,Other,Autism,5.5,Moderate,6.7,Moderate,3.5,Low,8.9,High,5.8,Moderate,Moderate,Include logical puzzles
+S0192,8,Other,Autism,8.2,High,6.7,Moderate,6.9,Moderate,7.1,High,6.9,Moderate,High,Maintain current learning strategy
+S0193,17,F,Dyslexia,7.3,High,8.7,High,6.4,Moderate,7.4,High,5.8,Moderate,High,Maintain current learning strategy
+S0194,14,F,ADHD,8.9,High,4.6,Low,9.6,High,5.9,Moderate,3.1,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0195,15,Other,ASD,6.3,Moderate,4.6,Low,7.7,High,4.7,Low,5.1,Moderate,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0196,16,M,Autism,2.2,Low,5.1,Moderate,1.2,Low,2.8,Low,7.5,High,Low,"Use memory games, Include logical puzzles, Incorporate motor skill exercises"
+S0197,14,Other,Dyspraxia,7.6,High,6.9,Moderate,4.1,Low,5.9,Moderate,6,Moderate,Moderate,Include logical puzzles
+S0198,14,F,Dyspraxia,3.7,Low,9,High,7.8,High,5.6,Moderate,6.1,Moderate,Moderate,Use memory games
+S0199,11,M,ASD,6.4,Moderate,1.9,Low,5.5,Moderate,4.6,Low,4,Low,Low,"Apply visual math tools, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0200,9,Other,Autism,5.4,Moderate,9.6,High,7.3,High,4.9,Low,7.1,High,Moderate,Incorporate motor skill exercises
+S0201,18,M,Dyspraxia,8.8,High,7.8,High,6.1,Moderate,4.7,Low,7.4,High,Moderate,Incorporate motor skill exercises
+S0202,10,M,Dyslexia,6.8,Moderate,7.8,High,7.3,High,8.1,High,4.9,Low,Moderate,Use peer modeling and social stories
+S0203,13,F,ASD,8.6,High,6.4,Moderate,10,High,4.6,Low,9.5,High,High,Incorporate motor skill exercises
+S0204,17,Other,ASD,6.4,Moderate,4.7,Low,5,Moderate,5.4,Moderate,6.8,Moderate,Moderate,Apply visual math tools
+S0205,9,F,Autism,7,High,4.9,Low,6,Moderate,10,High,9.5,High,High,Apply visual math tools
+S0206,9,F,Dyspraxia,6.9,Moderate,6.1,Moderate,6.2,Moderate,7.2,High,4,Low,Moderate,Use peer modeling and social stories
+S0207,11,Other,ADHD,5.5,Moderate,2.7,Low,6.8,Moderate,7.3,High,5,Moderate,Moderate,Apply visual math tools
+S0208,10,F,ASD,9.1,High,3.5,Low,3.1,Low,6.4,Moderate,8.1,High,Moderate,"Apply visual math tools, Include logical puzzles"
+S0209,13,M,Dyspraxia,9.4,High,5.1,Moderate,8.2,High,5.9,Moderate,5.7,Moderate,Moderate,Maintain current learning strategy
+S0210,15,Other,Autism,7.8,High,7.3,High,2.8,Low,9,High,8.8,High,High,Include logical puzzles
+S0211,14,F,Autism,4.7,Low,6.8,Moderate,7,High,6.5,Moderate,4.9,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0212,8,Other,Dyslexia,4.7,Low,5.9,Moderate,8.3,High,7.1,High,5.3,Moderate,Moderate,Use memory games
+S0213,17,M,Dyslexia,7.5,High,1,Low,8.3,High,2.5,Low,5.3,Moderate,Low,"Apply visual math tools, Incorporate motor skill exercises"
+S0214,14,F,Dyslexia,3.8,Low,3.4,Low,8.3,High,5.1,Moderate,6.7,Moderate,Moderate,"Use memory games, Apply visual math tools"
+S0215,17,F,Dyspraxia,5.9,Moderate,7,High,6.2,Moderate,3.4,Low,8,High,Moderate,Incorporate motor skill exercises
+S0216,11,F,ASD,5,Moderate,2.9,Low,5.1,Moderate,9,High,7.7,High,Moderate,Apply visual math tools
+S0217,8,M,Dyslexia,5.3,Moderate,5.3,Moderate,5.4,Moderate,10,High,6.8,Moderate,Moderate,Maintain current learning strategy
+S0218,14,Other,Dyspraxia,6.9,Moderate,8.1,High,6.5,Moderate,5.5,Moderate,5.6,Moderate,Moderate,Maintain current learning strategy
+S0219,16,M,Dyspraxia,5.9,Moderate,5.9,Moderate,7.5,High,6.1,Moderate,7.5,High,Moderate,Maintain current learning strategy
+S0220,9,F,Dyspraxia,5.8,Moderate,6.2,Moderate,2,Low,7.8,High,6.7,Moderate,Moderate,Include logical puzzles
+S0221,17,Other,ASD,8,High,1,Low,10,High,5.7,Moderate,8.2,High,Moderate,Apply visual math tools
+S0222,17,Other,ADHD,3.9,Low,7.2,High,3.9,Low,4.8,Low,9.8,High,Moderate,"Use memory games, Include logical puzzles, Incorporate motor skill exercises"
+S0223,16,Other,Dyspraxia,5.6,Moderate,6.4,Moderate,7.7,High,7,High,6.3,Moderate,Moderate,Maintain current learning strategy
+S0224,10,Other,ASD,6.7,Moderate,10,High,5.9,Moderate,6.4,Moderate,8.1,High,High,Maintain current learning strategy
+S0225,15,M,Autism,8.2,High,8.4,High,7.3,High,3.7,Low,9.3,High,High,Incorporate motor skill exercises
+S0226,14,F,Dyspraxia,3.7,Low,6.6,Moderate,4.5,Low,5.9,Moderate,6.7,Moderate,Moderate,"Use memory games, Include logical puzzles"
+S0227,14,Other,ASD,6.6,Moderate,6.8,Moderate,9.2,High,6.9,Moderate,5.5,Moderate,High,Maintain current learning strategy
+S0228,10,M,ADHD,7.9,High,8.4,High,3.5,Low,7.2,High,7.4,High,Moderate,Include logical puzzles
+S0229,13,M,Dyslexia,5.4,Moderate,8.8,High,5.7,Moderate,6.3,Moderate,5.7,Moderate,Moderate,Maintain current learning strategy
+S0230,17,Other,ASD,6,Moderate,3.8,Low,3.1,Low,9.2,High,4.3,Low,Moderate,"Apply visual math tools, Include logical puzzles, Use peer modeling and social stories"
+S0231,12,Other,Dyslexia,4,Low,1.7,Low,4.7,Low,3.4,Low,9.3,High,Low,"Use memory games, Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises"
+S0232,18,M,ADHD,8,High,4.6,Low,10,High,8,High,5.4,Moderate,High,Apply visual math tools
+S0233,9,F,ASD,1,Low,10,High,3.2,Low,2.7,Low,8,High,Low,"Use memory games, Include logical puzzles, Incorporate motor skill exercises"
+S0234,8,F,ASD,10,High,8.8,High,7.1,High,7.2,High,7.7,High,High,Maintain current learning strategy
+S0235,11,Other,ASD,7.5,High,6.6,Moderate,6.2,Moderate,5.9,Moderate,4.5,Low,Moderate,Use peer modeling and social stories
+S0236,11,F,Dyslexia,5.4,Moderate,2.6,Low,5.8,Moderate,4,Low,3.8,Low,Low,"Apply visual math tools, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0237,12,M,Dyspraxia,6.4,Moderate,8.8,High,7.8,High,2.9,Low,4,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0238,9,M,Dyspraxia,7.9,High,4,Low,5.6,Moderate,7.1,High,4.1,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0239,12,Other,Autism,6.2,Moderate,3.3,Low,4.8,Low,6.6,Moderate,2.8,Low,Low,"Apply visual math tools, Include logical puzzles, Use peer modeling and social stories"
+S0240,10,Other,ASD,6.9,Moderate,6,Moderate,7.1,High,6.4,Moderate,8.7,High,High,Maintain current learning strategy
+S0241,13,Other,ADHD,6.3,Moderate,5.1,Moderate,6.2,Moderate,7.1,High,6.1,Moderate,Moderate,Maintain current learning strategy
+S0242,17,M,ASD,6.1,Moderate,4.6,Low,4.7,Low,3.2,Low,9.5,High,Moderate,"Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises"
+S0243,11,Other,Dyslexia,3.5,Low,4.6,Low,4.6,Low,7.8,High,5.4,Moderate,Moderate,"Use memory games, Apply visual math tools, Include logical puzzles"
+S0244,11,Other,Dyslexia,8.5,High,4.7,Low,6.6,Moderate,4.3,Low,10,High,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0245,18,F,ADHD,3.6,Low,6.6,Moderate,7.3,High,6.8,Moderate,5.6,Moderate,Moderate,Use memory games
+S0246,18,M,ASD,5.7,Moderate,6.1,Moderate,5.7,Moderate,7.9,High,10,High,High,Maintain current learning strategy
+S0247,8,M,ADHD,4.9,Low,3.3,Low,5.8,Moderate,10,High,4.4,Low,Moderate,"Use memory games, Apply visual math tools, Use peer modeling and social stories"
+S0248,15,Other,ASD,9.3,High,9.4,High,4.9,Low,7.1,High,9.3,High,High,Include logical puzzles
+S0249,13,Other,Dyslexia,5.2,Moderate,5.6,Moderate,4.8,Low,4,Low,4.7,Low,Low,"Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0250,9,F,ADHD,3.6,Low,6.1,Moderate,4.5,Low,6.5,Moderate,2.9,Low,Low,"Use memory games, Include logical puzzles, Use peer modeling and social stories"
+S0251,12,Other,ASD,6.7,Moderate,7.7,High,2,Low,6.7,Moderate,8.5,High,Moderate,Include logical puzzles
+S0252,12,Other,ADHD,3.6,Low,9.3,High,6.8,Moderate,4.6,Low,5.9,Moderate,Moderate,"Use memory games, Incorporate motor skill exercises"
+S0253,8,F,Autism,7.1,High,6.2,Moderate,7.1,High,4.2,Low,6.3,Moderate,Moderate,Incorporate motor skill exercises
+S0254,14,M,ASD,3.2,Low,5.8,Moderate,4.2,Low,4.5,Low,8.5,High,Moderate,"Use memory games, Include logical puzzles, Incorporate motor skill exercises"
+S0255,11,F,ADHD,8.2,High,7.2,High,3.8,Low,5.4,Moderate,8.4,High,Moderate,Include logical puzzles
+S0256,8,Other,ASD,6.3,Moderate,10,High,6.8,Moderate,6.4,Moderate,5.4,Moderate,Moderate,Maintain current learning strategy
+S0257,11,M,Dyspraxia,6.3,Moderate,5.7,Moderate,7.4,High,7.9,High,4.4,Low,Moderate,Use peer modeling and social stories
+S0258,14,M,ASD,3.3,Low,2.3,Low,7,High,3.8,Low,1.7,Low,Low,"Use memory games, Apply visual math tools, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0259,16,F,ASD,6.8,Moderate,10,High,6,Moderate,7.7,High,6.2,Moderate,High,Maintain current learning strategy
+S0260,14,M,ADHD,5.8,Moderate,7.8,High,5.4,Moderate,6.5,Moderate,6.6,Moderate,Moderate,Maintain current learning strategy
+S0261,11,M,ASD,4.7,Low,8,High,5.7,Moderate,4.5,Low,7.1,High,Moderate,"Use memory games, Incorporate motor skill exercises"
+S0262,10,M,ADHD,4.2,Low,6.1,Moderate,6,Moderate,8.2,High,6.9,Moderate,Moderate,Use memory games
+S0263,15,Other,Dyslexia,5.9,Moderate,7.6,High,8.8,High,7.1,High,6,Moderate,High,Maintain current learning strategy
+S0264,15,M,ADHD,3.4,Low,3.9,Low,5.4,Moderate,4.8,Low,5.6,Moderate,Low,"Use memory games, Apply visual math tools, Incorporate motor skill exercises"
+S0265,13,F,Autism,6.1,Moderate,7.1,High,5.9,Moderate,7,High,6.1,Moderate,Moderate,Maintain current learning strategy
+S0266,15,Other,ADHD,2,Low,4.1,Low,5.7,Moderate,3.6,Low,7.2,High,Low,"Use memory games, Apply visual math tools, Incorporate motor skill exercises"
+S0267,8,F,Autism,9.1,High,8.4,High,5.6,Moderate,9,High,6.3,Moderate,High,Maintain current learning strategy
+S0268,11,M,ASD,5.3,Moderate,4.8,Low,5.4,Moderate,5.2,Moderate,6.3,Moderate,Moderate,Apply visual math tools
+S0269,17,M,Dyspraxia,6.3,Moderate,6,Moderate,6.9,Moderate,8.4,High,7.9,High,High,Maintain current learning strategy
+S0270,15,Other,Dyslexia,3,Low,1,Low,7.9,High,3.3,Low,5.6,Moderate,Low,"Use memory games, Apply visual math tools, Incorporate motor skill exercises"
+S0271,18,F,Dyspraxia,3.7,Low,2.4,Low,7.1,High,7.5,High,4.8,Low,Moderate,"Use memory games, Apply visual math tools, Use peer modeling and social stories"
+S0272,8,Other,Dyspraxia,1,Low,4.9,Low,6.8,Moderate,3,Low,6.4,Moderate,Low,"Use memory games, Apply visual math tools, Incorporate motor skill exercises"
+S0273,14,M,ASD,6,Moderate,7.2,High,6.2,Moderate,4.1,Low,8.4,High,Moderate,Incorporate motor skill exercises
+S0274,16,Other,Autism,5.7,Moderate,5.9,Moderate,4.1,Low,5.1,Moderate,4.2,Low,Moderate,"Include logical puzzles, Use peer modeling and social stories"
+S0275,15,Other,Autism,5.7,Moderate,9.4,High,3.3,Low,2.8,Low,8.9,High,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0276,11,M,Autism,5.6,Moderate,4.7,Low,8.1,High,4.8,Low,9.7,High,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0277,10,F,ASD,7.4,High,5,Moderate,10,High,4.8,Low,7.5,High,Moderate,Incorporate motor skill exercises
+S0278,18,F,ADHD,6.6,Moderate,8.6,High,9.1,High,6.1,Moderate,4.5,Low,Moderate,Use peer modeling and social stories
+S0279,12,Other,Dyslexia,6.9,Moderate,4.6,Low,10,High,6.3,Moderate,5.3,Moderate,Moderate,Apply visual math tools
+S0280,12,M,ADHD,6.4,Moderate,3.3,Low,4.1,Low,8.4,High,4.7,Low,Moderate,"Apply visual math tools, Include logical puzzles, Use peer modeling and social stories"
+S0281,16,F,ADHD,3.9,Low,7.1,High,8.4,High,7.4,High,8,High,Moderate,Use memory games
+S0282,8,Other,Autism,4.5,Low,3.2,Low,9,High,5.4,Moderate,5.5,Moderate,Moderate,"Use memory games, Apply visual math tools"
+S0283,9,M,Dyslexia,8.7,High,7.1,High,6.9,Moderate,10,High,4.7,Low,High,Use peer modeling and social stories
+S0284,18,M,Autism,7.9,High,6.1,Moderate,6.5,Moderate,9.1,High,7,High,High,Maintain current learning strategy
+S0285,13,M,Autism,7.1,High,8.1,High,5.3,Moderate,4.3,Low,3.9,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0286,16,F,ASD,2.1,Low,10,High,3.8,Low,5.6,Moderate,5.4,Moderate,Moderate,"Use memory games, Include logical puzzles"
+S0287,13,Other,Dyspraxia,6.6,Moderate,7.6,High,7.7,High,4.8,Low,5.7,Moderate,Moderate,Incorporate motor skill exercises
+S0288,15,F,Dyslexia,6.6,Moderate,5.5,Moderate,9.2,High,7,High,7.5,High,High,Maintain current learning strategy
+S0289,18,F,ADHD,7.3,High,8.3,High,6.4,Moderate,3.4,Low,6.8,Moderate,Moderate,Incorporate motor skill exercises
+S0290,14,M,Dyspraxia,4.7,Low,4.9,Low,7.2,High,8.5,High,6,Moderate,Moderate,"Use memory games, Apply visual math tools"
+S0291,9,Other,ADHD,6.6,Moderate,9.4,High,6.5,Moderate,10,High,7.1,High,High,Maintain current learning strategy
+S0292,15,Other,Dyspraxia,2.5,Low,7.5,High,6.8,Moderate,8.6,High,7.3,High,Moderate,Use memory games
+S0293,17,Other,Dyspraxia,5.7,Moderate,3.6,Low,5.6,Moderate,4.3,Low,4.8,Low,Low,"Apply visual math tools, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0294,12,M,Dyslexia,7.2,High,9.3,High,6.8,Moderate,3.6,Low,6.9,Moderate,Moderate,Incorporate motor skill exercises
+S0295,17,F,Dyslexia,8.4,High,4.8,Low,5.7,Moderate,6,Moderate,4.4,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0296,13,F,ASD,7.3,High,5.8,Moderate,6.8,Moderate,4.2,Low,5.1,Moderate,Moderate,Incorporate motor skill exercises
+S0297,18,Other,Autism,7.4,High,5.3,Moderate,9.5,High,5.2,Moderate,6.4,Moderate,Moderate,Maintain current learning strategy
+S0298,11,M,Dyspraxia,7.9,High,3.2,Low,2.5,Low,2.9,Low,8.5,High,Moderate,"Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises"
+S0299,16,Other,ASD,4.9,Low,10,High,4.9,Low,6.4,Moderate,9.1,High,High,"Use memory games, Include logical puzzles"
+S0300,9,M,Dyspraxia,10,High,10,High,8.4,High,8,High,7.2,High,High,Maintain current learning strategy
+S0301,14,F,Dyspraxia,7.6,High,4.9,Low,4.4,Low,6,Moderate,5.7,Moderate,Moderate,"Apply visual math tools, Include logical puzzles"
+S0302,13,F,ASD,5.1,Moderate,7.4,High,7.9,High,6.2,Moderate,9,High,High,Maintain current learning strategy
+S0303,15,F,Dyspraxia,3.7,Low,5.6,Moderate,4.6,Low,2.3,Low,5.8,Moderate,Low,"Use memory games, Include logical puzzles, Incorporate motor skill exercises"
+S0304,16,Other,Autism,5.8,Moderate,9,High,7.3,High,4,Low,9.7,High,High,Incorporate motor skill exercises
+S0305,13,M,Autism,8.4,High,7.2,High,5.5,Moderate,4.1,Low,5.3,Moderate,Moderate,Incorporate motor skill exercises
+S0306,14,Other,Autism,8.2,High,9.8,High,9.1,High,5,Moderate,3.8,Low,High,Use peer modeling and social stories
+S0307,16,M,Autism,6.3,Moderate,2.5,Low,6.6,Moderate,5.7,Moderate,5.1,Moderate,Moderate,Apply visual math tools
+S0308,12,Other,ADHD,2.8,Low,7,High,4.9,Low,3.7,Low,1,Low,Low,"Use memory games, Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0309,13,F,ADHD,5.9,Moderate,9.5,High,9.3,High,5.1,Moderate,4.8,Low,Moderate,Use peer modeling and social stories
+S0310,9,M,Autism,6.9,Moderate,4,Low,6.6,Moderate,7.5,High,8.5,High,Moderate,Apply visual math tools
+S0311,14,Other,Dyslexia,5.8,Moderate,5.6,Moderate,4.2,Low,4.3,Low,5.5,Moderate,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0312,17,F,Dyspraxia,6.7,Moderate,7.8,High,4.4,Low,9,High,5.5,Moderate,Moderate,Include logical puzzles
+S0313,16,Other,ASD,6,Moderate,4.5,Low,1.2,Low,7.8,High,7.5,High,Moderate,"Apply visual math tools, Include logical puzzles"
+S0314,15,F,Dyspraxia,5.4,Moderate,6.1,Moderate,7,High,2.9,Low,4.9,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0315,16,F,Dyslexia,7.6,High,3.5,Low,6.6,Moderate,3.3,Low,6.9,Moderate,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0316,16,Other,Autism,5.9,Moderate,2.8,Low,8.3,High,4.5,Low,4.4,Low,Moderate,"Apply visual math tools, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0317,13,F,Autism,6.4,Moderate,8.3,High,4,Low,6.1,Moderate,6.9,Moderate,Moderate,Include logical puzzles
+S0318,10,Other,ADHD,7.4,High,6.4,Moderate,5.3,Moderate,4.3,Low,6.2,Moderate,Moderate,Incorporate motor skill exercises
+S0319,9,M,ADHD,3.9,Low,1,Low,6.9,Moderate,7.8,High,1.3,Low,Low,"Use memory games, Apply visual math tools, Use peer modeling and social stories"
+S0320,14,M,ASD,4,Low,7.2,High,10,High,6,Moderate,4.5,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0321,9,F,Autism,5.6,Moderate,8.7,High,4.7,Low,4.4,Low,5,Moderate,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0322,11,F,Dyslexia,4.1,Low,6.2,Moderate,9.2,High,6.6,Moderate,5.5,Moderate,Moderate,Use memory games
+S0323,15,F,Autism,5.4,Moderate,2.9,Low,7.8,High,5.8,Moderate,5.6,Moderate,Moderate,Apply visual math tools
+S0324,17,F,Dyspraxia,10,High,6.6,Moderate,4.5,Low,5.1,Moderate,8.3,High,Moderate,Include logical puzzles
+S0325,9,F,Dyslexia,6.2,Moderate,3.1,Low,7.8,High,4.7,Low,9.7,High,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0326,11,M,ADHD,8.2,High,5.1,Moderate,8.6,High,6.1,Moderate,7.7,High,High,Maintain current learning strategy
+S0327,18,Other,Dyspraxia,7,High,4.3,Low,4.7,Low,8.1,High,5.3,Moderate,Moderate,"Apply visual math tools, Include logical puzzles"
+S0328,17,Other,Dyspraxia,5.2,Moderate,4.1,Low,6.8,Moderate,10,High,3.9,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0329,15,Other,ADHD,6,Moderate,8.8,High,5.8,Moderate,6.9,Moderate,3.9,Low,Moderate,Use peer modeling and social stories
+S0330,9,M,ASD,6.9,Moderate,5.6,Moderate,8,High,8.4,High,10,High,High,Maintain current learning strategy
+S0331,12,Other,Dyslexia,7.2,High,6.7,Moderate,6.4,Moderate,5.3,Moderate,6.7,Moderate,Moderate,Maintain current learning strategy
+S0332,15,M,Autism,5.4,Moderate,6.3,Moderate,8.6,High,4,Low,8.3,High,Moderate,Incorporate motor skill exercises
+S0333,11,M,Dyspraxia,8.6,High,5.8,Moderate,1.8,Low,4.8,Low,8.6,High,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0334,8,Other,Autism,6,Moderate,4,Low,5,Moderate,7.7,High,7.1,High,Moderate,Apply visual math tools
+S0335,13,M,ASD,5.5,Moderate,5.3,Moderate,5.2,Moderate,4.2,Low,9.2,High,Moderate,Incorporate motor skill exercises
+S0336,11,M,Dyspraxia,5.4,Moderate,8.4,High,9,High,8,High,5.1,Moderate,High,Maintain current learning strategy
+S0337,12,Other,ASD,6.8,Moderate,6,Moderate,4.2,Low,6.6,Moderate,3.6,Low,Moderate,"Include logical puzzles, Use peer modeling and social stories"
+S0338,15,Other,Autism,8.4,High,5.1,Moderate,6.4,Moderate,6.6,Moderate,5.5,Moderate,Moderate,Maintain current learning strategy
+S0339,13,M,Autism,7.2,High,5.1,Moderate,7.7,High,3.3,Low,6.3,Moderate,Moderate,Incorporate motor skill exercises
+S0340,16,F,Dyspraxia,9.9,High,4,Low,4.6,Low,7,High,6.4,Moderate,Moderate,"Apply visual math tools, Include logical puzzles"
+S0341,16,F,Dyspraxia,6.7,Moderate,7,High,7.3,High,8.2,High,6.8,Moderate,High,Maintain current learning strategy
+S0342,8,F,ADHD,5.5,Moderate,7.3,High,9.8,High,5.7,Moderate,4.1,Low,Moderate,Use peer modeling and social stories
+S0343,8,Other,Autism,8.2,High,5.8,Moderate,1.7,Low,7.7,High,4.9,Low,Moderate,"Include logical puzzles, Use peer modeling and social stories"
+S0344,11,M,ADHD,5.8,Moderate,6.7,Moderate,6.4,Moderate,7.4,High,5.1,Moderate,Moderate,Maintain current learning strategy
+S0345,13,Other,Autism,7,High,5.5,Moderate,7.5,High,7.2,High,4.1,Low,Moderate,Use peer modeling and social stories
+S0346,17,F,Dyspraxia,8.2,High,4.9,Low,7.6,High,6.7,Moderate,9.7,High,High,Apply visual math tools
+S0347,15,F,ADHD,5.6,Moderate,5.3,Moderate,6,Moderate,5.4,Moderate,7.6,High,Moderate,Maintain current learning strategy
+S0348,15,Other,ASD,2.8,Low,3.9,Low,3.9,Low,7.9,High,9.4,High,Moderate,"Use memory games, Apply visual math tools, Include logical puzzles"
+S0349,16,F,Dyslexia,5.8,Moderate,5.7,Moderate,6.1,Moderate,8.3,High,4.1,Low,Moderate,Use peer modeling and social stories
+S0350,14,F,Autism,6.5,Moderate,8,High,7,High,6.4,Moderate,8,High,High,Maintain current learning strategy
+S0351,14,F,ASD,1,Low,7.4,High,4.7,Low,2.3,Low,7,High,Low,"Use memory games, Include logical puzzles, Incorporate motor skill exercises"
+S0352,12,Other,Dyslexia,8.7,High,5.7,Moderate,7.9,High,9.2,High,8.6,High,High,Maintain current learning strategy
+S0353,8,F,Autism,9.3,High,7.5,High,6.2,Moderate,2.8,Low,5.5,Moderate,Moderate,Incorporate motor skill exercises
+S0354,12,Other,Autism,4.3,Low,10,High,5.6,Moderate,6.2,Moderate,7.1,High,Moderate,Use memory games
+S0355,11,Other,Dyspraxia,6.1,Moderate,9.4,High,4.8,Low,6.4,Moderate,4.5,Low,Moderate,"Include logical puzzles, Use peer modeling and social stories"
+S0356,14,F,Autism,3.4,Low,4.8,Low,5.9,Moderate,5.1,Moderate,4.6,Low,Low,"Use memory games, Apply visual math tools, Use peer modeling and social stories"
+S0357,15,Other,Dyslexia,3.2,Low,5.8,Moderate,3,Low,7.5,High,6.2,Moderate,Moderate,"Use memory games, Include logical puzzles"
+S0358,11,F,ASD,3.1,Low,5.4,Moderate,4.5,Low,6.6,Moderate,8.7,High,Moderate,"Use memory games, Include logical puzzles"
+S0359,14,M,ADHD,2.2,Low,6.2,Moderate,5.7,Moderate,7.3,High,6.4,Moderate,Moderate,Use memory games
+S0360,16,M,ASD,4.5,Low,5.4,Moderate,4.4,Low,8.2,High,6,Moderate,Moderate,"Use memory games, Include logical puzzles"
+S0361,15,F,Dyslexia,9.8,High,5.9,Moderate,4.6,Low,3,Low,2.4,Low,Moderate,"Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0362,15,M,Autism,2.8,Low,6.5,Moderate,7,High,2.8,Low,7.8,High,Moderate,"Use memory games, Incorporate motor skill exercises"
+S0363,15,M,ASD,5,Moderate,6.3,Moderate,9.2,High,7.8,High,5.5,Moderate,Moderate,Maintain current learning strategy
+S0364,17,M,ADHD,4.2,Low,1.7,Low,4.6,Low,5.6,Moderate,4,Low,Low,"Use memory games, Apply visual math tools, Include logical puzzles, Use peer modeling and social stories"
+S0365,15,M,Autism,5.7,Moderate,6.2,Moderate,5.6,Moderate,4.7,Low,6.3,Moderate,Moderate,Incorporate motor skill exercises
+S0366,18,M,ADHD,6.9,Moderate,3.8,Low,8.8,High,5.8,Moderate,6,Moderate,Moderate,Apply visual math tools
+S0367,10,M,Dyslexia,7.4,High,6.5,Moderate,7.9,High,6.6,Moderate,4.8,Low,Moderate,Use peer modeling and social stories
+S0368,18,M,Dyslexia,6.7,Moderate,3.7,Low,6.2,Moderate,5.9,Moderate,5.6,Moderate,Moderate,Apply visual math tools
+S0369,13,Other,Autism,5.7,Moderate,2.2,Low,4.9,Low,6.2,Moderate,6.3,Moderate,Moderate,"Apply visual math tools, Include logical puzzles"
+S0370,13,M,Autism,3.9,Low,8.5,High,4.3,Low,7.9,High,6.9,Moderate,Moderate,"Use memory games, Include logical puzzles"
+S0371,18,M,ADHD,4.7,Low,9.6,High,3.6,Low,7.8,High,8,High,Moderate,"Use memory games, Include logical puzzles"
+S0372,13,F,Autism,4.7,Low,8.8,High,5.5,Moderate,6.6,Moderate,6.5,Moderate,Moderate,Use memory games
+S0373,9,M,Autism,5.7,Moderate,7.6,High,7.6,High,2.5,Low,8.6,High,Moderate,Incorporate motor skill exercises
+S0374,8,M,ADHD,2.7,Low,8.1,High,8.3,High,3.8,Low,5.2,Moderate,Moderate,"Use memory games, Incorporate motor skill exercises"
+S0375,12,Other,Dyslexia,3.8,Low,5.6,Moderate,5.4,Moderate,7.6,High,8.6,High,Moderate,Use memory games
+S0376,9,M,Dyspraxia,8.8,High,4.9,Low,5.6,Moderate,2.6,Low,4.4,Low,Moderate,"Apply visual math tools, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0377,11,M,Dyslexia,7.9,High,9.2,High,3.5,Low,4.8,Low,5.9,Moderate,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0378,11,F,Dyslexia,6.6,Moderate,4.4,Low,6.8,Moderate,5.1,Moderate,6,Moderate,Moderate,Apply visual math tools
+S0379,17,F,ASD,7.1,High,6,Moderate,5.1,Moderate,5.8,Moderate,5.8,Moderate,Moderate,Maintain current learning strategy
+S0380,14,F,Dyspraxia,5.3,Moderate,5.5,Moderate,9.2,High,7.1,High,5.4,Moderate,Moderate,Maintain current learning strategy
+S0381,16,F,Dyspraxia,7.4,High,5.3,Moderate,8.3,High,6.7,Moderate,5.8,Moderate,Moderate,Maintain current learning strategy
+S0382,10,M,ADHD,6.9,Moderate,2.9,Low,3.7,Low,3.6,Low,6.3,Moderate,Low,"Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises"
+S0383,16,F,Autism,9.5,High,10,High,7.3,High,7,High,2.4,Low,High,Use peer modeling and social stories
+S0384,9,F,ASD,4.9,Low,4.4,Low,4.8,Low,5.7,Moderate,5.1,Moderate,Low,"Use memory games, Apply visual math tools, Include logical puzzles"
+S0385,13,F,ADHD,2,Low,7.5,High,3.9,Low,6.5,Moderate,10,High,Moderate,"Use memory games, Include logical puzzles"
+S0386,10,Other,Dyspraxia,4.2,Low,1,Low,5.4,Moderate,8.2,High,9.9,High,Moderate,"Use memory games, Apply visual math tools"
+S0387,16,M,ADHD,3.5,Low,7,High,5.1,Moderate,5.8,Moderate,10,High,Moderate,Use memory games
+S0388,12,Other,ASD,3,Low,6.5,Moderate,6.9,Moderate,8.2,High,6.2,Moderate,Moderate,Use memory games
+S0389,10,M,ADHD,6.6,Moderate,5.2,Moderate,6.5,Moderate,5.3,Moderate,7.2,High,Moderate,Maintain current learning strategy
+S0390,14,M,Autism,5.3,Moderate,6.8,Moderate,5.9,Moderate,8.3,High,5.9,Moderate,Moderate,Maintain current learning strategy
+S0391,14,F,ADHD,2.5,Low,8.5,High,4.2,Low,4.7,Low,4.8,Low,Low,"Use memory games, Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0392,17,F,ADHD,8.7,High,1.7,Low,10,High,8.1,High,6.4,Moderate,Moderate,Apply visual math tools
+S0393,18,M,Dyslexia,5.9,Moderate,6.6,Moderate,7,High,7.3,High,7.1,High,Moderate,Maintain current learning strategy
+S0394,9,M,Dyspraxia,6.2,Moderate,5.6,Moderate,5.7,Moderate,5.6,Moderate,8.3,High,Moderate,Maintain current learning strategy
+S0395,11,F,Dyslexia,7.2,High,1,Low,7.3,High,6.4,Moderate,6,Moderate,Moderate,Apply visual math tools
+S0396,15,F,Autism,5.2,Moderate,8.2,High,7.9,High,4.5,Low,6.8,Moderate,Moderate,Incorporate motor skill exercises
+S0397,10,Other,Autism,4.1,Low,3.2,Low,4.7,Low,7.7,High,7.9,High,Moderate,"Use memory games, Apply visual math tools, Include logical puzzles"
+S0398,8,M,Dyslexia,7,High,7.5,High,7,High,4.7,Low,6.9,Moderate,Moderate,Incorporate motor skill exercises
+S0399,15,M,Dyslexia,7.6,High,7.5,High,8.4,High,7.4,High,6.7,Moderate,High,Maintain current learning strategy
+S0400,10,Other,Dyslexia,8.1,High,5.9,Moderate,4.2,Low,5.7,Moderate,4.5,Low,Moderate,"Include logical puzzles, Use peer modeling and social stories"
+S0401,13,M,Autism,4.6,Low,5.7,Moderate,4.4,Low,5.4,Moderate,2.2,Low,Low,"Use memory games, Include logical puzzles, Use peer modeling and social stories"
+S0402,16,F,ADHD,6.4,Moderate,6,Moderate,4.4,Low,7.3,High,7.9,High,Moderate,Include logical puzzles
+S0403,15,Other,Dyspraxia,2.8,Low,4.5,Low,4.5,Low,4.1,Low,7.7,High,Low,"Use memory games, Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises"
+S0404,14,M,ASD,5.6,Moderate,5.5,Moderate,2,Low,7.3,High,3.5,Low,Low,"Include logical puzzles, Use peer modeling and social stories"
+S0405,17,F,Dyspraxia,6.1,Moderate,6.6,Moderate,8.7,High,3.4,Low,1,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0406,14,M,Dyslexia,6.4,Moderate,9.6,High,8.5,High,6.4,Moderate,5,Moderate,High,Maintain current learning strategy
+S0407,15,F,Autism,7.6,High,4.1,Low,7,High,7,High,8.1,High,Moderate,Apply visual math tools
+S0408,12,F,Dyspraxia,10,High,6.8,Moderate,5,Moderate,5.9,Moderate,2.5,Low,Moderate,Use peer modeling and social stories
+S0409,18,F,ADHD,4.6,Low,5.2,Moderate,5,Moderate,6.3,Moderate,4.4,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0410,17,M,Dyspraxia,8.2,High,6,Moderate,6,Moderate,5.3,Moderate,6.3,Moderate,Moderate,Maintain current learning strategy
+S0411,8,Other,Dyslexia,7.7,High,4.3,Low,4.7,Low,5.4,Moderate,3.3,Low,Moderate,"Apply visual math tools, Include logical puzzles, Use peer modeling and social stories"
+S0412,17,Other,ADHD,4.4,Low,5,Moderate,7.7,High,6.5,Moderate,6.4,Moderate,Moderate,Use memory games
+S0413,17,F,ADHD,7.7,High,5.7,Moderate,6.8,Moderate,5.8,Moderate,6.5,Moderate,Moderate,Maintain current learning strategy
+S0414,13,F,Autism,4.8,Low,1.1,Low,5.7,Moderate,8.8,High,7.9,High,Moderate,"Use memory games, Apply visual math tools"
+S0415,14,F,Dyspraxia,7.9,High,8.5,High,6.2,Moderate,6.4,Moderate,4.8,Low,Moderate,Use peer modeling and social stories
+S0416,17,F,ASD,5.4,Moderate,7.2,High,8.4,High,5.7,Moderate,5.1,Moderate,Moderate,Maintain current learning strategy
+S0417,11,F,ADHD,6,Moderate,7.2,High,3.1,Low,1.4,Low,4.9,Low,Low,"Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0418,15,F,Autism,3.6,Low,5,Moderate,5.7,Moderate,5.1,Moderate,8.9,High,Moderate,Use memory games
+S0419,11,M,Dyspraxia,6.7,Moderate,6.6,Moderate,7.2,High,3.7,Low,8.1,High,Moderate,Incorporate motor skill exercises
+S0420,10,F,ASD,5.8,Moderate,7.3,High,3.9,Low,2.9,Low,7.6,High,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0421,18,F,Dyslexia,6.8,Moderate,4.2,Low,4.3,Low,8.3,High,3.6,Low,Moderate,"Apply visual math tools, Include logical puzzles, Use peer modeling and social stories"
+S0422,17,F,Dyspraxia,9.3,High,4.2,Low,7.3,High,5.3,Moderate,7.2,High,Moderate,Apply visual math tools
+S0423,14,F,ADHD,4.9,Low,5.7,Moderate,6.1,Moderate,4,Low,7.5,High,Moderate,"Use memory games, Incorporate motor skill exercises"
+S0424,18,Other,Autism,5,Moderate,5.5,Moderate,4,Low,1,Low,5.6,Moderate,Low,"Include logical puzzles, Incorporate motor skill exercises"
+S0425,9,F,Autism,10,High,7.6,High,6,Moderate,5.5,Moderate,6,Moderate,High,Maintain current learning strategy
+S0426,13,M,Autism,7.1,High,3.6,Low,8.2,High,7.4,High,7.4,High,Moderate,Apply visual math tools
+S0427,10,M,ASD,6.9,Moderate,6,Moderate,7.3,High,7.2,High,5.3,Moderate,Moderate,Maintain current learning strategy
+S0428,16,M,Autism,4.9,Low,6.2,Moderate,9.1,High,3.5,Low,3.1,Low,Moderate,"Use memory games, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0429,14,Other,ASD,6.3,Moderate,6.1,Moderate,6.3,Moderate,6.5,Moderate,5.6,Moderate,Moderate,Maintain current learning strategy
+S0430,15,M,ADHD,9,High,2.8,Low,4.3,Low,5.8,Moderate,2.7,Low,Low,"Apply visual math tools, Include logical puzzles, Use peer modeling and social stories"
+S0431,11,Other,ASD,5.6,Moderate,9.3,High,6,Moderate,6.5,Moderate,3.5,Low,Moderate,Use peer modeling and social stories
+S0432,13,F,Autism,4.8,Low,5.2,Moderate,5.4,Moderate,8.6,High,7.1,High,Moderate,Use memory games
+S0433,13,F,Autism,3.8,Low,6.5,Moderate,7,High,8.3,High,9.2,High,Moderate,Use memory games
+S0434,16,Other,Dyslexia,4,Low,4.4,Low,3.5,Low,5.5,Moderate,6.9,Moderate,Low,"Use memory games, Apply visual math tools, Include logical puzzles"
+S0435,12,M,ASD,8,High,5.8,Moderate,5.4,Moderate,6.3,Moderate,4.3,Low,Moderate,Use peer modeling and social stories
+S0436,12,F,ASD,10,High,2.8,Low,6.4,Moderate,10,High,6,Moderate,High,Apply visual math tools
+S0437,11,Other,Dyspraxia,5.6,Moderate,5.3,Moderate,5.6,Moderate,8.7,High,1.6,Low,Moderate,Use peer modeling and social stories
+S0438,16,F,Dyslexia,9.1,High,3.2,Low,5.5,Moderate,5.1,Moderate,7.2,High,Moderate,Apply visual math tools
+S0439,18,F,Autism,2.8,Low,6.9,Moderate,10,High,3.3,Low,6.4,Moderate,Moderate,"Use memory games, Incorporate motor skill exercises"
+S0440,17,M,ADHD,4.7,Low,6.9,Moderate,6,Moderate,4.7,Low,7,High,Moderate,"Use memory games, Incorporate motor skill exercises"
+S0441,10,Other,Dyslexia,9.6,High,5.6,Moderate,7.4,High,3.4,Low,4.1,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0442,16,F,Autism,6.9,Moderate,9,High,6.7,Moderate,5.4,Moderate,6,Moderate,Moderate,Maintain current learning strategy
+S0443,13,F,Dyspraxia,3.5,Low,7.2,High,7.8,High,5.1,Moderate,5.1,Moderate,Moderate,Use memory games
+S0444,15,Other,Dyslexia,6.5,Moderate,5.1,Moderate,5.9,Moderate,10,High,5.5,Moderate,Moderate,Maintain current learning strategy
+S0445,17,Other,Dyspraxia,5.3,Moderate,4.7,Low,7.5,High,5.6,Moderate,4.7,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0446,18,Other,ADHD,8.6,High,8.8,High,4.8,Low,2.3,Low,8,High,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0447,12,M,ASD,4.6,Low,7.6,High,2.1,Low,7.8,High,3.6,Low,Moderate,"Use memory games, Include logical puzzles, Use peer modeling and social stories"
+S0448,16,Other,Dyslexia,7.5,High,6,Moderate,4.1,Low,5.2,Moderate,7.4,High,Moderate,Include logical puzzles
+S0449,14,M,Dyslexia,6.2,Moderate,7.2,High,10,High,2.9,Low,9.2,High,High,Incorporate motor skill exercises
+S0450,12,M,ADHD,6.2,Moderate,4.2,Low,3.3,Low,5.6,Moderate,7.8,High,Moderate,"Apply visual math tools, Include logical puzzles"
+S0451,18,M,Dyslexia,5.7,Moderate,9,High,3.1,Low,6,Moderate,3.5,Low,Moderate,"Include logical puzzles, Use peer modeling and social stories"
+S0452,14,Other,ASD,6.7,Moderate,7.8,High,5.2,Moderate,1,Low,6.4,Moderate,Moderate,Incorporate motor skill exercises
+S0453,11,M,Dyspraxia,6.9,Moderate,6.8,Moderate,8.5,High,3.9,Low,7.4,High,Moderate,Incorporate motor skill exercises
+S0454,15,M,ADHD,8.4,High,2.4,Low,6.6,Moderate,5,Moderate,5.8,Moderate,Moderate,Apply visual math tools
+S0455,15,F,Dyspraxia,6.7,Moderate,5,Moderate,4.6,Low,6.1,Moderate,3.8,Low,Moderate,"Include logical puzzles, Use peer modeling and social stories"
+S0456,11,M,ASD,3.8,Low,7.4,High,3.7,Low,7.3,High,6.9,Moderate,Moderate,"Use memory games, Include logical puzzles"
+S0457,8,Other,ADHD,2.5,Low,4.6,Low,8.4,High,4,Low,5.1,Moderate,Low,"Use memory games, Apply visual math tools, Incorporate motor skill exercises"
+S0458,15,F,Autism,6.9,Moderate,7.6,High,5.5,Moderate,4.8,Low,8.8,High,Moderate,Incorporate motor skill exercises
+S0459,10,F,ASD,9.5,High,8,High,6.2,Moderate,4.4,Low,4.3,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0460,18,Other,Dyslexia,7,High,6.8,Moderate,8.8,High,7.3,High,3,Low,Moderate,Use peer modeling and social stories
+S0461,17,M,Dyslexia,8.1,High,4,Low,5.2,Moderate,6.5,Moderate,10,High,Moderate,Apply visual math tools
+S0462,8,F,Dyslexia,10,High,7.2,High,5.6,Moderate,7.1,High,7.8,High,High,Maintain current learning strategy
+S0463,13,F,Dyslexia,5.4,Moderate,9.6,High,6.5,Moderate,7,High,7.3,High,High,Maintain current learning strategy
+S0464,10,Other,Dyslexia,6.8,Moderate,7.7,High,4.8,Low,4.9,Low,3.8,Low,Moderate,"Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0465,9,Other,Dyslexia,6.9,Moderate,7.6,High,6.9,Moderate,9.3,High,6,Moderate,High,Maintain current learning strategy
+S0466,9,Other,Dyslexia,7.3,High,3.8,Low,5.2,Moderate,7.4,High,7.7,High,Moderate,Apply visual math tools
+S0467,11,M,ASD,5.4,Moderate,5.9,Moderate,3,Low,5.3,Moderate,7.8,High,Moderate,Include logical puzzles
+S0468,14,F,ADHD,7.2,High,7,High,6.1,Moderate,6,Moderate,4.7,Low,Moderate,Use peer modeling and social stories
+S0469,11,M,ASD,7.4,High,6.8,Moderate,7,High,4.9,Low,1.7,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0470,18,F,Dyspraxia,8.2,High,5,Moderate,4.3,Low,7.4,High,5.2,Moderate,Moderate,Include logical puzzles
+S0471,15,Other,Dyspraxia,8.1,High,7.2,High,7.4,High,3.3,Low,8.4,High,Moderate,Incorporate motor skill exercises
+S0472,11,M,ASD,6.5,Moderate,5.3,Moderate,6.3,Moderate,2.4,Low,6.8,Moderate,Moderate,Incorporate motor skill exercises
+S0473,11,F,Dyspraxia,3.9,Low,3.3,Low,3,Low,8.2,High,4.7,Low,Low,"Use memory games, Apply visual math tools, Include logical puzzles, Use peer modeling and social stories"
+S0474,13,F,Dyslexia,9.1,High,4.9,Low,2.6,Low,3.8,Low,8.5,High,Moderate,"Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises"
+S0475,12,F,ADHD,5.7,Moderate,4.9,Low,6.3,Moderate,7,High,8.2,High,Moderate,Apply visual math tools
+S0476,13,F,Dyslexia,8.9,High,5.3,Moderate,3.3,Low,5.2,Moderate,6.5,Moderate,Moderate,Include logical puzzles
+S0477,16,F,ADHD,4.1,Low,4.1,Low,6.7,Moderate,5.9,Moderate,6.1,Moderate,Moderate,"Use memory games, Apply visual math tools"
+S0478,16,Other,Autism,4.5,Low,5.5,Moderate,4.2,Low,7.8,High,8.1,High,Moderate,"Use memory games, Include logical puzzles"
+S0479,18,M,Dyslexia,2.3,Low,4.1,Low,3,Low,4.7,Low,5.8,Moderate,Low,"Use memory games, Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises"
+S0480,17,Other,ASD,3.1,Low,4.2,Low,4,Low,6.4,Moderate,6.1,Moderate,Low,"Use memory games, Apply visual math tools, Include logical puzzles"
+S0481,15,M,Dyspraxia,4.6,Low,6.4,Moderate,4.9,Low,5.5,Moderate,9.3,High,Moderate,"Use memory games, Include logical puzzles"
+S0482,9,Other,Dyslexia,8.7,High,3.4,Low,7.7,High,7.6,High,3.7,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0483,12,F,ADHD,7.6,High,9.1,High,3.8,Low,4.2,Low,8,High,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0484,18,M,ADHD,6.5,Moderate,7.1,High,6.7,Moderate,6.8,Moderate,3.3,Low,Moderate,Use peer modeling and social stories
+S0485,14,F,Autism,8.1,High,8.3,High,5.5,Moderate,5.9,Moderate,2.9,Low,Moderate,Use peer modeling and social stories
+S0486,9,Other,ADHD,7,High,7.1,High,5.9,Moderate,8.2,High,5.3,Moderate,Moderate,Maintain current learning strategy
+S0487,8,Other,Dyspraxia,7.1,High,4,Low,6,Moderate,5.7,Moderate,6.5,Moderate,Moderate,Apply visual math tools
+S0488,12,M,ASD,5.3,Moderate,5.7,Moderate,7.7,High,5.1,Moderate,2.8,Low,Moderate,Use peer modeling and social stories
+S0489,11,Other,Autism,9.5,High,8.8,High,3.4,Low,7.4,High,5,Moderate,Moderate,Include logical puzzles
+S0490,9,M,ASD,6.5,Moderate,6.6,Moderate,5.5,Moderate,4.4,Low,4.6,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0491,14,M,Autism,4.2,Low,4.3,Low,5.9,Moderate,4.6,Low,7.4,High,Moderate,"Use memory games, Apply visual math tools, Incorporate motor skill exercises"
+S0492,8,F,Autism,9,High,4.8,Low,6.5,Moderate,7,High,6.9,Moderate,Moderate,Apply visual math tools
+S0493,18,F,ASD,6.2,Moderate,7.5,High,7,High,3.5,Low,7.7,High,Moderate,Incorporate motor skill exercises
+S0494,16,M,Dyspraxia,7.8,High,4.5,Low,6.1,Moderate,7.4,High,5.6,Moderate,Moderate,Apply visual math tools
+S0495,12,Other,Dyslexia,8.1,High,10,High,4.4,Low,3.2,Low,6.6,Moderate,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0496,10,Other,Dyslexia,7.4,High,5.5,Moderate,8.9,High,3.3,Low,7.4,High,Moderate,Incorporate motor skill exercises
+S0497,12,F,ADHD,4.8,Low,9.4,High,10,High,4.5,Low,4.9,Low,Moderate,"Use memory games, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0498,8,F,Dyslexia,7.7,High,5.2,Moderate,5.9,Moderate,6.1,Moderate,2.2,Low,Moderate,Use peer modeling and social stories
+S0499,15,F,Dyspraxia,6,Moderate,4.6,Low,5,Moderate,8.9,High,3.5,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0500,17,Other,Dyslexia,7.6,High,5.4,Moderate,5.4,Moderate,7.6,High,6.7,Moderate,Moderate,Maintain current learning strategy
+S0501,17,Other,ADHD,7.1,High,7.9,High,5.3,Moderate,4.8,Low,3.8,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0502,13,F,Autism,4.3,Low,10,High,8.5,High,3.3,Low,3.4,Low,Moderate,"Use memory games, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0503,16,M,ASD,7,High,7.1,High,7.1,High,5.5,Moderate,5.7,Moderate,Moderate,Maintain current learning strategy
+S0504,14,M,ADHD,6.7,Moderate,6.2,Moderate,1.6,Low,5.5,Moderate,4.3,Low,Low,"Include logical puzzles, Use peer modeling and social stories"
+S0505,15,F,ADHD,6.4,Moderate,10,High,6.7,Moderate,5.4,Moderate,7.8,High,High,Maintain current learning strategy
+S0506,9,F,Dyslexia,7,High,6.8,Moderate,7.2,High,10,High,3.7,Low,Moderate,Use peer modeling and social stories
+S0507,10,Other,Autism,6.9,Moderate,4.1,Low,7.1,High,4.2,Low,5.2,Moderate,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0508,11,F,Dyslexia,5.4,Moderate,8,High,7.8,High,3.5,Low,6.1,Moderate,Moderate,Incorporate motor skill exercises
+S0509,13,M,Dyspraxia,4.6,Low,3.5,Low,5.6,Moderate,5.4,Moderate,10,High,Moderate,"Use memory games, Apply visual math tools"
+S0510,18,M,Autism,6.9,Moderate,3.2,Low,4.9,Low,8,High,10,High,Moderate,"Apply visual math tools, Include logical puzzles"
+S0511,9,F,Autism,2.8,Low,2.2,Low,9.7,High,6.8,Moderate,4.3,Low,Moderate,"Use memory games, Apply visual math tools, Use peer modeling and social stories"
+S0512,18,M,Dyslexia,7.1,High,1,Low,6,Moderate,6.7,Moderate,7.8,High,Moderate,Apply visual math tools
+S0513,17,Other,Dyspraxia,4,Low,6.2,Moderate,4.1,Low,6.5,Moderate,4.2,Low,Low,"Use memory games, Include logical puzzles, Use peer modeling and social stories"
+S0514,9,M,ADHD,5.2,Moderate,4,Low,7.3,High,7.7,High,5.5,Moderate,Moderate,Apply visual math tools
+S0515,14,Other,Autism,6.1,Moderate,3.1,Low,5.4,Moderate,5.9,Moderate,10,High,Moderate,Apply visual math tools
+S0516,17,Other,Autism,3.8,Low,8.9,High,8,High,6.6,Moderate,9.5,High,High,Use memory games
+S0517,9,Other,Dyslexia,6.7,Moderate,6.8,Moderate,5.9,Moderate,8.4,High,8.2,High,High,Maintain current learning strategy
+S0518,11,M,Autism,4.7,Low,3.4,Low,5.6,Moderate,4.4,Low,5.9,Moderate,Low,"Use memory games, Apply visual math tools, Incorporate motor skill exercises"
+S0519,14,M,ASD,8.5,High,5.1,Moderate,5.9,Moderate,6.1,Moderate,7.7,High,Moderate,Maintain current learning strategy
+S0520,10,F,Dyslexia,1.5,Low,4.8,Low,6.4,Moderate,8.4,High,5,Moderate,Moderate,"Use memory games, Apply visual math tools"
+S0521,17,M,ADHD,2.2,Low,7.2,High,4.7,Low,3.6,Low,4.8,Low,Low,"Use memory games, Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0522,12,M,ADHD,5.6,Moderate,4.8,Low,1.6,Low,7.8,High,8.5,High,Moderate,"Apply visual math tools, Include logical puzzles"
+S0523,17,M,ADHD,7.3,High,3.7,Low,5.6,Moderate,6,Moderate,7.2,High,Moderate,Apply visual math tools
+S0524,8,M,ADHD,7.3,High,4.5,Low,6.2,Moderate,6.9,Moderate,8.9,High,Moderate,Apply visual math tools
+S0525,16,Other,Dyslexia,7.4,High,7.6,High,6.2,Moderate,8.8,High,6.8,Moderate,High,Maintain current learning strategy
+S0526,16,M,ASD,4.3,Low,8.8,High,7.4,High,5.1,Moderate,5,Moderate,Moderate,Use memory games
+S0527,17,Other,Autism,6.6,Moderate,6.9,Moderate,6.4,Moderate,6.6,Moderate,9.4,High,High,Maintain current learning strategy
+S0528,11,M,Dyspraxia,8.1,High,6.4,Moderate,7.9,High,3.9,Low,6.8,Moderate,Moderate,Incorporate motor skill exercises
+S0529,10,Other,ADHD,9.6,High,5.6,Moderate,4.3,Low,4.7,Low,3.8,Low,Moderate,"Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0530,12,Other,Autism,4.4,Low,5.3,Moderate,3.2,Low,6,Moderate,7.8,High,Moderate,"Use memory games, Include logical puzzles"
+S0531,12,F,ASD,4.2,Low,9,High,7,High,8.1,High,4.7,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0532,14,Other,Dyslexia,7.7,High,3.8,Low,7.8,High,6.3,Moderate,7.1,High,Moderate,Apply visual math tools
+S0533,18,F,ADHD,3.6,Low,4.2,Low,7.2,High,4.1,Low,6.9,Moderate,Moderate,"Use memory games, Apply visual math tools, Incorporate motor skill exercises"
+S0534,10,Other,Autism,3.3,Low,7.7,High,3.5,Low,7.1,High,7.3,High,Moderate,"Use memory games, Include logical puzzles"
+S0535,15,F,ASD,4.6,Low,7.2,High,6.5,Moderate,4.9,Low,4,Low,Moderate,"Use memory games, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0536,18,M,Autism,2.1,Low,6.7,Moderate,2.9,Low,6.2,Moderate,5.5,Moderate,Low,"Use memory games, Include logical puzzles"
+S0537,8,M,Dyspraxia,7.4,High,5.4,Moderate,5.3,Moderate,7.5,High,6.7,Moderate,Moderate,Maintain current learning strategy
+S0538,8,Other,Dyslexia,6.6,Moderate,6.9,Moderate,2.9,Low,7.5,High,7.2,High,Moderate,Include logical puzzles
+S0539,13,F,Dyspraxia,4,Low,5.5,Moderate,5.9,Moderate,5.7,Moderate,6.7,Moderate,Moderate,Use memory games
+S0540,12,F,ADHD,8.9,High,8.2,High,3.4,Low,7.2,High,8.7,High,High,Include logical puzzles
+S0541,16,F,Dyspraxia,6.8,Moderate,8.2,High,10,High,8,High,6.5,Moderate,High,Maintain current learning strategy
+S0542,8,Other,Dyspraxia,8.1,High,6.3,Moderate,6,Moderate,5.3,Moderate,9.1,High,Moderate,Maintain current learning strategy
+S0543,8,M,Autism,4.4,Low,9.1,High,7,High,3.2,Low,6.7,Moderate,Moderate,"Use memory games, Incorporate motor skill exercises"
+S0544,8,M,Dyslexia,1.8,Low,7.3,High,7.8,High,4.8,Low,6.2,Moderate,Moderate,"Use memory games, Incorporate motor skill exercises"
+S0545,15,F,Dyslexia,9.9,High,5,Moderate,3.9,Low,9,High,9.9,High,High,Include logical puzzles
+S0546,16,Other,ADHD,6,Moderate,8,High,8.7,High,4.5,Low,5,Moderate,Moderate,Incorporate motor skill exercises
+S0547,13,M,Dyslexia,8.5,High,9.4,High,7.1,High,4.2,Low,10,High,High,Incorporate motor skill exercises
+S0548,14,M,ADHD,4.9,Low,5.3,Moderate,6.7,Moderate,9.1,High,7.7,High,Moderate,Use memory games
+S0549,15,F,Autism,6.8,Moderate,6.9,Moderate,6.1,Moderate,7.1,High,1,Low,Moderate,Use peer modeling and social stories
+S0550,10,F,ADHD,5.4,Moderate,6.5,Moderate,3.7,Low,6.8,Moderate,5.6,Moderate,Moderate,Include logical puzzles
+S0551,8,Other,ADHD,9.5,High,9.1,High,5.1,Moderate,5.7,Moderate,5.9,Moderate,High,Maintain current learning strategy
+S0552,18,Other,Dyspraxia,5.1,Moderate,6.4,Moderate,4.5,Low,3.7,Low,7.2,High,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0553,11,F,Dyslexia,7.3,High,4.4,Low,7.8,High,4.7,Low,6.5,Moderate,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0554,15,M,ASD,7.6,High,5.9,Moderate,6.9,Moderate,5,Moderate,5.6,Moderate,Moderate,Maintain current learning strategy
+S0555,11,Other,ASD,5.6,Moderate,4.5,Low,5.6,Moderate,2.9,Low,5,Moderate,Low,"Apply visual math tools, Incorporate motor skill exercises"
+S0556,18,Other,ASD,5.4,Moderate,5.5,Moderate,5.5,Moderate,5.9,Moderate,7,High,Moderate,Maintain current learning strategy
+S0557,12,F,Dyslexia,7.7,High,4.7,Low,3.6,Low,3.9,Low,5,Moderate,Low,"Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises"
+S0558,15,M,Autism,5.3,Moderate,4.5,Low,3.4,Low,5.1,Moderate,6.4,Moderate,Low,"Apply visual math tools, Include logical puzzles"
+S0559,9,F,ADHD,7.2,High,4.9,Low,5.2,Moderate,4.1,Low,5.9,Moderate,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0560,13,M,ADHD,4.3,Low,7.1,High,2.4,Low,5.3,Moderate,6.6,Moderate,Moderate,"Use memory games, Include logical puzzles"
+S0561,9,Other,Autism,6.4,Moderate,10,High,6.7,Moderate,4,Low,5.8,Moderate,Moderate,Incorporate motor skill exercises
+S0562,11,Other,ASD,2.4,Low,5.8,Moderate,4.3,Low,7.8,High,4.9,Low,Moderate,"Use memory games, Include logical puzzles, Use peer modeling and social stories"
+S0563,18,F,Dyslexia,5.8,Moderate,4.7,Low,9.5,High,5.4,Moderate,9.7,High,High,Apply visual math tools
+S0564,17,F,ADHD,7.6,High,7,High,6.7,Moderate,6.8,Moderate,2.1,Low,Moderate,Use peer modeling and social stories
+S0565,9,Other,ADHD,5.4,Moderate,7.7,High,5.9,Moderate,3.2,Low,5.9,Moderate,Moderate,Incorporate motor skill exercises
+S0566,9,F,Autism,9.4,High,8.5,High,5.9,Moderate,7.9,High,5.3,Moderate,High,Maintain current learning strategy
+S0567,8,F,Dyslexia,2.6,Low,4.2,Low,9.1,High,5.5,Moderate,5.5,Moderate,Moderate,"Use memory games, Apply visual math tools"
+S0568,12,Other,ASD,5.4,Moderate,9.8,High,9.3,High,10,High,5.7,Moderate,High,Maintain current learning strategy
+S0569,16,M,Autism,6.6,Moderate,3,Low,9,High,3.7,Low,6.4,Moderate,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0570,11,M,Dyspraxia,3.8,Low,4.8,Low,4.3,Low,4.8,Low,4.9,Low,Low,"Use memory games, Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0571,14,M,Dyslexia,4.9,Low,7.7,High,3.8,Low,6.4,Moderate,8.4,High,Moderate,"Use memory games, Include logical puzzles"
+S0572,15,Other,Autism,5,Moderate,4.6,Low,5.5,Moderate,8.4,High,6.4,Moderate,Moderate,Apply visual math tools
+S0573,12,F,ASD,4.9,Low,7,High,3.8,Low,7.4,High,6.8,Moderate,Moderate,"Use memory games, Include logical puzzles"
+S0574,18,Other,ASD,5.4,Moderate,4.3,Low,4.2,Low,7.1,High,8.5,High,Moderate,"Apply visual math tools, Include logical puzzles"
+S0575,15,Other,ADHD,4.7,Low,6.9,Moderate,1.8,Low,4.8,Low,5.9,Moderate,Low,"Use memory games, Include logical puzzles, Incorporate motor skill exercises"
+S0576,9,M,ASD,4.2,Low,4.1,Low,4.7,Low,6.6,Moderate,5.6,Moderate,Moderate,"Use memory games, Apply visual math tools, Include logical puzzles"
+S0577,14,Other,ADHD,1.5,Low,1.8,Low,4.8,Low,6.9,Moderate,1,Low,Low,"Use memory games, Apply visual math tools, Include logical puzzles, Use peer modeling and social stories"
+S0578,10,Other,Dyspraxia,5,Moderate,4.9,Low,8.8,High,5.2,Moderate,6.8,Moderate,Moderate,Apply visual math tools
+S0579,12,F,Autism,6.3,Moderate,1.7,Low,7.5,High,6.4,Moderate,7,High,Moderate,Apply visual math tools
+S0580,14,Other,Dyspraxia,10,High,1.8,Low,9.4,High,5.4,Moderate,6.6,Moderate,Moderate,Apply visual math tools
+S0581,15,F,Autism,5.9,Moderate,5.2,Moderate,4.9,Low,6.7,Moderate,3,Low,Moderate,"Include logical puzzles, Use peer modeling and social stories"
+S0582,17,Other,ADHD,7.5,High,5.2,Moderate,3.7,Low,5.1,Moderate,8.5,High,Moderate,Include logical puzzles
+S0583,18,Other,ADHD,4.9,Low,6.7,Moderate,4.5,Low,7.5,High,7.4,High,Moderate,"Use memory games, Include logical puzzles"
+S0584,15,F,ADHD,9.7,High,5.6,Moderate,7.3,High,6.2,Moderate,8.6,High,High,Maintain current learning strategy
+S0585,17,M,Dyslexia,4.6,Low,7.5,High,5.6,Moderate,5.9,Moderate,6.2,Moderate,Moderate,Use memory games
+S0586,10,Other,ASD,6.5,Moderate,5.8,Moderate,6.4,Moderate,9.2,High,8,High,High,Maintain current learning strategy
+S0587,12,F,Dyspraxia,7.7,High,5.1,Moderate,4.2,Low,7.9,High,7.8,High,Moderate,Include logical puzzles
+S0588,10,F,Dyslexia,8.9,High,4.8,Low,5.5,Moderate,2.7,Low,5.2,Moderate,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0589,10,F,Dyspraxia,8,High,5.1,Moderate,7.3,High,5.6,Moderate,6.6,Moderate,Moderate,Maintain current learning strategy
+S0590,12,Other,Dyspraxia,3.7,Low,6.2,Moderate,1,Low,5.6,Moderate,2.7,Low,Low,"Use memory games, Include logical puzzles, Use peer modeling and social stories"
+S0591,16,Other,Autism,8.4,High,7.6,High,6.9,Moderate,9,High,4.1,Low,High,Use peer modeling and social stories
+S0592,11,F,Dyspraxia,9.5,High,7.9,High,5.5,Moderate,8.3,High,3.8,Low,High,Use peer modeling and social stories
+S0593,13,F,ASD,4.4,Low,4.8,Low,4.9,Low,3.9,Low,8.4,High,Moderate,"Use memory games, Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises"
+S0594,17,Other,Autism,5.5,Moderate,6.7,Moderate,4.9,Low,2.4,Low,6.5,Moderate,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0595,17,F,ADHD,2.2,Low,5.9,Moderate,3.3,Low,10,High,7.8,High,Moderate,"Use memory games, Include logical puzzles"
+S0596,15,Other,ADHD,6.2,Moderate,8.5,High,4.3,Low,7.1,High,6.4,Moderate,Moderate,Include logical puzzles
+S0597,14,M,Autism,6.5,Moderate,8.5,High,7.5,High,6.6,Moderate,2.7,Low,Moderate,Use peer modeling and social stories
+S0598,10,F,Dyspraxia,4.1,Low,5.8,Moderate,6.2,Moderate,3.7,Low,10,High,Moderate,"Use memory games, Incorporate motor skill exercises"
+S0599,11,Other,ADHD,9,High,7.2,High,6.1,Moderate,5.6,Moderate,4.1,Low,Moderate,Use peer modeling and social stories
+S0600,14,Other,ADHD,6.2,Moderate,6.5,Moderate,3.5,Low,6.7,Moderate,5.7,Moderate,Moderate,Include logical puzzles
+S0601,13,F,ADHD,2.2,Low,4.3,Low,5.2,Moderate,9.8,High,7.1,High,Moderate,"Use memory games, Apply visual math tools"
+S0602,10,F,ASD,3.3,Low,7,High,2.9,Low,8.2,High,5.1,Moderate,Moderate,"Use memory games, Include logical puzzles"
+S0603,14,Other,ASD,5.8,Moderate,8.7,High,3.4,Low,3.2,Low,4.8,Low,Moderate,"Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0604,11,Other,Autism,8.1,High,3,Low,1,Low,5.1,Moderate,7.1,High,Low,"Apply visual math tools, Include logical puzzles"
+S0605,13,M,ADHD,8.4,High,5.1,Moderate,5.2,Moderate,8.3,High,2.3,Low,Moderate,Use peer modeling and social stories
+S0606,8,F,Dyslexia,5.2,Moderate,6.4,Moderate,6.9,Moderate,5,Moderate,6.1,Moderate,Moderate,Maintain current learning strategy
+S0607,16,M,Dyspraxia,1,Low,4.7,Low,6.9,Moderate,4,Low,6.1,Moderate,Low,"Use memory games, Apply visual math tools, Incorporate motor skill exercises"
+S0608,10,F,Dyslexia,6.9,Moderate,5.3,Moderate,6.3,Moderate,4.1,Low,5.6,Moderate,Moderate,Incorporate motor skill exercises
+S0609,13,Other,ASD,7.2,High,6.3,Moderate,4.8,Low,6.4,Moderate,7.4,High,Moderate,Include logical puzzles
+S0610,11,F,Autism,1.9,Low,8.3,High,5.3,Moderate,6.9,Moderate,8.4,High,Moderate,Use memory games
+S0611,15,Other,Dyspraxia,3.3,Low,4.6,Low,5.4,Moderate,4.4,Low,9.5,High,Moderate,"Use memory games, Apply visual math tools, Incorporate motor skill exercises"
+S0612,8,M,Autism,4.3,Low,4.9,Low,6.4,Moderate,3.6,Low,5.2,Moderate,Low,"Use memory games, Apply visual math tools, Incorporate motor skill exercises"
+S0613,8,M,ADHD,6.6,Moderate,5.3,Moderate,5.8,Moderate,4.9,Low,3,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0614,17,F,ASD,6.6,Moderate,9.5,High,6,Moderate,6.5,Moderate,7.4,High,High,Maintain current learning strategy
+S0615,10,Other,ADHD,3.5,Low,9.4,High,6.4,Moderate,9.3,High,4.5,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0616,11,M,Dyslexia,9.6,High,7.6,High,7.1,High,6.5,Moderate,5.5,Moderate,High,Maintain current learning strategy
+S0617,18,M,Dyspraxia,8.4,High,6.3,Moderate,2.1,Low,3.8,Low,5.6,Moderate,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0618,11,F,ADHD,6.6,Moderate,5.9,Moderate,8.4,High,2.1,Low,6.3,Moderate,Moderate,Incorporate motor skill exercises
+S0619,16,Other,ASD,2.4,Low,7.5,High,5.8,Moderate,6.8,Moderate,4.3,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0620,13,M,ADHD,8.6,High,8.1,High,7.2,High,5.7,Moderate,7.2,High,High,Maintain current learning strategy
+S0621,8,Other,ASD,4.6,Low,7.7,High,9.3,High,8.1,High,4.5,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0622,11,F,Autism,6.7,Moderate,3.4,Low,7.1,High,6.9,Moderate,2.3,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0623,17,M,ASD,3.7,Low,5.4,Moderate,5.4,Moderate,3.6,Low,6.8,Moderate,Low,"Use memory games, Incorporate motor skill exercises"
+S0624,15,Other,Dyslexia,6.5,Moderate,5.6,Moderate,4.5,Low,8.1,High,9.3,High,Moderate,Include logical puzzles
+S0625,16,F,Dyslexia,5,Moderate,4.8,Low,7,High,5.3,Moderate,5.7,Moderate,Moderate,Apply visual math tools
+S0626,16,F,Dyspraxia,7.5,High,2.2,Low,8.6,High,6.1,Moderate,5.2,Moderate,Moderate,Apply visual math tools
+S0627,9,Other,Autism,5.8,Moderate,5.9,Moderate,2.5,Low,9,High,6.1,Moderate,Moderate,Include logical puzzles
+S0628,18,F,Dyslexia,6.9,Moderate,7.9,High,4,Low,6.9,Moderate,5.5,Moderate,Moderate,Include logical puzzles
+S0629,10,M,ASD,7.7,High,1.7,Low,5.8,Moderate,4.8,Low,6.9,Moderate,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0630,8,Other,Autism,6.9,Moderate,4.6,Low,4.6,Low,5.8,Moderate,4.2,Low,Moderate,"Apply visual math tools, Include logical puzzles, Use peer modeling and social stories"
+S0631,17,Other,Dyslexia,7.7,High,5.3,Moderate,1,Low,5.3,Moderate,3.9,Low,Low,"Include logical puzzles, Use peer modeling and social stories"
+S0632,11,M,Autism,2.7,Low,3.5,Low,6.2,Moderate,8.7,High,6.6,Moderate,Moderate,"Use memory games, Apply visual math tools"
+S0633,17,F,ADHD,4.8,Low,6.9,Moderate,5.1,Moderate,4.6,Low,3.7,Low,Moderate,"Use memory games, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0634,10,Other,ASD,2.5,Low,5.2,Moderate,6.3,Moderate,5.8,Moderate,5.2,Moderate,Moderate,Use memory games
+S0635,18,M,Dyspraxia,4.1,Low,7.2,High,3.4,Low,7.6,High,4,Low,Moderate,"Use memory games, Include logical puzzles, Use peer modeling and social stories"
+S0636,8,F,ADHD,4.5,Low,3.1,Low,5,Moderate,8,High,7,High,Moderate,"Use memory games, Apply visual math tools"
+S0637,18,Other,Dyspraxia,8,High,7,High,3.8,Low,5.3,Moderate,4.4,Low,Moderate,"Include logical puzzles, Use peer modeling and social stories"
+S0638,11,Other,ADHD,8.7,High,3.6,Low,7.8,High,7.8,High,9.7,High,High,Apply visual math tools
+S0639,13,Other,ASD,5.2,Moderate,7.4,High,10,High,4.8,Low,2.9,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0640,12,Other,Dyslexia,2.2,Low,7.4,High,2.2,Low,5.3,Moderate,6.9,Moderate,Low,"Use memory games, Include logical puzzles"
+S0641,18,M,Autism,6.4,Moderate,6.9,Moderate,6.4,Moderate,8.6,High,4.1,Low,Moderate,Use peer modeling and social stories
+S0642,16,F,ADHD,4.6,Low,4.5,Low,7.7,High,7.8,High,6.9,Moderate,Moderate,"Use memory games, Apply visual math tools"
+S0643,10,F,ASD,8.4,High,3.6,Low,9.3,High,9,High,7.5,High,High,Apply visual math tools
+S0644,15,F,Autism,9.6,High,2.7,Low,5,Moderate,4.5,Low,7.4,High,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0645,11,M,ADHD,3.9,Low,7.5,High,8.7,High,7.4,High,6.6,Moderate,Moderate,Use memory games
+S0646,15,Other,ASD,4,Low,4.3,Low,8.5,High,7.6,High,5.9,Moderate,Moderate,"Use memory games, Apply visual math tools"
+S0647,9,M,ADHD,5.2,Moderate,1.9,Low,3.9,Low,9.8,High,3.4,Low,Low,"Apply visual math tools, Include logical puzzles, Use peer modeling and social stories"
+S0648,16,F,Autism,6.4,Moderate,8,High,3.5,Low,6.4,Moderate,7.9,High,Moderate,Include logical puzzles
+S0649,9,M,Dyslexia,6,Moderate,10,High,2.7,Low,8.1,High,5.7,Moderate,Moderate,Include logical puzzles
+S0650,10,Other,ADHD,7.5,High,6.9,Moderate,4.5,Low,6.5,Moderate,2.3,Low,Moderate,"Include logical puzzles, Use peer modeling and social stories"
+S0651,11,Other,Autism,7.2,High,6.6,Moderate,7.3,High,8.1,High,6.7,Moderate,High,Maintain current learning strategy
+S0652,8,M,Dyslexia,6.3,Moderate,4.2,Low,4.6,Low,8.4,High,8.9,High,Moderate,"Apply visual math tools, Include logical puzzles"
+S0653,12,F,Autism,5.5,Moderate,6.1,Moderate,4.2,Low,8.3,High,7.3,High,Moderate,Include logical puzzles
+S0654,14,M,Dyspraxia,9.9,High,4.2,Low,5.2,Moderate,6.5,Moderate,7.3,High,Moderate,Apply visual math tools
+S0655,10,M,Dyslexia,5.6,Moderate,4.3,Low,7.8,High,7.4,High,4.2,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0656,9,M,ASD,8.7,High,8.3,High,6.3,Moderate,6.2,Moderate,7.1,High,High,Maintain current learning strategy
+S0657,14,Other,ADHD,4.3,Low,6.1,Moderate,1.7,Low,7.8,High,2.9,Low,Low,"Use memory games, Include logical puzzles, Use peer modeling and social stories"
+S0658,9,F,ASD,9,High,5.3,Moderate,5.6,Moderate,4.7,Low,5.4,Moderate,Moderate,Incorporate motor skill exercises
+S0659,15,M,ADHD,8.8,High,1,Low,8.6,High,6.7,Moderate,3.6,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0660,15,M,ASD,3.8,Low,9.4,High,4.1,Low,3.7,Low,8.3,High,Moderate,"Use memory games, Include logical puzzles, Incorporate motor skill exercises"
+S0661,12,M,ASD,6.7,Moderate,4.1,Low,6.4,Moderate,3.9,Low,8.2,High,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0662,9,M,Dyslexia,8.1,High,7.1,High,6.7,Moderate,9.5,High,6,Moderate,High,Maintain current learning strategy
+S0663,8,Other,Dyslexia,3.6,Low,6.9,Moderate,10,High,4,Low,5.3,Moderate,Moderate,"Use memory games, Incorporate motor skill exercises"
+S0664,15,Other,Dyspraxia,6.8,Moderate,5.9,Moderate,4,Low,8.2,High,10,High,Moderate,Include logical puzzles
+S0665,13,Other,ADHD,6.4,Moderate,4.2,Low,2.9,Low,6.5,Moderate,8.2,High,Moderate,"Apply visual math tools, Include logical puzzles"
+S0666,9,F,Dyspraxia,7,High,6,Moderate,4.8,Low,3.8,Low,7.7,High,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0667,17,M,Dyspraxia,7.8,High,2.9,Low,9.2,High,7.1,High,8.8,High,High,Apply visual math tools
+S0668,16,Other,ADHD,3.3,Low,3.3,Low,5.7,Moderate,7,High,9.6,High,Moderate,"Use memory games, Apply visual math tools"
+S0669,18,F,ADHD,7.4,High,5.5,Moderate,3.9,Low,8.5,High,4.1,Low,Moderate,"Include logical puzzles, Use peer modeling and social stories"
+S0670,17,M,Dyslexia,9.3,High,5.4,Moderate,9.2,High,7.4,High,5.7,Moderate,High,Maintain current learning strategy
+S0671,12,Other,ASD,5,Moderate,5.3,Moderate,6.9,Moderate,6.2,Moderate,4.8,Low,Moderate,Use peer modeling and social stories
+S0672,11,M,Dyspraxia,5.7,Moderate,6.2,Moderate,1.7,Low,6.9,Moderate,4,Low,Low,"Include logical puzzles, Use peer modeling and social stories"
+S0673,12,Other,Dyslexia,3.7,Low,2.6,Low,2.4,Low,3.3,Low,4.6,Low,Low,"Use memory games, Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0674,10,M,Dyspraxia,9.9,High,4.9,Low,6.4,Moderate,6.8,Moderate,6.3,Moderate,Moderate,Apply visual math tools
+S0675,8,M,Dyslexia,5.8,Moderate,3.6,Low,8.9,High,9.6,High,2.6,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0676,16,F,ASD,4,Low,5.4,Moderate,4.1,Low,7,High,4.5,Low,Moderate,"Use memory games, Include logical puzzles, Use peer modeling and social stories"
+S0677,15,F,ASD,10,High,8.4,High,6.4,Moderate,8.1,High,8.2,High,High,Maintain current learning strategy
+S0678,14,M,ASD,4.9,Low,4.4,Low,6.2,Moderate,7.7,High,6.3,Moderate,Moderate,"Use memory games, Apply visual math tools"
+S0679,12,F,Dyslexia,2.8,Low,4.4,Low,5.9,Moderate,5.8,Moderate,9.9,High,Moderate,"Use memory games, Apply visual math tools"
+S0680,8,M,Autism,3.2,Low,7,High,9,High,10,High,5.2,Moderate,Moderate,Use memory games
+S0681,17,M,Autism,7,High,7.1,High,6.4,Moderate,5.8,Moderate,6.9,Moderate,Moderate,Maintain current learning strategy
+S0682,9,Other,Autism,1,Low,7.4,High,6.3,Moderate,5.6,Moderate,10,High,Moderate,Use memory games
+S0683,8,M,ADHD,4.7,Low,5.2,Moderate,10,High,4.3,Low,4.9,Low,Moderate,"Use memory games, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0684,14,M,Autism,5.7,Moderate,7.7,High,6.4,Moderate,3.4,Low,4.9,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0685,18,F,ADHD,4.8,Low,5.8,Moderate,6.9,Moderate,6.8,Moderate,2.4,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0686,15,M,ASD,8.1,High,6.5,Moderate,8.8,High,6.9,Moderate,8.2,High,High,Maintain current learning strategy
+S0687,11,Other,ADHD,6.9,Moderate,8.7,High,7,High,5.8,Moderate,10,High,High,Maintain current learning strategy
+S0688,14,Other,Dyspraxia,7.8,High,7.1,High,3.4,Low,3.4,Low,6.6,Moderate,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0689,9,M,ADHD,6.3,Moderate,4.8,Low,6.3,Moderate,9.2,High,7.4,High,Moderate,Apply visual math tools
+S0690,17,F,ADHD,3.7,Low,5.8,Moderate,4.4,Low,5.2,Moderate,5.2,Moderate,Low,"Use memory games, Include logical puzzles"
+S0691,16,Other,ASD,5,Moderate,3.5,Low,5.7,Moderate,4.9,Low,1,Low,Low,"Apply visual math tools, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0692,15,F,ADHD,10,High,8.2,High,5.2,Moderate,6,Moderate,3.7,Low,Moderate,Use peer modeling and social stories
+S0693,17,M,ADHD,9.4,High,9.8,High,6.3,Moderate,8,High,6.4,Moderate,High,Maintain current learning strategy
+S0694,17,Other,ADHD,3.3,Low,5.2,Moderate,6.3,Moderate,5.1,Moderate,5.6,Moderate,Moderate,Use memory games
+S0695,14,Other,ADHD,5.8,Moderate,5.8,Moderate,6.1,Moderate,3.9,Low,4.6,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0696,12,Other,Dyslexia,3.4,Low,8,High,1.8,Low,8.3,High,8.8,High,Moderate,"Use memory games, Include logical puzzles"
+S0697,17,M,ASD,5.4,Moderate,1,Low,5.3,Moderate,5.9,Moderate,4,Low,Low,"Apply visual math tools, Use peer modeling and social stories"
+S0698,13,M,ASD,5,Moderate,9.1,High,7.3,High,4.2,Low,2.8,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0699,10,M,Autism,5.3,Moderate,5.6,Moderate,7,High,4.9,Low,7,High,Moderate,Incorporate motor skill exercises
+S0700,17,F,Dyslexia,9.9,High,7.6,High,5.9,Moderate,5.6,Moderate,5.3,Moderate,Moderate,Maintain current learning strategy
+S0701,12,F,Dyspraxia,8.4,High,4.7,Low,6.1,Moderate,6.1,Moderate,5,Moderate,Moderate,Apply visual math tools
+S0702,13,M,Dyspraxia,3.3,Low,6.6,Moderate,5.9,Moderate,7,High,4.9,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0703,17,Other,Dyslexia,8.4,High,4.2,Low,9.4,High,2.5,Low,6.9,Moderate,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0704,9,Other,Autism,7,High,4.4,Low,6.8,Moderate,8.6,High,1.6,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0705,8,F,ADHD,7,High,1,Low,4.1,Low,9.3,High,4.8,Low,Moderate,"Apply visual math tools, Include logical puzzles, Use peer modeling and social stories"
+S0706,11,F,Dyslexia,3.7,Low,5.6,Moderate,10,High,2.3,Low,3.9,Low,Moderate,"Use memory games, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0707,9,F,ADHD,9,High,9.7,High,5.8,Moderate,3.5,Low,10,High,High,Incorporate motor skill exercises
+S0708,18,Other,ASD,9.2,High,7.4,High,4.4,Low,5.9,Moderate,5.7,Moderate,Moderate,Include logical puzzles
+S0709,13,M,Dyslexia,6.7,Moderate,8.9,High,7.8,High,3.8,Low,8.8,High,High,Incorporate motor skill exercises
+S0710,14,M,ADHD,6.6,Moderate,7.4,High,8.9,High,3.8,Low,5.9,Moderate,Moderate,Incorporate motor skill exercises
+S0711,13,F,ASD,4.9,Low,2.9,Low,6.7,Moderate,10,High,2.3,Low,Moderate,"Use memory games, Apply visual math tools, Use peer modeling and social stories"
+S0712,16,F,Dyslexia,5.9,Moderate,7.3,High,6.2,Moderate,5.8,Moderate,3.4,Low,Moderate,Use peer modeling and social stories
+S0713,11,F,ASD,6.5,Moderate,4.5,Low,1.6,Low,8.4,High,7.9,High,Moderate,"Apply visual math tools, Include logical puzzles"
+S0714,17,Other,Autism,6.1,Moderate,6.5,Moderate,8.1,High,6.4,Moderate,7.8,High,Moderate,Maintain current learning strategy
+S0715,14,Other,ADHD,5.4,Moderate,8.6,High,6.6,Moderate,6.4,Moderate,3.5,Low,Moderate,Use peer modeling and social stories
+S0716,11,M,Dyslexia,6.6,Moderate,4.3,Low,4.7,Low,4.4,Low,3.9,Low,Low,"Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0717,13,F,Dyslexia,10,High,8.7,High,9.8,High,3.6,Low,6.1,Moderate,High,Incorporate motor skill exercises
+S0718,11,Other,Autism,3.4,Low,4.6,Low,4.2,Low,8.5,High,5.2,Moderate,Moderate,"Use memory games, Apply visual math tools, Include logical puzzles"
+S0719,8,F,ADHD,8.1,High,7.2,High,10,High,3,Low,8.5,High,High,Incorporate motor skill exercises
+S0720,15,Other,ADHD,8.3,High,4.1,Low,8,High,6.7,Moderate,5.5,Moderate,Moderate,Apply visual math tools
+S0721,17,M,Autism,4.4,Low,4.6,Low,10,High,6,Moderate,7.6,High,Moderate,"Use memory games, Apply visual math tools"
+S0722,9,Other,ASD,4.4,Low,4.4,Low,8.2,High,3.3,Low,5.2,Moderate,Moderate,"Use memory games, Apply visual math tools, Incorporate motor skill exercises"
+S0723,14,F,Dyslexia,6.1,Moderate,6.2,Moderate,5.6,Moderate,6.8,Moderate,7.4,High,Moderate,Maintain current learning strategy
+S0724,11,M,ADHD,7.5,High,4,Low,5.4,Moderate,8.4,High,7.8,High,Moderate,Apply visual math tools
+S0725,11,M,Dyspraxia,3.3,Low,6.7,Moderate,2,Low,6.1,Moderate,9.8,High,Moderate,"Use memory games, Include logical puzzles"
+S0726,15,Other,Dyspraxia,4.1,Low,4.3,Low,7.5,High,2.9,Low,4.7,Low,Low,"Use memory games, Apply visual math tools, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0727,15,M,Dyslexia,7.2,High,4.7,Low,5.5,Moderate,7.5,High,6.8,Moderate,Moderate,Apply visual math tools
+S0728,8,F,Dyslexia,6.5,Moderate,5.3,Moderate,6.7,Moderate,5.8,Moderate,6.9,Moderate,Moderate,Maintain current learning strategy
+S0729,15,F,Autism,5,Moderate,5.6,Moderate,4,Low,5.9,Moderate,4.4,Low,Low,"Include logical puzzles, Use peer modeling and social stories"
+S0730,18,Other,Dyspraxia,3.8,Low,6.5,Moderate,6.4,Moderate,7.6,High,5.1,Moderate,Moderate,Use memory games
+S0731,13,M,Dyslexia,6.8,Moderate,7.1,High,6.9,Moderate,4.3,Low,6.3,Moderate,Moderate,Incorporate motor skill exercises
+S0732,11,Other,ASD,6.7,Moderate,6,Moderate,1.8,Low,6.3,Moderate,10,High,Moderate,Include logical puzzles
+S0733,12,Other,ASD,5.3,Moderate,4.5,Low,6.7,Moderate,6.6,Moderate,8.4,High,Moderate,Apply visual math tools
+S0734,9,Other,Dyspraxia,3.5,Low,7.5,High,7.2,High,5.7,Moderate,6.7,Moderate,Moderate,Use memory games
+S0735,10,M,Autism,8.1,High,7.7,High,3.7,Low,7.6,High,5.9,Moderate,Moderate,Include logical puzzles
+S0736,11,Other,Dyslexia,6.1,Moderate,6.1,Moderate,5.7,Moderate,8.4,High,5.8,Moderate,Moderate,Maintain current learning strategy
+S0737,13,M,Autism,3.8,Low,5.2,Moderate,6.4,Moderate,8.5,High,7.2,High,Moderate,Use memory games
+S0738,15,Other,ADHD,4.3,Low,10,High,6.5,Moderate,8.6,High,5.7,Moderate,High,Use memory games
+S0739,17,F,ADHD,7.1,High,7.7,High,8.4,High,8.1,High,7.7,High,High,Maintain current learning strategy
+S0740,10,M,ADHD,5.4,Moderate,4.9,Low,6.7,Moderate,7.9,High,5.6,Moderate,Moderate,Apply visual math tools
+S0741,14,Other,Dyslexia,8.1,High,8.9,High,4.2,Low,4.3,Low,5.7,Moderate,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0742,16,M,ASD,6.6,Moderate,5,Moderate,8.7,High,6.8,Moderate,6.1,Moderate,Moderate,Maintain current learning strategy
+S0743,10,M,ADHD,3.1,Low,3.4,Low,6.6,Moderate,1.7,Low,8,High,Low,"Use memory games, Apply visual math tools, Incorporate motor skill exercises"
+S0744,17,Other,Dyslexia,5.7,Moderate,10,High,10,High,5.6,Moderate,5.8,Moderate,High,Maintain current learning strategy
+S0745,14,Other,Dyslexia,8,High,9.4,High,2.7,Low,2.4,Low,4.8,Low,Moderate,"Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0746,16,F,Dyslexia,7.2,High,7,High,8.1,High,3.6,Low,1.4,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0747,17,Other,Dyslexia,7.7,High,4.3,Low,2,Low,6.3,Moderate,7.6,High,Moderate,"Apply visual math tools, Include logical puzzles"
+S0748,17,F,Autism,5.8,Moderate,5.1,Moderate,5.7,Moderate,5.3,Moderate,3.3,Low,Moderate,Use peer modeling and social stories
+S0749,11,M,Dyspraxia,4.6,Low,7,High,6.6,Moderate,6.3,Moderate,4,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0750,10,F,ASD,5.6,Moderate,1.6,Low,6.4,Moderate,8.9,High,3.1,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0751,11,Other,ASD,4.8,Low,6.7,Moderate,8.5,High,5.1,Moderate,4.6,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0752,17,M,Dyspraxia,2.1,Low,6.2,Moderate,10,High,6.6,Moderate,6,Moderate,Moderate,Use memory games
+S0753,13,M,ADHD,6.6,Moderate,6,Moderate,4.4,Low,7.6,High,6.5,Moderate,Moderate,Include logical puzzles
+S0754,17,Other,Dyspraxia,6,Moderate,4,Low,8.6,High,7.3,High,4.9,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0755,12,Other,Dyspraxia,8,High,5,Moderate,4.4,Low,4.5,Low,2.5,Low,Low,"Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0756,18,M,Dyspraxia,6.9,Moderate,2.3,Low,3.5,Low,1.8,Low,5.8,Moderate,Low,"Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises"
+S0757,18,Other,Dyspraxia,5.7,Moderate,5.3,Moderate,3.9,Low,3.7,Low,6.9,Moderate,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0758,12,F,Dyspraxia,4.9,Low,6.6,Moderate,4.2,Low,6.4,Moderate,8.6,High,Moderate,"Use memory games, Include logical puzzles"
+S0759,11,M,ASD,7.2,High,5.2,Moderate,6.5,Moderate,5.5,Moderate,6,Moderate,Moderate,Maintain current learning strategy
+S0760,12,M,ADHD,5.3,Moderate,5.7,Moderate,6.4,Moderate,4,Low,4,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0761,9,M,Dyslexia,3.2,Low,2.8,Low,3.6,Low,6.3,Moderate,4.2,Low,Low,"Use memory games, Apply visual math tools, Include logical puzzles, Use peer modeling and social stories"
+S0762,14,Other,ADHD,7,High,6.1,Moderate,2.1,Low,7.3,High,7.6,High,Moderate,Include logical puzzles
+S0763,13,M,ADHD,4,Low,6.8,Moderate,4.3,Low,6.2,Moderate,3.5,Low,Low,"Use memory games, Include logical puzzles, Use peer modeling and social stories"
+S0764,11,M,ASD,2.4,Low,5.2,Moderate,5.8,Moderate,5.2,Moderate,3.6,Low,Low,"Use memory games, Use peer modeling and social stories"
+S0765,15,M,ASD,5.2,Moderate,6.5,Moderate,5.9,Moderate,6.4,Moderate,4.7,Low,Moderate,Use peer modeling and social stories
+S0766,13,M,Autism,8.3,High,3.6,Low,7,High,8.4,High,7,High,Moderate,Apply visual math tools
+S0767,16,F,ASD,5.6,Moderate,4.9,Low,8.1,High,3.2,Low,4.1,Low,Moderate,"Apply visual math tools, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0768,14,Other,Dyspraxia,5.2,Moderate,8.5,High,6.8,Moderate,4.1,Low,5.4,Moderate,Moderate,Incorporate motor skill exercises
+S0769,8,M,Dyspraxia,4.8,Low,4.6,Low,8,High,3.3,Low,9.2,High,Moderate,"Use memory games, Apply visual math tools, Incorporate motor skill exercises"
+S0770,10,Other,ADHD,7.7,High,8.2,High,5.1,Moderate,5.7,Moderate,3.1,Low,Moderate,Use peer modeling and social stories
+S0771,10,Other,Autism,5,Moderate,7,High,8.6,High,3.8,Low,5.3,Moderate,Moderate,Incorporate motor skill exercises
+S0772,9,Other,ASD,5.7,Moderate,3.2,Low,7.2,High,4.6,Low,5.6,Moderate,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0773,15,F,Dyspraxia,5.1,Moderate,4.4,Low,6,Moderate,5.6,Moderate,5.3,Moderate,Moderate,Apply visual math tools
+S0774,8,Other,Dyslexia,4.5,Low,6.6,Moderate,9.3,High,6.3,Moderate,8,High,Moderate,Use memory games
+S0775,12,Other,ADHD,3.2,Low,6.3,Moderate,3.8,Low,3,Low,4.5,Low,Low,"Use memory games, Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0776,18,F,ADHD,8.4,High,7.9,High,6.5,Moderate,2.9,Low,5.6,Moderate,Moderate,Incorporate motor skill exercises
+S0777,8,F,Dyspraxia,6.6,Moderate,6.4,Moderate,2.3,Low,4.2,Low,5.9,Moderate,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0778,12,Other,Dyspraxia,7.1,High,1.6,Low,5.7,Moderate,6.3,Moderate,7.7,High,Moderate,Apply visual math tools
+S0779,16,M,ASD,7.4,High,7.2,High,4.4,Low,2.2,Low,5.2,Moderate,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0780,8,M,ADHD,8,High,8.8,High,7.4,High,6.9,Moderate,6.8,Moderate,High,Maintain current learning strategy
+S0781,13,Other,ADHD,4.9,Low,5.7,Moderate,9.3,High,4.1,Low,9.2,High,Moderate,"Use memory games, Incorporate motor skill exercises"
+S0782,11,M,ADHD,5.4,Moderate,8.7,High,3.2,Low,7.2,High,4.5,Low,Moderate,"Include logical puzzles, Use peer modeling and social stories"
+S0783,12,M,Dyspraxia,3.2,Low,6.4,Moderate,8,High,4.3,Low,3,Low,Low,"Use memory games, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0784,12,Other,Dyspraxia,5.8,Moderate,5.8,Moderate,7.1,High,7.9,High,5.9,Moderate,Moderate,Maintain current learning strategy
+S0785,10,F,Autism,9.7,High,6.4,Moderate,5.3,Moderate,2.8,Low,5.5,Moderate,Moderate,Incorporate motor skill exercises
+S0786,16,F,ADHD,5.3,Moderate,7.9,High,6.9,Moderate,3.6,Low,6.3,Moderate,Moderate,Incorporate motor skill exercises
+S0787,8,F,ADHD,7.3,High,9.1,High,7.8,High,7.5,High,6.1,Moderate,High,Maintain current learning strategy
+S0788,11,F,Dyslexia,6.8,Moderate,8.5,High,3.3,Low,5.3,Moderate,4.5,Low,Moderate,"Include logical puzzles, Use peer modeling and social stories"
+S0789,16,Other,ASD,6.8,Moderate,8.5,High,4.8,Low,1.2,Low,5.2,Moderate,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0790,13,M,Dyslexia,7.8,High,7.1,High,6.9,Moderate,5.4,Moderate,3.4,Low,Moderate,Use peer modeling and social stories
+S0791,8,F,Autism,7,High,4.3,Low,10,High,7.1,High,4.8,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0792,11,Other,Autism,4.8,Low,5.8,Moderate,5.5,Moderate,8.2,High,6.4,Moderate,Moderate,Use memory games
+S0793,11,M,ADHD,4.5,Low,9.8,High,6.1,Moderate,7.5,High,4.8,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0794,13,F,Dyspraxia,6.7,Moderate,6.6,Moderate,2.2,Low,10,High,8.6,High,Moderate,Include logical puzzles
+S0795,15,M,ADHD,5.2,Moderate,3.8,Low,6.7,Moderate,6.2,Moderate,6.7,Moderate,Moderate,Apply visual math tools
+S0796,10,F,Dyspraxia,6.4,Moderate,7,High,8.9,High,7.1,High,3.9,Low,Moderate,Use peer modeling and social stories
+S0797,11,M,ADHD,8.7,High,9.3,High,10,High,3.8,Low,6.5,Moderate,High,Incorporate motor skill exercises
+S0798,10,F,ASD,1.8,Low,7.1,High,4.9,Low,9.8,High,4.5,Low,Moderate,"Use memory games, Include logical puzzles, Use peer modeling and social stories"
+S0799,18,Other,ASD,2.6,Low,5.1,Moderate,2,Low,7.5,High,1.9,Low,Low,"Use memory games, Include logical puzzles, Use peer modeling and social stories"
+S0800,9,M,ASD,6.1,Moderate,1.8,Low,5.4,Moderate,9.3,High,6.7,Moderate,Moderate,Apply visual math tools
+S0801,15,F,ADHD,4.3,Low,5.9,Moderate,6,Moderate,6.9,Moderate,3.3,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0802,10,F,Autism,7.2,High,1,Low,4.7,Low,5,Moderate,7.3,High,Moderate,"Apply visual math tools, Include logical puzzles"
+S0803,16,Other,Dyspraxia,6,Moderate,3.2,Low,4,Low,6.4,Moderate,5.8,Moderate,Moderate,"Apply visual math tools, Include logical puzzles"
+S0804,9,F,ASD,4.8,Low,5,Moderate,7.4,High,5,Moderate,5.8,Moderate,Moderate,Use memory games
+S0805,15,Other,Dyslexia,10,High,3.2,Low,2.3,Low,7.6,High,4.6,Low,Moderate,"Apply visual math tools, Include logical puzzles, Use peer modeling and social stories"
+S0806,8,F,Dyspraxia,5.4,Moderate,4.4,Low,5.5,Moderate,9.2,High,7.6,High,Moderate,Apply visual math tools
+S0807,11,Other,Dyslexia,7.7,High,3.2,Low,3.7,Low,1,Low,4.4,Low,Low,"Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0808,17,M,Dyslexia,7.9,High,7,High,5.6,Moderate,6,Moderate,4.6,Low,Moderate,Use peer modeling and social stories
+S0809,18,F,Dyspraxia,6.4,Moderate,7.5,High,2.8,Low,6.6,Moderate,7.9,High,Moderate,Include logical puzzles
+S0810,11,Other,Autism,5.2,Moderate,7.4,High,10,High,5.8,Moderate,6.8,Moderate,High,Maintain current learning strategy
+S0811,12,F,Autism,4.5,Low,6.4,Moderate,6.9,Moderate,6.4,Moderate,4,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0812,14,F,ASD,6.4,Moderate,8.9,High,6.9,Moderate,7.9,High,5.5,Moderate,High,Maintain current learning strategy
+S0813,10,M,ASD,7.5,High,6.6,Moderate,4.1,Low,6.6,Moderate,4,Low,Moderate,"Include logical puzzles, Use peer modeling and social stories"
+S0814,16,M,Autism,4.7,Low,6.4,Moderate,6.6,Moderate,3.6,Low,8.1,High,Moderate,"Use memory games, Incorporate motor skill exercises"
+S0815,12,F,Autism,7.1,High,4.6,Low,2.9,Low,5.7,Moderate,5.1,Moderate,Moderate,"Apply visual math tools, Include logical puzzles"
+S0816,12,M,Dyspraxia,6.2,Moderate,5.3,Moderate,2,Low,5.2,Moderate,5.4,Moderate,Low,Include logical puzzles
+S0817,11,M,Dyslexia,7.3,High,4.6,Low,9.4,High,2.2,Low,8.6,High,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0818,14,F,Dyspraxia,5.6,Moderate,7.7,High,6.2,Moderate,8.3,High,5.2,Moderate,Moderate,Maintain current learning strategy
+S0819,17,M,Dyslexia,3.8,Low,8.8,High,5.8,Moderate,6.4,Moderate,8.5,High,Moderate,Use memory games
+S0820,17,F,Dyspraxia,3.9,Low,7.2,High,4.8,Low,5.7,Moderate,6.1,Moderate,Moderate,"Use memory games, Include logical puzzles"
+S0821,10,Other,Autism,3,Low,4.4,Low,8.7,High,7.8,High,5.9,Moderate,Moderate,"Use memory games, Apply visual math tools"
+S0822,12,F,ADHD,6.5,Moderate,5.4,Moderate,8.7,High,5.6,Moderate,6.5,Moderate,Moderate,Maintain current learning strategy
+S0823,12,F,ASD,8.3,High,4.4,Low,9.1,High,2.9,Low,9.3,High,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0824,8,M,Dyspraxia,5.3,Moderate,5.5,Moderate,2.2,Low,5.1,Moderate,3.9,Low,Low,"Include logical puzzles, Use peer modeling and social stories"
+S0825,12,F,ASD,4.8,Low,5.7,Moderate,7.9,High,6.4,Moderate,6.6,Moderate,Moderate,Use memory games
+S0826,8,Other,ASD,3.8,Low,4.2,Low,9.6,High,4.5,Low,9.3,High,Moderate,"Use memory games, Apply visual math tools, Incorporate motor skill exercises"
+S0827,14,Other,ADHD,5.5,Moderate,6,Moderate,8.1,High,8.5,High,5.8,Moderate,Moderate,Maintain current learning strategy
+S0828,17,Other,Autism,5.2,Moderate,5.9,Moderate,6.7,Moderate,7.8,High,6,Moderate,Moderate,Maintain current learning strategy
+S0829,15,M,Dyslexia,7.2,High,9.3,High,6.8,Moderate,6.6,Moderate,3,Low,Moderate,Use peer modeling and social stories
+S0830,8,F,Dyspraxia,1,Low,6.8,Moderate,5.8,Moderate,5,Moderate,6.5,Moderate,Moderate,Use memory games
+S0831,15,Other,ADHD,5.9,Moderate,8.3,High,6.2,Moderate,4.5,Low,8,High,Moderate,Incorporate motor skill exercises
+S0832,14,M,Autism,5.6,Moderate,7.1,High,5,Moderate,4.7,Low,6.2,Moderate,Moderate,Incorporate motor skill exercises
+S0833,11,M,ADHD,6,Moderate,7,High,5.5,Moderate,2.3,Low,5.1,Moderate,Moderate,Incorporate motor skill exercises
+S0834,14,Other,ADHD,7.6,High,5.4,Moderate,5.5,Moderate,8,High,4.6,Low,Moderate,Use peer modeling and social stories
+S0835,14,F,Dyspraxia,2.9,Low,5.7,Moderate,5,Moderate,4.1,Low,5.6,Moderate,Low,"Use memory games, Incorporate motor skill exercises"
+S0836,10,M,Autism,7,High,6,Moderate,6.6,Moderate,9.6,High,5.3,Moderate,Moderate,Maintain current learning strategy
+S0837,12,M,Dyspraxia,6.6,Moderate,5,Moderate,4.3,Low,4.8,Low,5,Moderate,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0838,9,F,Autism,6.7,Moderate,10,High,4.6,Low,5.2,Moderate,5.9,Moderate,Moderate,Include logical puzzles
+S0839,11,Other,Dyspraxia,6.8,Moderate,6.5,Moderate,8.6,High,1.1,Low,1.2,Low,Low,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0840,11,F,Autism,5,Moderate,8.2,High,2.9,Low,1,Low,7.1,High,Low,"Include logical puzzles, Incorporate motor skill exercises"
+S0841,15,Other,ADHD,6.5,Moderate,3.8,Low,4,Low,4.1,Low,6.2,Moderate,Low,"Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises"
+S0842,8,Other,Dyspraxia,4.7,Low,7,High,1,Low,4.3,Low,3.7,Low,Low,"Use memory games, Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0843,15,M,Dyslexia,5.5,Moderate,4.9,Low,7.6,High,2.3,Low,6.1,Moderate,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0844,17,F,ASD,7.1,High,9.7,High,5,Moderate,6.6,Moderate,2.4,Low,Moderate,Use peer modeling and social stories
+S0845,12,F,ADHD,1.2,Low,7.7,High,6,Moderate,8.4,High,3.3,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0846,10,F,Dyspraxia,7,High,9.7,High,6.8,Moderate,6.6,Moderate,6,Moderate,High,Maintain current learning strategy
+S0847,9,Other,ASD,2.9,Low,8.7,High,4.8,Low,7,High,2.9,Low,Moderate,"Use memory games, Include logical puzzles, Use peer modeling and social stories"
+S0848,14,Other,Dyspraxia,3.6,Low,8.9,High,5.3,Moderate,8.9,High,5.8,Moderate,Moderate,Use memory games
+S0849,17,Other,ASD,2.3,Low,7.8,High,4.8,Low,7.4,High,6.1,Moderate,Moderate,"Use memory games, Include logical puzzles"
+S0850,16,Other,Dyspraxia,2.9,Low,6.3,Moderate,10,High,7,High,5.9,Moderate,Moderate,Use memory games
+S0851,12,M,Autism,8.2,High,6.4,Moderate,6.4,Moderate,3.8,Low,6.5,Moderate,Moderate,Incorporate motor skill exercises
+S0852,11,F,Dyspraxia,8.1,High,4.3,Low,8.8,High,5.8,Moderate,4.2,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0853,9,F,Dyspraxia,8,High,5.4,Moderate,7.5,High,5.4,Moderate,5.9,Moderate,Moderate,Maintain current learning strategy
+S0854,17,Other,ASD,7,High,6.6,Moderate,2,Low,3.8,Low,7.9,High,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0855,13,Other,Dyspraxia,5.7,Moderate,5,Moderate,3.3,Low,3.8,Low,2,Low,Low,"Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0856,17,Other,ASD,5.8,Moderate,4.8,Low,4.1,Low,5.9,Moderate,6.7,Moderate,Moderate,"Apply visual math tools, Include logical puzzles"
+S0857,14,F,ASD,10,High,3,Low,8.3,High,7.9,High,4.4,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0858,11,F,Dyspraxia,6.4,Moderate,5.1,Moderate,6.4,Moderate,9,High,7.2,High,Moderate,Maintain current learning strategy
+S0859,13,M,ASD,7,High,5.1,Moderate,3,Low,5.6,Moderate,8.4,High,Moderate,Include logical puzzles
+S0860,11,Other,Autism,2.9,Low,3.9,Low,6.3,Moderate,4,Low,4.4,Low,Low,"Use memory games, Apply visual math tools, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0861,14,M,Dyspraxia,5.2,Moderate,3.3,Low,4.1,Low,7.4,High,3.4,Low,Low,"Apply visual math tools, Include logical puzzles, Use peer modeling and social stories"
+S0862,13,Other,Autism,2.8,Low,4.7,Low,7.5,High,5.6,Moderate,5.1,Moderate,Moderate,"Use memory games, Apply visual math tools"
+S0863,11,F,Dyslexia,6.1,Moderate,2.5,Low,7,High,6.8,Moderate,5.2,Moderate,Moderate,Apply visual math tools
+S0864,18,F,Dyslexia,8,High,3.7,Low,8.3,High,6.3,Moderate,5.3,Moderate,Moderate,Apply visual math tools
+S0865,17,M,ADHD,6,Moderate,5.8,Moderate,8.4,High,3.8,Low,4.5,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0866,11,F,ASD,8.1,High,4.8,Low,7.8,High,9.4,High,5.2,Moderate,High,Apply visual math tools
+S0867,17,Other,Autism,7.4,High,3.7,Low,7.5,High,6.4,Moderate,6.9,Moderate,Moderate,Apply visual math tools
+S0868,8,Other,ADHD,4.7,Low,2.7,Low,7,High,1.9,Low,5.4,Moderate,Low,"Use memory games, Apply visual math tools, Incorporate motor skill exercises"
+S0869,8,Other,Dyspraxia,7.9,High,6.4,Moderate,9.9,High,8.1,High,4.7,Low,High,Use peer modeling and social stories
+S0870,18,M,Dyslexia,6.1,Moderate,5.9,Moderate,2.8,Low,4.1,Low,4.9,Low,Low,"Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0871,8,M,Autism,1.9,Low,6.1,Moderate,5.5,Moderate,2.7,Low,6.8,Moderate,Low,"Use memory games, Incorporate motor skill exercises"
+S0872,8,F,Dyslexia,7.4,High,6.5,Moderate,5.4,Moderate,7.2,High,7.4,High,Moderate,Maintain current learning strategy
+S0873,16,Other,Autism,6.6,Moderate,4.4,Low,6.6,Moderate,8.4,High,4.8,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0874,13,Other,Dyslexia,10,High,4.9,Low,6.1,Moderate,4.7,Low,6.4,Moderate,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0875,11,M,ADHD,2.5,Low,4.9,Low,3.8,Low,6.3,Moderate,8,High,Moderate,"Use memory games, Apply visual math tools, Include logical puzzles"
+S0876,15,M,ASD,7.3,High,1.3,Low,10,High,6.6,Moderate,4.4,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0877,15,M,Dyspraxia,6.3,Moderate,6.4,Moderate,4.7,Low,6.4,Moderate,4.8,Low,Moderate,"Include logical puzzles, Use peer modeling and social stories"
+S0878,14,Other,Dyslexia,5.2,Moderate,4.6,Low,3.1,Low,6.3,Moderate,7.2,High,Moderate,"Apply visual math tools, Include logical puzzles"
+S0879,8,Other,Autism,7,High,7.6,High,6.6,Moderate,4.9,Low,7.7,High,Moderate,Incorporate motor skill exercises
+S0880,16,Other,Autism,3.3,Low,4.2,Low,4.1,Low,8.2,High,7.9,High,Moderate,"Use memory games, Apply visual math tools, Include logical puzzles"
+S0881,13,Other,Dyslexia,7,High,8.1,High,4.2,Low,6.7,Moderate,5.7,Moderate,Moderate,Include logical puzzles
+S0882,18,Other,Dyslexia,7.7,High,5.8,Moderate,5.2,Moderate,7.1,High,7.8,High,Moderate,Maintain current learning strategy
+S0883,8,M,Autism,4.7,Low,5.9,Moderate,3.9,Low,1,Low,6.4,Moderate,Low,"Use memory games, Include logical puzzles, Incorporate motor skill exercises"
+S0884,13,F,Autism,7.2,High,6.5,Moderate,2.1,Low,5.3,Moderate,1.6,Low,Low,"Include logical puzzles, Use peer modeling and social stories"
+S0885,18,Other,ADHD,8.7,High,3.8,Low,8.5,High,7.9,High,4.2,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0886,11,Other,ASD,3.7,Low,6.7,Moderate,4.3,Low,6.2,Moderate,5,Moderate,Moderate,"Use memory games, Include logical puzzles"
+S0887,11,M,ASD,2.4,Low,1.5,Low,6.5,Moderate,4.9,Low,4.9,Low,Low,"Use memory games, Apply visual math tools, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0888,17,F,Autism,7.4,High,8.3,High,5.5,Moderate,5.3,Moderate,7,High,Moderate,Maintain current learning strategy
+S0889,11,F,ASD,3.3,Low,6.4,Moderate,7.1,High,7.4,High,2.1,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0890,10,Other,Dyslexia,4.5,Low,4.2,Low,6.2,Moderate,7,High,9,High,Moderate,"Use memory games, Apply visual math tools"
+S0891,11,Other,ADHD,5,Moderate,5,Moderate,8.3,High,6.6,Moderate,8.5,High,Moderate,Maintain current learning strategy
+S0892,12,F,Autism,6.6,Moderate,3.7,Low,3.3,Low,2.9,Low,7.3,High,Low,"Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises"
+S0893,8,M,Dyspraxia,8.4,High,9.7,High,7.7,High,8.3,High,4.8,Low,High,Use peer modeling and social stories
+S0894,13,M,Autism,3.7,Low,7.7,High,6.8,Moderate,6.2,Moderate,6.8,Moderate,Moderate,Use memory games
+S0895,17,F,Dyspraxia,6.6,Moderate,8.6,High,8.6,High,7.1,High,7.7,High,High,Maintain current learning strategy
+S0896,8,Other,Dyspraxia,7,High,5.1,Moderate,7.5,High,3.2,Low,8.1,High,Moderate,Incorporate motor skill exercises
+S0897,18,Other,ASD,3.6,Low,6.6,Moderate,4.3,Low,7.1,High,5.9,Moderate,Moderate,"Use memory games, Include logical puzzles"
+S0898,17,M,Dyspraxia,2.8,Low,6.8,Moderate,4.8,Low,7.8,High,6,Moderate,Moderate,"Use memory games, Include logical puzzles"
+S0899,14,F,Dyspraxia,6.8,Moderate,4.1,Low,4.8,Low,5.1,Moderate,7.7,High,Moderate,"Apply visual math tools, Include logical puzzles"
+S0900,11,F,Autism,9.4,High,4.4,Low,8.2,High,1.7,Low,3.6,Low,Moderate,"Apply visual math tools, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0901,12,F,Dyspraxia,4.1,Low,3.3,Low,2.8,Low,6.8,Moderate,5.6,Moderate,Low,"Use memory games, Apply visual math tools, Include logical puzzles"
+S0902,17,F,Autism,6.8,Moderate,7.4,High,6.5,Moderate,7.3,High,5.9,Moderate,Moderate,Maintain current learning strategy
+S0903,18,F,Dyspraxia,3.6,Low,8.1,High,4.8,Low,4.1,Low,5.6,Moderate,Moderate,"Use memory games, Include logical puzzles, Incorporate motor skill exercises"
+S0904,16,Other,Autism,4.2,Low,5.2,Moderate,6.7,Moderate,6.7,Moderate,4.2,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0905,12,Other,Autism,5,Moderate,8.1,High,7,High,10,High,8.4,High,High,Maintain current learning strategy
+S0906,12,M,ADHD,8.3,High,3.2,Low,7.5,High,5.9,Moderate,4.9,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0907,15,M,ADHD,6.3,Moderate,7.9,High,7,High,4.2,Low,7.5,High,Moderate,Incorporate motor skill exercises
+S0908,13,F,Dyslexia,4.7,Low,6.4,Moderate,5.4,Moderate,5.6,Moderate,7.5,High,Moderate,Use memory games
+S0909,9,M,Dyspraxia,3.9,Low,9.9,High,2.4,Low,4.8,Low,6.7,Moderate,Moderate,"Use memory games, Include logical puzzles, Incorporate motor skill exercises"
+S0910,9,Other,Dyspraxia,7.2,High,5.8,Moderate,5.9,Moderate,6.8,Moderate,5.5,Moderate,Moderate,Maintain current learning strategy
+S0911,15,F,Dyspraxia,8.8,High,7.7,High,7.7,High,4.1,Low,5.8,Moderate,Moderate,Incorporate motor skill exercises
+S0912,9,F,Dyspraxia,5.4,Moderate,4,Low,6.7,Moderate,4.9,Low,7.3,High,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0913,9,Other,ASD,3.9,Low,9.4,High,4.2,Low,6.4,Moderate,7.6,High,Moderate,"Use memory games, Include logical puzzles"
+S0914,9,M,Dyslexia,4.9,Low,7.7,High,3.5,Low,8.9,High,6,Moderate,Moderate,"Use memory games, Include logical puzzles"
+S0915,10,Other,ASD,4.8,Low,5.4,Moderate,7.6,High,4.8,Low,4.5,Low,Moderate,"Use memory games, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0916,11,F,Dyslexia,5.6,Moderate,3.6,Low,9.6,High,4.9,Low,7.7,High,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0917,8,Other,ASD,6.4,Moderate,4,Low,6,Moderate,7.6,High,5.6,Moderate,Moderate,Apply visual math tools
+S0918,18,M,Autism,8.4,High,8,High,7.8,High,5.1,Moderate,3.8,Low,Moderate,Use peer modeling and social stories
+S0919,17,Other,Dyspraxia,4.8,Low,6.4,Moderate,7.1,High,1.7,Low,6,Moderate,Moderate,"Use memory games, Incorporate motor skill exercises"
+S0920,8,M,ASD,6.3,Moderate,5.4,Moderate,8.6,High,6.8,Moderate,8.6,High,High,Maintain current learning strategy
+S0921,12,Other,Dyslexia,5.6,Moderate,7.9,High,9.3,High,8.6,High,3.8,Low,High,Use peer modeling and social stories
+S0922,13,Other,Dyspraxia,5.5,Moderate,5.3,Moderate,7,High,7.4,High,4.3,Low,Moderate,Use peer modeling and social stories
+S0923,9,M,ADHD,6.1,Moderate,2,Low,8.9,High,5,Moderate,6.1,Moderate,Moderate,Apply visual math tools
+S0924,13,Other,Dyspraxia,5.4,Moderate,8.3,High,1,Low,6,Moderate,5.8,Moderate,Moderate,Include logical puzzles
+S0925,8,M,ASD,5.1,Moderate,9.5,High,4.2,Low,7.5,High,6.7,Moderate,Moderate,Include logical puzzles
+S0926,17,F,ASD,8.5,High,4.7,Low,4.5,Low,8.2,High,6.9,Moderate,Moderate,"Apply visual math tools, Include logical puzzles"
+S0927,11,M,Dyslexia,2.9,Low,4.9,Low,6.8,Moderate,7.7,High,4.6,Low,Moderate,"Use memory games, Apply visual math tools, Use peer modeling and social stories"
+S0928,15,Other,ASD,1,Low,7,High,3.6,Low,2,Low,1,Low,Low,"Use memory games, Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0929,17,Other,Autism,7.6,High,6.3,Moderate,5.5,Moderate,8.8,High,7.3,High,High,Maintain current learning strategy
+S0930,11,Other,ASD,9.2,High,3.2,Low,5.9,Moderate,2.8,Low,5.5,Moderate,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0931,17,F,ASD,5.5,Moderate,7.3,High,6.1,Moderate,7.2,High,7.4,High,Moderate,Maintain current learning strategy
+S0932,8,F,Autism,10,High,5.4,Moderate,4.1,Low,6.5,Moderate,4.4,Low,Moderate,"Include logical puzzles, Use peer modeling and social stories"
+S0933,13,F,ADHD,9,High,5.4,Moderate,4.9,Low,5.1,Moderate,7.4,High,Moderate,Include logical puzzles
+S0934,15,M,Autism,5.7,Moderate,4.7,Low,9.3,High,4.3,Low,6.1,Moderate,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0935,12,Other,Dyslexia,7.3,High,2.7,Low,7,High,3.9,Low,7.6,High,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0936,12,Other,Dyspraxia,4.1,Low,7.4,High,8.2,High,7.7,High,6.5,Moderate,Moderate,Use memory games
+S0937,18,Other,ASD,5.5,Moderate,4.8,Low,8.9,High,4.6,Low,3.9,Low,Moderate,"Apply visual math tools, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0938,18,F,Dyspraxia,7.3,High,4.4,Low,4.1,Low,3.1,Low,5,Moderate,Low,"Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises"
+S0939,11,F,ADHD,5.8,Moderate,6.5,Moderate,7.9,High,7.1,High,5.6,Moderate,Moderate,Maintain current learning strategy
+S0940,13,M,ASD,5.6,Moderate,7,High,8.5,High,6.3,Moderate,5.1,Moderate,Moderate,Maintain current learning strategy
+S0941,15,F,Autism,4,Low,3.1,Low,7.3,High,7.2,High,7.2,High,Moderate,"Use memory games, Apply visual math tools"
+S0942,11,F,ADHD,5.7,Moderate,8.8,High,5,Moderate,7.9,High,5.9,Moderate,Moderate,Maintain current learning strategy
+S0943,15,F,Dyspraxia,4.8,Low,7.2,High,6.8,Moderate,6.7,Moderate,6.2,Moderate,Moderate,Use memory games
+S0944,13,F,ADHD,5.9,Moderate,10,High,8.4,High,7.4,High,6.2,Moderate,High,Maintain current learning strategy
+S0945,8,Other,ASD,8,High,7,High,6.1,Moderate,5.4,Moderate,5.8,Moderate,Moderate,Maintain current learning strategy
+S0946,8,Other,Autism,1,Low,6.4,Moderate,5,Moderate,9.2,High,6,Moderate,Moderate,Use memory games
+S0947,13,Other,ADHD,3.6,Low,5.9,Moderate,3.9,Low,6.9,Moderate,6.6,Moderate,Moderate,"Use memory games, Include logical puzzles"
+S0948,15,M,ADHD,7.9,High,4.4,Low,6.1,Moderate,3.3,Low,7.4,High,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0949,9,M,Dyslexia,7,High,7,High,6,Moderate,6.8,Moderate,9.2,High,High,Maintain current learning strategy
+S0950,9,M,Autism,5.4,Moderate,6.3,Moderate,3.8,Low,4.3,Low,6.2,Moderate,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0951,18,M,Dyslexia,8.2,High,5.5,Moderate,5.5,Moderate,5.2,Moderate,4.9,Low,Moderate,Use peer modeling and social stories
+S0952,8,F,Dyslexia,6.6,Moderate,3,Low,8.6,High,4.7,Low,7.4,High,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0953,10,F,ASD,3.5,Low,7.3,High,7.3,High,6.8,Moderate,4,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0954,8,M,Dyslexia,6.5,Moderate,3.6,Low,5.5,Moderate,8.1,High,7.6,High,Moderate,Apply visual math tools
+S0955,13,F,Dyspraxia,6,Moderate,4.1,Low,7.3,High,6,Moderate,1.4,Low,Low,"Apply visual math tools, Use peer modeling and social stories"
+S0956,12,F,ADHD,7.6,High,6,Moderate,8.4,High,3.8,Low,1,Low,Moderate,"Incorporate motor skill exercises, Use peer modeling and social stories"
+S0957,15,Other,ADHD,6.6,Moderate,6.6,Moderate,2.6,Low,4,Low,10,High,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0958,18,Other,Autism,5.4,Moderate,7.5,High,4.7,Low,1.8,Low,5.7,Moderate,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0959,13,F,Dyspraxia,5.5,Moderate,5.2,Moderate,5.8,Moderate,6.5,Moderate,5.7,Moderate,Moderate,Maintain current learning strategy
+S0960,8,M,Dyspraxia,3.5,Low,7,High,2.1,Low,1.9,Low,7.5,High,Low,"Use memory games, Include logical puzzles, Incorporate motor skill exercises"
+S0961,18,M,Autism,7,High,5.9,Moderate,3.2,Low,4.6,Low,5.5,Moderate,Moderate,"Include logical puzzles, Incorporate motor skill exercises"
+S0962,9,M,Dyspraxia,2.8,Low,4.5,Low,7.3,High,8.9,High,5.2,Moderate,Moderate,"Use memory games, Apply visual math tools"
+S0963,10,M,Autism,7.5,High,2.2,Low,7.3,High,4.4,Low,6.6,Moderate,Moderate,"Apply visual math tools, Incorporate motor skill exercises"
+S0964,10,M,ASD,5.5,Moderate,8.6,High,4.3,Low,7.3,High,5.4,Moderate,Moderate,Include logical puzzles
+S0965,8,Other,Dyslexia,5.7,Moderate,5.6,Moderate,4.3,Low,6,Moderate,5.9,Moderate,Moderate,Include logical puzzles
+S0966,12,Other,ASD,6.5,Moderate,6.2,Moderate,7.6,High,7.8,High,3.9,Low,Moderate,Use peer modeling and social stories
+S0967,12,F,ADHD,7.7,High,3.6,Low,7.2,High,7.2,High,2.2,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0968,11,Other,ADHD,6.2,Moderate,5.1,Moderate,4.5,Low,8.7,High,4.7,Low,Moderate,"Include logical puzzles, Use peer modeling and social stories"
+S0969,14,Other,ADHD,4.4,Low,6.2,Moderate,7.4,High,5.7,Moderate,8.3,High,Moderate,Use memory games
+S0970,11,M,Autism,7.1,High,1.6,Low,4.9,Low,4.9,Low,7,High,Moderate,"Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises"
+S0971,10,Other,Dyspraxia,1,Low,10,High,7.1,High,6.3,Moderate,8.4,High,Moderate,Use memory games
+S0972,13,F,ASD,10,High,7.7,High,7.9,High,6.3,Moderate,5.7,Moderate,High,Maintain current learning strategy
+S0973,10,F,Autism,5,Moderate,4.3,Low,4.6,Low,3.3,Low,5.8,Moderate,Low,"Apply visual math tools, Include logical puzzles, Incorporate motor skill exercises"
+S0974,10,F,Dyspraxia,2.6,Low,6.4,Moderate,5.9,Moderate,6.3,Moderate,5,Moderate,Moderate,Use memory games
+S0975,15,F,Autism,10,High,8.7,High,3.5,Low,6.5,Moderate,4.8,Low,Moderate,"Include logical puzzles, Use peer modeling and social stories"
+S0976,10,F,Dyslexia,4,Low,3.3,Low,6.9,Moderate,4.6,Low,7.9,High,Moderate,"Use memory games, Apply visual math tools, Incorporate motor skill exercises"
+S0977,10,Other,ADHD,8,High,8.7,High,4.3,Low,7,High,7.3,High,High,Include logical puzzles
+S0978,17,F,Dyslexia,5.1,Moderate,4.5,Low,9.2,High,6.5,Moderate,7.3,High,Moderate,Apply visual math tools
+S0979,14,F,ADHD,4.4,Low,3.6,Low,4.9,Low,5.8,Moderate,3.9,Low,Low,"Use memory games, Apply visual math tools, Include logical puzzles, Use peer modeling and social stories"
+S0980,10,Other,ASD,6,Moderate,2.6,Low,3.8,Low,7.3,High,7.2,High,Moderate,"Apply visual math tools, Include logical puzzles"
+S0981,18,M,Dyslexia,5.2,Moderate,4,Low,3.9,Low,5.3,Moderate,7.3,High,Moderate,"Apply visual math tools, Include logical puzzles"
+S0982,8,M,ADHD,7.9,High,5,Moderate,3.7,Low,6.5,Moderate,4.4,Low,Moderate,"Include logical puzzles, Use peer modeling and social stories"
+S0983,10,M,ADHD,5,Moderate,8.7,High,7.7,High,6.3,Moderate,3.5,Low,Moderate,Use peer modeling and social stories
+S0984,10,F,Dyspraxia,6.4,Moderate,8.1,High,5.2,Moderate,8.7,High,8.6,High,High,Maintain current learning strategy
+S0985,12,F,Autism,9.3,High,6.6,Moderate,7.2,High,8.8,High,6.9,Moderate,High,Maintain current learning strategy
+S0986,18,Other,Autism,5,Moderate,5.1,Moderate,6.5,Moderate,3.4,Low,5.7,Moderate,Moderate,Incorporate motor skill exercises
+S0987,16,F,ASD,8.2,High,1.6,Low,9.1,High,8.2,High,5.1,Moderate,Moderate,Apply visual math tools
+S0988,18,F,Autism,7.1,High,6,Moderate,8.5,High,8,High,3.2,Low,Moderate,Use peer modeling and social stories
+S0989,11,F,Dyspraxia,7.2,High,5.6,Moderate,6.2,Moderate,4.5,Low,9.5,High,Moderate,Incorporate motor skill exercises
+S0990,8,F,Dyspraxia,8.1,High,4.5,Low,3.3,Low,5.2,Moderate,6.9,Moderate,Moderate,"Apply visual math tools, Include logical puzzles"
+S0991,14,F,Dyslexia,6.5,Moderate,8.5,High,7.6,High,7.9,High,6.7,Moderate,High,Maintain current learning strategy
+S0992,18,F,Dyspraxia,3.2,Low,5.6,Moderate,8.1,High,5.9,Moderate,7,High,Moderate,Use memory games
+S0993,14,M,Autism,5.4,Moderate,3.9,Low,5.8,Moderate,6.6,Moderate,4.7,Low,Moderate,"Apply visual math tools, Use peer modeling and social stories"
+S0994,9,Other,Dyspraxia,5.5,Moderate,4.1,Low,8.2,High,5.4,Moderate,8.9,High,Moderate,Apply visual math tools
+S0995,16,M,Dyspraxia,9.1,High,5.8,Moderate,4,Low,1.8,Low,3.1,Low,Low,"Include logical puzzles, Incorporate motor skill exercises, Use peer modeling and social stories"
+S0996,10,Other,ADHD,3.3,Low,8.8,High,6.2,Moderate,6.8,Moderate,1.6,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S0997,13,Other,Autism,3.6,Low,7.8,High,6.6,Moderate,5.7,Moderate,7.1,High,Moderate,Use memory games
+S0998,16,Other,ADHD,9.3,High,5.6,Moderate,6.1,Moderate,6.4,Moderate,10,High,High,Maintain current learning strategy
+S0999,17,Other,ASD,1.8,Low,7.4,High,5.8,Moderate,7.1,High,4.7,Low,Moderate,"Use memory games, Use peer modeling and social stories"
+S1000,12,F,Dyslexia,5.9,Moderate,7.4,High,10,High,7.6,High,4.3,Low,High,Use peer modeling and social stories
