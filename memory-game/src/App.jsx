@@ -6,7 +6,7 @@ import BoxClickGame from "./components/game/BoxClickGame";
 import MathReasoningGame from "./components/game/MathReasoningGame";
 import SocialThinkingQuiz from "./components/game/SocialThinkingQuiz";
 import UserDashboard from "./components/home/UserDashboard";
-import Classes from './components/home/Classes';
+import Recommendation from './components/home/RecommendationDisplay';
 import './App.css';
 
 const App = () => {
@@ -26,7 +26,7 @@ const App = () => {
           
           {/* User Dashboard Route */}
           <Route path="/dashboard" element={<UserDashboard />} />
-          <Route path="/classes" element={<Classes />} />
+          <Route path="/recommendation" element={<Recommendation/>} />
 
           {/* Fallback route for unknown paths */}
           <Route path="*" element={<Navigate to="/memory" />} />

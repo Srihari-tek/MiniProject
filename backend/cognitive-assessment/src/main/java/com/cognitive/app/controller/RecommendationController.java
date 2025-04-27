@@ -18,11 +18,8 @@ public class RecommendationController {
     }
 
     @GetMapping("/{userId}")
-    public Map<String, String> getRecommendation(@PathVariable String userId) {
-        String recommendation = recommendationService.getLearningRecommendation(userId);
-
-        Map<String, String> response = new HashMap<>();
-        response.put("recommendation", recommendation);
-        return response;
+    public Map<String, Object> getRecommendation(@PathVariable String userId) {
+        return recommendationService.getLearningRecommendation(userId);
     }
+
 }

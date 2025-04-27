@@ -4,7 +4,15 @@ import java.util.Map;
 
 public class RecommendationRequest {
     private String userId;
-    private Map<String, Object> results; // Use Map<String, Object> to match the Flask model format
+    private Map<String, Object> results;
+
+    public RecommendationRequest() {
+    }
+
+    public RecommendationRequest(String userId, Map<String, Object> results) {
+        this.userId = userId;
+        this.results = results;
+    }
 
     public String getUserId() {
         return userId;
@@ -21,4 +29,13 @@ public class RecommendationRequest {
     public void setResults(Map<String, Object> results) {
         this.results = results;
     }
+
+    @Override
+    public String toString() {
+        return "RecommendationRequest{" +
+                "userId='" + userId + '\'' +
+                ", results=" + results +
+                '}';
+    }
+
 }
