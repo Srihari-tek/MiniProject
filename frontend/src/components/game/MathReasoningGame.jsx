@@ -71,9 +71,9 @@ const MathReasoningGame = () => {
   };
 
   const getCategory = () => {
-    if (score >= 4) return "Basic-Smart";
-    if (score === 3) return "Basic-Intermediate";
-    return "Basic-Beginner";
+    if (score >= 4) return "High";
+    if (score === 3) return "Moderate";
+    return "Low";
   };
 
   const submitResult = async () => {

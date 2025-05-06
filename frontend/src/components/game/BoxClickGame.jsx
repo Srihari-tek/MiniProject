@@ -56,9 +56,9 @@ const BoxClickGame = () => {
   };
 
   const categorizeScore = () => {
-    if (score >= 8) return "Basic-Smart";
-    if (score >= 5) return "Basic-Intermediate";
-    return "Basic-Beginner";
+    if (score >= 8) return "High";
+    if (score >= 5) return "Moderate";
+    return "Low";
   };
 
   const showFinalScore = () => {

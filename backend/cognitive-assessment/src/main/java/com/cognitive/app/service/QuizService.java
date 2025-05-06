@@ -26,51 +26,101 @@ public class QuizService {
     private void loadLearningResourceQuizzes() {
         // 1. Maintain Current Learning Strategy
         List<Map<String, Object>> maintainStrategyQuiz = List.of(
-                createQuestion("What does 'maintain strategy' mean?", List.of("Change learning methods", "Keep successful methods", "Ignore old methods", "None"), "Keep successful methods"),
-                createQuestion("Why is consistency important?", List.of("It confuses students", "It helps stability", "It limits creativity", "None"), "It helps stability"),
-                createQuestion("When should you maintain a strategy?", List.of("Only after failures", "After successful attempts", "Before trying anything", "None"), "After successful attempts"),
-                createQuestion("What should you track while maintaining a strategy?", List.of("Results and behavior", "Weather patterns", "Random opinions", "None"), "Results and behavior"),
-                createQuestion("Consistency in learning improves?", List.of("Confusion", "Retention and skills", "Anxiety", "None"), "Retention and skills")
+                createQuestion("Which of the following tasks would most require fine motor skills?",
+                        List.of("Running a mile", "Threading a needle", "Kicking a football", "Climbing stairs"),
+                        "Threading a needle"),
+                createQuestion("What is peer modeling?",
+                        List.of("Imitating a teacher", "Copying a peer’s appropriate behavior", "Watching videos", "Learning via flashcards"),
+                        "Copying a peer’s appropriate behavior"),
+                createQuestion("You hear a phone number once and recall it. This is:",
+                        List.of("Long-term memory", "Procedural memory", "Working memory", "Episodic memory"),
+                        "Working memory"),
+                createQuestion("What shape has four equal sides and all right angles?",
+                        List.of("Rectangle", "Triangle", "Square", "Rhombus"),
+                        "Square"),
+                createQuestion("What comes next? A, C, E, G, ___",
+                        List.of("H", "J", "K", "I"),
+                        "J")
         );
         learningQuizMap.put("maintain_current_learning_strategy", maintainStrategyQuiz);
 
         // 2. Incorporate Motor Skill Exercises
         List<Map<String, Object>> motorSkillQuiz = List.of(
-                createQuestion("Which exercise improves motor skills?", List.of("Jumping Jacks", "Reading quietly", "Listening to music", "None"), "Jumping Jacks"),
-                createQuestion("Hand-eye coordination can be improved by?", List.of("Catching a ball", "Listening to a podcast", "Meditating", "None"), "Catching a ball"),
-                createQuestion("Motor skill practice should be?", List.of("Once a month", "Frequent and consistent", "Rare", "None"), "Frequent and consistent"),
-                createQuestion("Fine motor skills involve?", List.of("Large muscle groups", "Small precise movements", "Running fast", "None"), "Small precise movements"),
-                createQuestion("Which activity supports fine motor skills?", List.of("Coloring", "Jumping rope", "Shouting", "None"), "Coloring")
+                createQuestion("What does hand-eye coordination help with?",
+                        List.of("Reading comprehension", "Typing on a keyboard", "Solving math equations", "Memorizing dates"),
+                        "Typing on a keyboard"),
+                createQuestion("A student rotates a puzzle piece to fit it. This requires:",
+                        List.of("Motor planning", "Passive motion", "Spatial neglect", "Resting tone"),
+                        "Motor planning"),
+                createQuestion("Which activity enhances bilateral coordination?",
+                        List.of("Hopping on one leg", "Catching a ball with both hands", "Listening to a story", "Reading silently"),
+                        "Catching a ball with both hands"),
+                createQuestion("Why is crossing the midline important?",
+                        List.of("It helps regulate emotions", "It supports two-handed activities", "It strengthens bones", "It improves vision"),
+                        "It supports two-handed activities"),
+                createQuestion("When practicing with scissors, which skill is being developed?",
+                        List.of("Core strength", "Visual sequencing", "Finger dexterity", "Time management"),
+                        "Finger dexterity")
         );
         learningQuizMap.put("incorporate_motor_skill_exercises", motorSkillQuiz);
 
         // 3. Use Peer Modeling and Social Stories
         List<Map<String, Object>> peerModelingQuiz = List.of(
-                createQuestion("Peer modeling means?", List.of("Learning by watching peers", "Ignoring peers", "Competing with peers", "None"), "Learning by watching peers"),
-                createQuestion("Social stories help students to?", List.of("Predict social situations", "Ignore feelings", "Avoid society", "None"), "Predict social situations"),
-                createQuestion("In peer modeling, the model should be?", List.of("Random", "Skillful and relatable", "Unfamiliar", "None"), "Skillful and relatable"),
-                createQuestion("Social stories usually include?", List.of("Realistic scenarios", "Fictional monsters", "Confusing instructions", "None"), "Realistic scenarios"),
-                createQuestion("Key benefit of peer modeling?", List.of("Creating jealousy", "Enhancing learning through observation", "Creating competition", "None"), "Enhancing learning through observation")
+                createQuestion("What is typically described in a social story?",
+                        List.of("Historical events", "A child’s routine and expected social behavior", "Scientific processes", "Fictional characters only"),
+                        "A child’s routine and expected social behavior"),
+                createQuestion("Which of the following promotes empathy?",
+                        List.of("Winning a game", "Talking without listening", "Taking turns in a conversation", "Avoiding peers"),
+                        "Taking turns in a conversation"),
+                createQuestion("A child sees another help and later does the same. This is:",
+                        List.of("Abstract thinking", "Peer modeling", "Internal motivation", "Language delay"),
+                        "Peer modeling"),
+                createQuestion("What should a good social story include?",
+                        List.of("Complex vocabulary", "Real-world relevance and clarity", "Fictional monsters", "Confusing instructions"),
+                        "Real-world relevance and clarity"),
+                createQuestion("Which scenario reflects poor social understanding?",
+                        List.of("Waiting in line", "Apologizing", "Laughing when someone is upset", "Holding the door"),
+                        "Laughing when someone is upset")
         );
         learningQuizMap.put("use_peer_modeling_and_social_stories", peerModelingQuiz);
 
         // 4. Use Memory Games
         List<Map<String, Object>> memoryGamesQuiz = List.of(
-                createQuestion("Memory games help improve?", List.of("Physical strength", "Recall ability", "Anger", "None"), "Recall ability"),
-                createQuestion("Which is a memory game?", List.of("Simon Says", "Running race", "Arm wrestling", "None"), "Simon Says"),
-                createQuestion("Memory games should be?", List.of("Boring", "Challenging and fun", "Punishing", "None"), "Challenging and fun"),
-                createQuestion("One benefit of memory games?", List.of("Forgetfulness", "Cognitive sharpening", "Laziness", "None"), "Cognitive sharpening"),
-                createQuestion("Good memory practice?", List.of("Matching cards", "Running marathons", "Cooking pasta", "None"), "Matching cards")
+                createQuestion("Which task best improves working memory?",
+                        List.of("Copying notes", "Playing a number recall game", "Listening to music", "Drawing a picture"),
+                        "Playing a number recall game"),
+                createQuestion("Following three-step instructions uses:",
+                        List.of("Emotional regulation", "Working memory", "Visual perception", "Word decoding"),
+                        "Working memory"),
+                createQuestion("Which strategy helps verbal memory?",
+                        List.of("Ignoring", "Repeating aloud", "Walking away", "Drawing random images"),
+                        "Repeating aloud"),
+                createQuestion("Remembering unrelated words is:",
+                        List.of("Long-term memory", "Muscle memory", "Implicit memory", "Short-term memory"),
+                        "Short-term memory"),
+                createQuestion("Reversing a number sequence aloud involves:",
+                        List.of("Repeating numbers", "Reversing a sequence", "Looking at pictures", "Typing randomly"),
+                        "Reversing a sequence")
         );
         learningQuizMap.put("use_memory_games", memoryGamesQuiz);
 
         // 5. Apply Visual Math Tools
         List<Map<String, Object>> visualMathQuiz = List.of(
-                createQuestion("Visual math tools help to?", List.of("Confuse learners", "Make concepts clear", "Increase anxiety", "None"), "Make concepts clear"),
-                createQuestion("An example of a visual math tool?", List.of("Flashcards", "Soccer ball", "Drama script", "None"), "Flashcards"),
-                createQuestion("Graphs and charts are?", List.of("Visual learning tools", "Physical workouts", "Storybooks", "None"), "Visual learning tools"),
-                createQuestion("Using visuals improves?", List.of("Confusion", "Understanding", "Memory loss", "None"), "Understanding"),
-                createQuestion("Which is a visual representation?", List.of("Equation drawing", "Music lyrics", "Running track", "None"), "Equation drawing")
+                createQuestion("Which of the following represents a pattern?",
+                        List.of("Red, blue, red, blue, red, ___", "1, 3, 7, 9, 2", "A, B, D, F", "Green, yellow, apple"),
+                        "Red, blue, red, blue, red, ___"),
+                createQuestion("Which tool compares quantities visually?",
+                        List.of("Bar graph", "Paragraph", "Stopwatch", "Textbook"),
+                        "Bar graph"),
+                createQuestion("Counting blocks in a triangle involves:",
+                        List.of("Number line", "Volume", "Geometry and spatial visualization", "Phonemic awareness"),
+                        "Geometry and spatial visualization"),
+                createQuestion("What defines symmetry?",
+                        List.of("Opposite colors", "Same shape on both sides", "Uneven patterns", "Random shapes"),
+                        "Same shape on both sides"),
+                createQuestion("What comes next? 2, 4, 6, 8, ___",
+                        List.of("11", "12", "10", "9"),
+                        "10")
         );
         learningQuizMap.put("apply_visual_math_tools", visualMathQuiz);
 

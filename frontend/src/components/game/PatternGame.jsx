@@ -62,9 +62,9 @@ const PatternGame = () => {
   };
 
   const categorizeScore = () => {
-    if (score >= 4) return "Basic-Smart";
-    if (score >= 2) return "Basic-Intermediate";
-    return "Basic-Beginner";
+    if (score >= 4) return "High";
+    if (score >= 2) return "Moderate";
+    return "Low";
   };
 
   const sendGameResult = async () => {
