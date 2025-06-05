@@ -1,3 +1,4 @@
+// App.js
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import MemoryGame from "./components/game/MemoryGame";
@@ -6,11 +7,11 @@ import BoxClickGame from "./components/game/BoxClickGame";
 import MathReasoningGame from "./components/game/MathReasoningGame";
 import SocialThinkingQuiz from "./components/game/SocialThinkingQuiz";
 import UserDashboard from "./components/home/UserDashboard";
-import Recommendation from './components/home/RecommendationDisplay';
 import RecommendationWrapper from './components/home/RecommendationWrapper';
+import Quiz from './components/home/Quiz';
+import Resources from './components/home/Resources'; // Import Resources component
 import Login from "./components/user/Login";
 import Signup from "./components/user/Signup";
-import { useLocation } from 'react-router-dom';
 import './App.css';
 
 // Protects routes if user is not logged in
@@ -45,6 +46,8 @@ const App = () => {
           <Route path="/socialthinking" element={<PrivateRoute element={<SocialThinkingQuiz />} />} />
           <Route path="/dashboard" element={<PrivateRoute element={<UserDashboard />} />} />
           <Route path="/recommendation" element={<RecommendationWrapper />} />
+          <Route path="/quiz" element={<Quiz />} />
+          <Route path="/resources" element={<Resources />} /> {/* Add Resources route */}
 
           {/* Fallback route */}
           <Route path="*" element={<Navigate to="/login" />} />

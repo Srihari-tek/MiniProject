@@ -17,6 +17,7 @@ const UserDashboard = ({ onStartNewSession }) => {
   const [progressData, setProgressData] = useState(null);
   const [gameScores, setGameScores] = useState([]);
   const [showDetailedResults, setShowDetailedResults] = useState(false);
+  const [showProgressDetails, setShowProgressDetails] = useState(false);
 
   useEffect(() => {
     const storedParentEmail = localStorage.getItem('parentEmail');
@@ -105,6 +106,13 @@ const UserDashboard = ({ onStartNewSession }) => {
   // Toggle between dashboard and detailed results
   const toggleDetailedResults = () => {
     setShowDetailedResults(!showDetailedResults);
+    setShowProgressDetails(false);
+  };
+
+  // Toggle between dashboard and progress details
+  const toggleProgressDetails = () => {
+    setShowProgressDetails(!showProgressDetails);
+    setShowDetailedResults(false);
   };
 
   // Render detailed game results
@@ -135,6 +143,79 @@ const UserDashboard = ({ onStartNewSession }) => {
     );
   };
 
+  // Render progress details
+  const renderProgressDetails = () => {
+    return (
+      <div className="progress-details">
+        <div className="progress-details-header">
+          <button className="back-button" onClick={toggleProgressDetails}>
+            ← Back to Dashboard
+          </button>
+          <h1>Learning Progress Details</h1>
+        </div>
+        
+        <div className="progress-details-content">
+          {progressData ? (
+            <>
+              <div className="progress-summary">
+                <div className="progress-stat">
+                  <h3>Total Quizzes</h3>
+                  <div className="stat-value">{progressData.totalQuizzes}</div>
+                </div>
+                <div className="progress-stat">
+                  <h3>Average Score</h3>
+                  <div className="stat-value">{progressData.averageScore.toFixed(2)}%</div>
+                </div>
+              </div>
+
+              <h2>Skill Progress</h2>
+              <table className="progress-table">
+                <thead>
+                  <tr>
+                    <th>Skill</th>
+                    <th>Last Month</th>
+                    <th>This Month</th>
+                    <th>Average</th>
+                    <th>Category</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {progressData.skillProgressList.map((skill, index) => (
+                    <tr key={index}>
+                      <td>{skill.skillName}</td>
+                      <td>{skill.lastMonthScore.toFixed(1)}%</td>
+                      <td>{skill.thisMonthScore.toFixed(1)}%</td>
+                      <td>{skill.averageScore.toFixed(1)}%</td>
+                      <td>{skill.currentCategory}</td>
+                      <td>{skill.status}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+
+              <h2>Recent Activities</h2>
+              <div className="activities-list">
+                {progressData.recentActivities.map((activity, index) => (
+                  <div key={index} className="activity-card">
+                    <div className="activity-date">{activity.date}</div>
+                    <div className="activity-details">
+                      <h3>{activity.quizType} quiz</h3>
+                      <p>Topic: <strong>{activity.referenceName}</strong></p>
+                      <p>Score: {activity.correctAnswers}/{activity.totalQuestions}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
+          ) : (
+            <p>Loading progress data...</p>
+          )}
+        </div>
+      </div>
+    );
+  };
+
   // Main dashboard render
   const renderDashboard = () => {
     return (
@@ -143,8 +224,10 @@ const UserDashboard = ({ onStartNewSession }) => {
           <div className="logo">SynapLearn</div>
           <nav className="nav-menu">
             <button className="nav-item active">Dashboard</button>
-            <button className="nav-item" onClick={() => navigate('/recommendation', { state: { userId } })}>Resources</button>
+            <button className="nav-item" onClick={() => navigate('/recommendation')}>Classes</button>
+            <button className="nav-item">Resources</button>
             <button className="nav-item">Learning Plan</button>
+            <button className="nav-item">Chat</button>
           </nav>
         </aside>
 
@@ -180,7 +263,15 @@ const UserDashboard = ({ onStartNewSession }) => {
                       <span className="number">{gameScores.length}</span>
                       <span className="label">Games Played</span>
                     </div>
-                    
+                    {gameScores.length > 0 && (
+                      <div className="average-score">
+                        <span className="number">
+                          {Math.round(gameScores.reduce((acc, score) => 
+                            acc + categoryToScore(score.category), 0) / gameScores.length)}%
+                        </span>
+                        <span className="label">Average Score</span>
+                      </div>
+                    )}
                   </div>
                   
                   <button className="view-detailed-results-btn" onClick={toggleDetailedResults}>
@@ -189,54 +280,16 @@ const UserDashboard = ({ onStartNewSession }) => {
                 </div>
               </div>
 
-              {/* Right Column - Progress Tracking */}
+              {/* Right Column - Progress Tracking Button */}
               <div className="right-column">
-                <section className="progress-tracking">
+                <div className="progress-tracking-box">
                   <h2>📈 Progress Tracking</h2>
-                  {progressData ? (
-                    <>
-                      <p><strong>Total Quizzes:</strong> {progressData.totalQuizzes}</p>
-                      <p><strong>Average Score:</strong> {progressData.averageScore.toFixed(2)}%</p>
-
-                      <h3>Skill Progress</h3>
-                      <table className="progress-table">
-                        <thead>
-                          <tr>
-                            <th>Skill</th>
-                            <th>Last Month</th>
-                            <th>This Month</th>
-                            <th>Average</th>
-                            <th>Category</th>
-                            <th>Status</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {progressData.skillProgressList.map((skill, index) => (
-                            <tr key={index}>
-                              <td>{skill.skillName}</td>
-                              <td>{skill.lastMonthScore.toFixed(1)}%</td>
-                              <td>{skill.thisMonthScore.toFixed(1)}%</td>
-                              <td>{skill.averageScore.toFixed(1)}%</td>
-                              <td>{skill.currentCategory}</td>
-                              <td>{skill.status}</td>
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
-
-                      <h3>Recent Activities</h3>
-                      <ul>
-                        {progressData.recentActivities.map((activity, index) => (
-                          <li key={index}>
-                            [{activity.date}] {activity.quizType} quiz on <strong>{activity.referenceName}</strong>: {activity.correctAnswers}/{activity.totalQuestions}
-                          </li>
-                        ))}
-                      </ul>
-                    </>
-                  ) : (
-                    <p>Loading progress data...</p>
-                  )}
-                </section>
+                  <p>View your learning progress, skill development, and recent activities.</p>
+                  
+                  <button className="view-progress-btn" onClick={toggleProgressDetails}>
+                    View Learning Progress
+                  </button>
+                </div>
               </div>
             </div>
 
@@ -249,7 +302,13 @@ const UserDashboard = ({ onStartNewSession }) => {
     );
   };
 
-  return showDetailedResults ? renderGameResultsDetail() : renderDashboard();
+  if (showDetailedResults) {
+    return renderGameResultsDetail();
+  } else if (showProgressDetails) {
+    return renderProgressDetails();
+  } else {
+    return renderDashboard();
+  }
 };
 
 UserDashboard.defaultProps = {
