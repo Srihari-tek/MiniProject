@@ -16,8 +16,6 @@ const Resources = () => {
           <button className="nav-item" onClick={() => navigate('/dashboard')}>Dashboard</button>
           <button className="nav-item" onClick={() => navigate('/recommendation')}>Classes</button>
           <button className="nav-item active">Resources</button>
-          <button className="nav-item">Learning Plan</button>
-          <button className="nav-item">Chat</button>
         </nav>
       </aside>
 

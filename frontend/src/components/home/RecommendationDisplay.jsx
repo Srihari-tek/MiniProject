@@ -46,8 +46,6 @@ const RecommendationDisplay = ({ userId }) => {
           <button className="nav-item" onClick={() => navigate('/dashboard')}>Dashboard</button>
           <button className="nav-item active">Classes</button>
           <button className="nav-item" onClick={handleViewResources}>Resources</button>
-          <button className="nav-item">Learning Plan</button>
-          <button className="nav-item">Chat</button>
         </nav>
       </aside>
 
@@ -59,20 +57,6 @@ const RecommendationDisplay = ({ userId }) => {
               📖 View Resources
             </button>
 
-            <div className="progress-buttons">
-              <button
-                className={progress === 'Completed' ? 'active' : ''}
-                onClick={() => handleProgress('Completed')}
-              >
-                ✅ Completed
-              </button>
-              <button
-                className={progress === 'Skipped' ? 'active' : ''}
-                onClick={() => handleProgress('Skipped')}
-              >
-                ❌ Skipped
-              </button>
-            </div>
 
             <div className="rating-bar">
               <p>Rate this suggestion:</p>

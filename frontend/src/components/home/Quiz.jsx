@@ -1,6 +1,7 @@
 // Quiz.js
 import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import './Quiz.css';
 
 const Quiz = () => {
   const location = useLocation();
@@ -74,9 +75,9 @@ const Quiz = () => {
 
   return (
     <div className="quiz-section">
-      <h3>📝 Quiz Time!</h3>
       {quizQuestions.length > 0 ? (
         <form onSubmit={(e) => { e.preventDefault(); handleSubmitQuiz(); }}>
+          <h3>📝 Quiz Time!</h3>
           {quizQuestions.map((question, index) => (
             <div key={index} className="quiz-question">
               <p>{index + 1}. {question.question}</p>

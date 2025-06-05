@@ -225,9 +225,7 @@ const UserDashboard = ({ onStartNewSession }) => {
           <nav className="nav-menu">
             <button className="nav-item active">Dashboard</button>
             <button className="nav-item" onClick={() => navigate('/recommendation')}>Classes</button>
-            <button className="nav-item">Resources</button>
-            <button className="nav-item">Learning Plan</button>
-            <button className="nav-item">Chat</button>
+            <button className="nav-item" onClick={() => navigate('/resources')}>Resources</button>
           </nav>
         </aside>
 
@@ -248,9 +246,6 @@ const UserDashboard = ({ onStartNewSession }) => {
                 <h1>Welcome, {userData?.name || 'User'}!</h1>
                 <p>"Excited to have you here! Let's begin your learning journey."</p>
               </div>
-              <div className="welcome-image">
-                <img src="/avatar.png" alt="Welcome" />
-              </div>
             </section>
 
             <div className="dashboard-grid two-column-layout">
@@ -263,15 +258,6 @@ const UserDashboard = ({ onStartNewSession }) => {
                       <span className="number">{gameScores.length}</span>
                       <span className="label">Games Played</span>
                     </div>
-                    {gameScores.length > 0 && (
-                      <div className="average-score">
-                        <span className="number">
-                          {Math.round(gameScores.reduce((acc, score) => 
-                            acc + categoryToScore(score.category), 0) / gameScores.length)}%
-                        </span>
-                        <span className="label">Average Score</span>
-                      </div>
-                    )}
                   </div>
                   
                   <button className="view-detailed-results-btn" onClick={toggleDetailedResults}>
