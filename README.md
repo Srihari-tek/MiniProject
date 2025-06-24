@@ -71,10 +71,9 @@ Trained on: Synthetic dataset modeled after cognitive performance profiles
 
 .
 ├── backend
-│ ├── springboot # Java backend with REST API
+│ ├── cognitive-assessment(SpringBoot) # Java backend with REST API
 │ └── flask # Python ML recommendation engine
-├── frontend
-│ └── react-app # React.js user dashboard
+├── frontend # React.js user dashboard
 ├── ml-model # Jupyter notebook and model training scripts
 ├── README.md # Project overview
 └── ...
@@ -115,3 +114,28 @@ GET /api/quiz/api/learning/{topic}
 "Include logical puzzles"
 
 "Use peer modeling and social stories"
+
+
+🧠 How to Run
+
+Frontend
+
+cd frontend
+npm install
+npm run dev
+
+Spring Boot Backend
+
+cd backend/cognitive-assessment
+mvn spring-boot:run
+
+Flask ML Server
+
+cd backend/flask
+python -m venv venv
+source venv/bin/activate (or venv\Scripts\activate on Windows)
+python app.py
+
+PostgreSQL
+
+Make sure PostgreSQL is running and matches your application.properties settings.
